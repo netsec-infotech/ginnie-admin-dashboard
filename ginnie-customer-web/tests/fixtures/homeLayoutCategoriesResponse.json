@@ -1,0 +1,638 @@
+{
+  "success": true,
+  "message": "Home layout fetched successfully",
+  "data": {
+    "scope_type": "global",
+    "scope_id": null,
+    "current_page": 1,
+    "last_page": 1,
+    "per_page": 5,
+    "total": 1,
+    "sections": [
+      {
+        "id": 41,
+        "type": "categories",
+        "title": null,
+        "style": "overlay",
+        "config": {
+          "source": "custom",
+          "background_type": "color",
+          "background_color": "#e1cccc"
+        },
+        "background_image": null,
+        "hero_media": null,
+        "card_background_image": null,
+        "content": {
+          "categories": [
+            {
+              "id": 79,
+              "title": "Flats",
+              "slug": "flats-1",
+              "image": "https://hypermart.eshopweb.store/storage/2481/image-Photoroom-%284%29.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 72,
+              "commission": "5.00",
+              "parent_slug": "womens-footwear-1",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Flats",
+                "seo_keywords": [
+                  "Flats"
+                ],
+                "seo_description": "Flats"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 40,
+              "title": "Fruits",
+              "slug": "fruits",
+              "image": "https://hypermart.eshopweb.store/storage/514/fresh-fruits.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 3,
+              "commission": "5.00",
+              "parent_slug": "vegetables-fruits-1",
+              "description": "Juicy, handpicked fruits packed with natural sweetness and nutrition for a healthy lifestyle.",
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Fruits",
+                "seo_keywords": [
+                  "Fruits"
+                ],
+                "seo_description": "Juicy, handpicked fruits packed with natural sweetness and nutrition for a healthy lifestyle."
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 25,
+              "title": "Fashion",
+              "slug": "fashion-1",
+              "image": "https://hypermart.eshopweb.store/storage/446/fashion-image.png",
+              "icon": "https://hypermart.eshopweb.store/storage/2110/sexy-smiling-beautiful-woman-her-handsome-boyfriend-happy-cheerful-family-having-tender-moments-near-blue-wall-studiopure-cheerful-models-huggingembracing-each-other-sunglasses-1.png",
+              "active_icon": "https://hypermart.eshopweb.store/storage/2111/sexy-smiling-beautiful-woman-her-handsome-boyfriend-happy-cheerful-family-having-tender-moments-near-blue-wall-studiopure-cheerful-models-huggingembracing-each-other-sunglasses-1.png",
+              "background_type": "image",
+              "background_color": "",
+              "background_image": "https://hypermart.eshopweb.store/storage/4695/Media__2_-removebg-preview.png",
+              "font_color": "#ffffff",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": null,
+              "commission": "0.00",
+              "parent_slug": null,
+              "description": "Trendy clothing, footwear, and accessories for men, women, and kids to suit every style and occasion",
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Fashion",
+                "seo_description": "Trendy clothing, footwear, and accessories for men, women, and kids to suit every style and occasion",
+                "seo_keywords": [
+                  "Fashion"
+                ]
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 123,
+              "title": "Fiction",
+              "slug": "fiction",
+              "image": "https://hypermart.eshopweb.store/assets/images/category-placeholder.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": "color",
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#FFFFFF",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 3,
+              "commission": "4.00",
+              "parent_slug": "vegetables-fruits-1",
+              "description": "Novels and stories",
+              "status": "active",
+              "requires_approval": true,
+              "metadata": {
+                "seo_title": "Fiction",
+                "seo_keywords": [
+                  "Fiction"
+                ],
+                "seo_description": "Novels and stories"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 134,
+              "title": "Fitness",
+              "slug": "fitness",
+              "image": "https://hypermart.eshopweb.store/assets/images/category-placeholder.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": "color",
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#FFFFFF",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 5,
+              "commission": "9.00",
+              "parent_slug": "eggs-1",
+              "description": "Workout gear",
+              "status": "active",
+              "requires_approval": true,
+              "metadata": {
+                "seo_title": "Fitness",
+                "seo_keywords": [
+                  "Fitness"
+                ],
+                "seo_description": "Workout gear"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 55,
+              "title": "Fragrances",
+              "slug": "fragrances-1",
+              "image": "https://hypermart.eshopweb.store/storage/2480/image-Photoroom-%283%29.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 26,
+              "commission": "12.00",
+              "parent_slug": "beauty-1",
+              "description": "Perfumes, body mists, and deodorants that provide a long-lasting, pleasant scent.",
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Fragrances",
+                "seo_keywords": [
+                  "Fragrances"
+                ],
+                "seo_description": "Perfumes, body mists, and deodorants that provide a long-lasting, pleasant scent."
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 92,
+              "title": "Fresh Meat",
+              "slug": "fresh-meat",
+              "image": "https://hypermart.eshopweb.store/storage/1382/Screenshot-from-2025-11-12-14-58-38.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 32,
+              "commission": "0.00",
+              "parent_slug": "chicken-meat-fish-1",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Fresh Meat",
+                "seo_keywords": [
+                  "Fresh",
+                  "Meat"
+                ],
+                "seo_description": "Fresh Meat"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 91,
+              "title": "Fish & Seafood",
+              "slug": "fish-seafood-1",
+              "image": "https://hypermart.eshopweb.store/storage/2450/image-Photoroom-%2860%29-2.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 91,
+              "commission": "0.00",
+              "parent_slug": "fish-seafood-1",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Fish & Seafood",
+                "seo_keywords": [
+                  "Fish",
+                  "Seafood"
+                ],
+                "seo_description": "Fish & Seafood"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 90,
+              "title": "Frozen Vegetables",
+              "slug": "frozen-vegetables",
+              "image": "https://hypermart.eshopweb.store/storage/2244/image-Photoroom-%2848%29.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 30,
+              "commission": "5.00",
+              "parent_slug": "frozen-food",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Frozen Vegetables",
+                "seo_keywords": [
+                  "Frozen",
+                  "Vegetables"
+                ],
+                "seo_description": "Frozen Vegetables"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 141,
+              "title": "Golf",
+              "slug": "golf",
+              "image": "https://hypermart.eshopweb.store/assets/images/category-placeholder.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": "color",
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#FFFFFF",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 5,
+              "commission": "11.00",
+              "parent_slug": "eggs-1",
+              "description": "Clubs and balls",
+              "status": "active",
+              "requires_approval": true,
+              "metadata": {
+                "seo_title": "Golf",
+                "seo_keywords": [
+                  "Golf"
+                ],
+                "seo_description": "Clubs and balls"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 109,
+              "title": "Coffee",
+              "slug": "coffee",
+              "image": "https://hypermart.eshopweb.store/storage/2437/Coffee.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 24,
+              "commission": "20.00",
+              "parent_slug": "grocery-1",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Buy Coffee Online at Best Prices | Fresh Coffee Products & Brands",
+                "seo_description": "Shop fresh coffee online at the best prices. Explore instant coffee, filter coffee, ground coffee, premium coffee brands, and more with fast delivery.",
+                "seo_keywords": [
+                  "Coffee"
+                ]
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 124,
+              "title": "Non-Fiction",
+              "slug": "non-fiction",
+              "image": "https://hypermart.eshopweb.store/assets/images/category-placeholder.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": "color",
+              "background_color": "#FF0000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 3,
+              "commission": "3.50",
+              "parent_slug": "vegetables-fruits-1",
+              "description": "Educational books",
+              "status": "active",
+              "requires_approval": true,
+              "metadata": {
+                "seo_title": "Non-Fiction",
+                "seo_keywords": [
+                  "Non",
+                  "Fiction"
+                ],
+                "seo_description": "Educational books"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 71,
+              "title": "Men's Footwear",
+              "slug": "mens-footwear-1",
+              "image": "https://hypermart.eshopweb.store/storage/2485/image-Photoroom-%287%29.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 25,
+              "commission": "9.00",
+              "parent_slug": "fashion-1",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Men's Footwear",
+                "seo_keywords": [
+                  "Men's",
+                  "Footwear"
+                ],
+                "seo_description": "Men's Footwear"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 113,
+              "title": "Office Supplies",
+              "slug": "office-supplies",
+              "image": "https://hypermart.eshopweb.store/storage/2236/image-Photoroom-%2846%29.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 28,
+              "commission": "0.00",
+              "parent_slug": "electronics-1",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Office Supplies",
+                "seo_keywords": [
+                  "Office",
+                  "Supplies"
+                ],
+                "seo_description": "Office Supplies"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 72,
+              "title": "Women's Footwear",
+              "slug": "womens-footwear-1",
+              "image": "https://hypermart.eshopweb.store/storage/2447/Women%27s-Footwear.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 25,
+              "commission": "10.00",
+              "parent_slug": "fashion-1",
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Women's Footwear",
+                "seo_keywords": [
+                  "Women's",
+                  "Footwear"
+                ],
+                "seo_description": "Women's Footwear"
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 97,
+              "title": "Diverse Pet Food",
+              "slug": "diverse-pet-food",
+              "image": "https://hypermart.eshopweb.store/storage/2448/petfoods.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": null,
+              "commission": "0.00",
+              "parent_slug": null,
+              "description": null,
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Diverse Pet Food",
+                "seo_description": "Diverse Pet Food",
+                "seo_keywords": [
+                  "Diverse",
+                  "Pet",
+                  "Food"
+                ]
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 38,
+              "title": "Cerels & Breakfast",
+              "slug": "cerels-breakfast",
+              "image": "https://hypermart.eshopweb.store/storage/512/cereals-and-breakfast.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 24,
+              "commission": "4.00",
+              "parent_slug": "grocery-1",
+              "description": "Healthy and tasty cereals, oats, and breakfast options to kickstart your day with energy.",
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Cerels & Breakfast",
+                "seo_keywords": [
+                  "Cerels",
+                  "Breakfast"
+                ],
+                "seo_description": "Healthy and tasty cereals, oats, and breakfast options to kickstart your day with energy."
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            },
+            {
+              "id": 36,
+              "title": "Masala & Dry Fruits",
+              "slug": "masala-dry-fruits-1",
+              "image": "https://hypermart.eshopweb.store/storage/2457/image-Photoroom-%2867%29.png",
+              "icon": "",
+              "active_icon": "",
+              "background_type": null,
+              "background_color": "#000000",
+              "background_image": "",
+              "font_color": "#000000",
+              "search_labels": [
+                "Search \"sweet\"",
+                "Search \"tea\"",
+                "Search \"milk\""
+              ],
+              "parent_id": 24,
+              "commission": "20.00",
+              "parent_slug": "grocery-1",
+              "description": "A rich variety of aromatic spices and premium dry fruits to add flavor, health, and taste to your meals.",
+              "status": "active",
+              "requires_approval": false,
+              "metadata": {
+                "seo_title": "Masala & Dry Fruits",
+                "seo_keywords": [
+                  "Masala",
+                  "Dry",
+                  "Fruits"
+                ],
+                "seo_description": "A rich variety of aromatic spices and premium dry fruits to add flavor, health, and taste to your meals."
+              },
+              "subcategory_count": 0,
+              "product_count": 0,
+              "enabled": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

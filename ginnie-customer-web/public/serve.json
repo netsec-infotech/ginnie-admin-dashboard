@@ -1,0 +1,23 @@
+{
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/brands/:slug", "destination": "/brands/[slug]/index.html" },
+    { "source": "/brands/:slug/", "destination": "/brands/[slug]/index.html" },
+    { "source": "/categories/:slug", "destination": "/categories/[slug]/index.html" },
+    { "source": "/categories/:slug/", "destination": "/categories/[slug]/index.html" },
+    { "source": "/delivery-zones/:slug", "destination": "/delivery-zones/[slug]/index.html" },
+    { "source": "/delivery-zones/:slug/", "destination": "/delivery-zones/[slug]/index.html" },
+    { "source": "/feature-sections/:slug", "destination": "/feature-sections/[slug]/index.html" },
+    { "source": "/feature-sections/:slug/", "destination": "/feature-sections/[slug]/index.html" },
+    { "source": "/my-account/orders/:slug", "destination": "/my-account/orders/[slug]/index.html" },
+    { "source": "/my-account/orders/:slug/", "destination": "/my-account/orders/[slug]/index.html" },
+    { "source": "/products/:slug", "destination": "/products/[slug]/index.html" },
+    { "source": "/products/:slug/", "destination": "/products/[slug]/index.html" },
+    { "source": "/section/:id", "destination": "/section/[id]/index.html" },
+    { "source": "/section/:id/", "destination": "/section/[id]/index.html" },
+    { "source": "/stores/:slug", "destination": "/stores/[slug]/index.html" },
+    { "source": "/stores/:slug/", "destination": "/stores/[slug]/index.html" },
+    { "source": "/share/products/:slug", "destination": "/share/products/[slug]/index.html" },
+    { "source": "/share/products/:slug/", "destination": "/share/products/[slug]/index.html" }
+  ]
+}

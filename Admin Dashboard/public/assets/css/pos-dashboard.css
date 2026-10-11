@@ -1,0 +1,30 @@
+/* ── Shared POS Dashboard Styles ── */
+
+#chart-pos-sales-trend {
+    height: 300px;
+}
+
+#chart-pos-payment-donut {
+    height: 300px;
+}
+
+#chart-pos-top-sellers {
+    height: 300px;
+}
+
+#chart-pos-store-revenue {
+    height: 300px;
+}
+
+#chart-pos-customer-donut {
+    height: 220px;
+    width: 220px;
+}
+
+.pos-dashboard-custom-date {
+    gap: .5rem;
+}
+
+.pos-progress-height {
+    height: 6px;
+}

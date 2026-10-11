@@ -1,0 +1,12 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.hyperLocal.customer",
+            "sha256_cert_fingerprints": [
+                "9B:AA:41:4B:CD:4F:81:A3:74:58:56:69:1A:08:29:04:D2:1D:27:A4:65:EC:B1:AF:5C:73:F1:4E:21:30:24:B1"
+            ]
+        }
+    }
+]

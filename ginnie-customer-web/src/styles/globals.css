@@ -1,0 +1,339 @@
+@import "tailwindcss";
+
+@config "../../tailwind.config.ts";
+
+/* Base styles for resetting and normalizing */
+html,
+body {
+  padding-right: 0 !important;
+  max-width: 100vw !important;
+  overflow-x: clip !important;
+}
+
+:root {
+  --home-category-control-bg: rgba(17, 24, 39, 0.06);
+  --home-category-control-hover-bg: rgba(17, 24, 39, 0.1);
+  --home-category-control-border: rgba(17, 24, 39, 0.14);
+  --home-category-control-selected-bg: rgba(17, 24, 39, 0.1);
+  --home-category-control-icon-bg: rgba(17, 24, 39, 0.07);
+  --home-category-control-icon-selected-bg: rgba(17, 24, 39, 0.13);
+  --home-category-focus-ring: rgba(17, 24, 39, 0.55);
+}
+
+/* Scrollbar for webkit browsers like Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as desired */
+  height: 8px; /* For horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.6); /* Scrollbar thumb color */
+  border-radius: 10px;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Scrollbar track color */
+}
+
+/*
+ * Scrollbar that stays out of the way until the area is hovered/focused.
+ * `scrollbar-gutter: stable` reserves the track up-front, so revealing the
+ * thumb never reflows the content beside it. Overrides the global track/thumb
+ * above, which are always-visible by default.
+ */
+.scrollbar-on-hover {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.2s ease;
+}
+
+.scrollbar-on-hover:hover,
+.scrollbar-on-hover:focus-within {
+  scrollbar-color: rgba(100, 100, 100, 0.6) transparent;
+}
+
+.scrollbar-on-hover::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-on-hover::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-on-hover::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+/* Keyboard users get it too — focus-within, not just hover. */
+.scrollbar-on-hover:hover::-webkit-scrollbar-thumb,
+.scrollbar-on-hover:focus-within::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.6);
+}
+
+/* Google Map Buttons */
+
+button[aria-label="Toggle fullscreen view"] {
+  border-radius: 28px !important; /* Apply the border-radius */
+}
+
+.gm-style-mtc button[aria-label="Show street map"] {
+  border-top-left-radius: 28px !important; /* Apply the border-radius */
+  border-bottom-left-radius: 28px !important; /* Apply the border-radius */
+}
+.gm-style-mtc button[aria-label="Show satellite imagery"] {
+  border-top-right-radius: 28px !important; /* Apply the border-radius */
+  border-bottom-right-radius: 28px !important; /* Apply the border-radius */
+}
+
+/* Progress Bar CSS */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: hsl(var(--heroui-primary)) !important;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px !important;
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow:
+    0 0 10px hsl(var(--heroui-primary)),
+    0 0 5px hsl(var(--heroui-primary)) !important;
+  opacity: 1;
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+}
+
+#nprogress .spinner-icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: hsl(var(--heroui-primary));
+  border-left-color: hsl(var(--heroui-primary));
+  border-radius: 50%;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* App Download Section CSS */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* Home layout: sections paged in by the infinite scroll pop into place, which
+   reads as a jolt against content the user is already reading. Opacity only —
+   animating transform/height here would move the page under them instead. */
+@keyframes home-section-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-section-in {
+  animation: home-section-in 260ms ease-out both;
+}
+
+/* Keep hero controls legible over mixed media. */
+.home-hero-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.72);
+  opacity: 1;
+}
+
+.home-hero-swiper .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-section-in {
+    animation: none;
+  }
+}
+
+.html-content strong {
+  font-weight: 700;
+}
+
+.html-content b {
+  font-weight: 700;
+}
+
+.html-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.html-content ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.html-content li {
+  margin-bottom: 0.25rem;
+}
+
+.html-content p {
+  margin-bottom: 0.5rem;
+}
+
+/* Smoke animation */
+.smoke {
+  width: 18px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+  animation: smoke 1.2s infinite ease-out;
+}
+
+.smoke.delay-150 {
+  animation-delay: 0.15s;
+}
+.smoke.delay-300 {
+  animation-delay: 0.3s;
+}
+
+@keyframes smoke {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-30px) translateY(-15px) scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Road animation */
+.road {
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to right,
+    #333 0px,
+    #333 12px,
+    transparent 12px,
+    transparent 28px
+  );
+  animation: roadMove 0.6s linear infinite;
+}
+
+@keyframes roadMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40px);
+  }
+}
+
+@keyframes home-category-progress {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(330%);
+  }
+}
+
+/* Common styles for both buttons */
+/* ❌ Hide by default (desktop & larger screens) */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+/* ✅ Show only on mobile (≤ 431px) */
+@media (max-width: 431px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    background: #ffffff;
+    border-radius: 9999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #111;
+    align-items: center;
+    justify-content: center;
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Dark mode */
+  .dark .swiper-button-next,
+  .dark .swiper-button-prev {
+    background: #1f2937;
+    color: #f9fafb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Icon size */
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}

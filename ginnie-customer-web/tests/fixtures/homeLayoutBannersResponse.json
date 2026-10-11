@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "message": "Home layout fetched successfully",
+  "data": {
+    "scope_type": "global",
+    "scope_id": null,
+    "current_page": 1,
+    "last_page": 1,
+    "per_page": 5,
+    "total": 1,
+    "sections": [
+      {
+        "id": 6,
+        "type": "banners",
+        "title": null,
+        "style": "full",
+        "config": [],
+        "background_image": null,
+        "hero_media": null,
+        "card_background_image": null,
+        "content": {
+          "items": [
+            {
+              "id": 13,
+              "image": "https://admin.spicekartaustralia.com/storage/38/banner2.jpg",
+              "link_type": "custom",
+              "link_url": "https://spicekartaustralia.com/",
+              "target_id": null,
+              "slug": null
+            },
+            {
+              "id": 14,
+              "image": "https://admin.spicekartaustralia.com/storage/39/banner3.jpg",
+              "link_type": "custom",
+              "link_url": "https://spicekartaustralia.com/",
+              "target_id": null,
+              "slug": null
+            },
+            {
+              "id": 15,
+              "image": "https://admin.spicekartaustralia.com/storage/40/CS103-1.jpg",
+              "link_type": "custom",
+              "link_url": "https://spicekartaustralia.com/",
+              "target_id": null,
+              "slug": null
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

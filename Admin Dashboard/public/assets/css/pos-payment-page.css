@@ -1,0 +1,236 @@
+:root {
+    --bg: #f5f7fb;
+    --card: #fff;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --primary: #2563eb;
+    --success: #16a34a;
+    --danger: #dc2626;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: #111827;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.04);
+    padding: 18px;
+    margin-bottom: 14px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #eef4ff, #fff);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.brand-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.brand-sub  {
+    color: var(--muted);
+    font-size: .85rem;
+}
+
+.label {
+    color: var(--muted);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 600;
+}
+
+.amount {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 4px 0 8px;
+}
+
+.row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.row .name {
+    flex: 1;
+}
+
+.row .meta {
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.row .qty {
+    color: var(--muted);
+}
+
+.row .price {
+    font-weight: 600;
+}
+
+.gateways {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gateway-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color .12s ease, transform .08s ease, box-shadow .12s ease;
+    color: #111827;
+}
+
+.gateway-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px -8px rgba(0,0,0,.15);
+}
+
+.gateway-btn:disabled {
+    opacity: .55;
+    cursor: wait;
+}
+
+.gateway-btn .gw-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #fff;
+    flex: 0 0 auto;
+}
+
+.gateway-btn[data-gateway="razorpay"]    .gw-mark { background: #3395ff; }
+.gateway-btn[data-gateway="stripe"]      .gw-mark { background: #635bff; }
+.gateway-btn[data-gateway="paystack"]    .gw-mark { background: #00C3F7; }
+.gateway-btn[data-gateway="flutterwave"] .gw-mark { background: #f5a623; }
+.gateway-btn .gw-arrow {
+    margin-left: auto;
+    color: var(--muted);
+}
+
+.status-banner {
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.status-banner.is-success { background: #f0fdf4; color: var(--success); border: 1px solid #bbf7d0; }
+.status-banner.is-error   { background: #fef2f2; color: var(--danger);  border: 1px solid #fecaca; }
+.status-banner.is-info    { background: #eff6ff; color: var(--primary); border: 1px solid #bfdbfe; }
+
+.footer-hint {
+    text-align: center;
+    color: var(--muted);
+    font-size: .8rem;
+    margin-top: 14px;
+}
+
+.icon-tick {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: var(--success);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ── Custom Extracted Inline Styles ── */
+
+.card.center h2 {
+    margin: 6px 0;
+}
+
+.card.center p {
+    color: var(--muted);
+}
+
+.payment-gateway-label {
+    margin-bottom: 8px;
+}
+
+.order-totals-divider {
+    margin-top: 10px;
+    border-top: 1px dashed var(--line);
+    padding-top: 10px;
+}
+
+.order-totals-divider-sm {
+    margin-top: 10px;
+    border-top: 1px dashed var(--line);
+    padding-top: 10px;
+    font-size: .9rem;
+}
+
+.text-muted-custom {
+    color: var(--muted) !important;
+}
+
+.text-success-custom {
+    color: var(--success) !important;
+}
+
+.text-danger-custom {
+    color: var(--danger) !important;
+}
+
+.font-size-sm {
+    font-size: .85rem !important;
+}

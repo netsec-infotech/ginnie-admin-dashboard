@@ -1,0 +1,123 @@
+@page {
+    size: 80mm auto;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.receipt {
+    width: 80mm;
+    padding: 6mm 4mm;
+    box-sizing: border-box;
+}
+
+.center      { text-align: center; }
+.right       { text-align: right; }
+.bold        { font-weight: bold; }
+.small       { font-size: 10px; }
+.uppercase   { text-transform: uppercase; }
+
+.divider {
+    border: 0;
+    border-top: 1px dashed #000;
+    margin: 6px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+table.items {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6px;
+    table-layout: fixed;
+}
+table.items th,
+table.items td {
+    text-align: left;
+    padding: 2px 0;
+    vertical-align: top;
+}
+table.items th.item,
+table.items td.item {
+    width: 58%;
+    padding-right: 6px;
+    word-break: break-word;
+}
+table.items td.qty,
+table.items td.amount,
+table.items th.qty,
+table.items th.amount {
+    text-align: right;
+    white-space: nowrap;
+}
+table.items th.qty,
+table.items td.qty {
+    width: 12%;
+    padding-right: 12px;
+}
+table.items th.amount,
+table.items td.amount {
+    width: 30%;
+    padding-left: 8px;
+}
+
+.item-meta {
+    margin-top: 2px;
+    padding-left: 8px;
+}
+.item-pricing {
+    margin-top: 3px;
+    padding-left: 8px;
+    color: #333;
+}
+
+.totals .row {
+    margin-top: 2px;
+}
+.totals .grand {
+    font-size: 13px;
+    font-weight: bold;
+    border-top: 1px dashed #000;
+    padding-top: 4px;
+    margin-top: 4px;
+}
+
+.footer-note {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 11px;
+}
+
+@media screen {
+    body {
+        background: #f0f0f0;
+        padding: 24px;
+    }
+    .receipt {
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0 2px 12px rgba(0,0,0,.15);
+    }
+}
+
+/* ── Custom Extracted Inline Styles ── */
+.receipt-store-title {
+    font-size: 14px;
+}
+
+.receipt-tax-summary {
+    border-top: 1px dotted #999;
+    padding-top: 2px;
+}
