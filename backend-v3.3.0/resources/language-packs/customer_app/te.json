@@ -1,0 +1,1474 @@
+{
+  "backToTop": "తిరిగి పైకి వెళ్లండి",
+  "appTitle": "హైపర్ లోకల్",
+  "appName": "హైపర్ లోకల్",
+  "welcome": "స్వాగతం",
+  "login": "లాగిన్",
+  "register": "రిజిస్టర్",
+  "email": "ఇమెయిల్",
+  "password": "పాస్‌వర్డ్",
+  "confirmPassword": "పాస్‌వర్డ్ నిర్ధారించండి",
+  "forgotPassword": "పాస్‌వర్డ్ మరచిపోయారా?",
+  "forgotPasswordDescription": "చింతించకండి! మీ ఇమెయిల్‌ను నమోదు చేయండి మరియు మీ పాస్‌వర్డ్‌ను రీసెట్ చేయడానికి మేము మీకు సూచనలను పంపుతాము.",
+  "sending": "పంపుతోంది...",
+  "sendResetLink": "రీసెట్ లింక్‌ను పంపండి",
+  "dontHaveAccount": "ఖాతా లేదా?",
+  "alreadyHaveAccount": "ఇప్పటికే ఖాతా ఉందా?",
+  "signUp": "సైన్ అప్",
+  "signIn": "సైన్ ఇన్",
+  "home": "హోమ్",
+  "discover": "కనుగొనండి",
+  "profile": "ప్రొఫైల్",
+  "dashboard": "డాష్‌బోర్డ్",
+  "settings": "సెట్టింగ్‌లు",
+  "language": "భాష",
+  "selectLanguage": "భాషను ఎంచుకోండి",
+  "arabic": "అరబిక్",
+  "french": "ఫ్రెంచ్",
+  "hindi": "హిందీ",
+  "gujarati": "గుజరాతీ",
+  "telugu": "తెలుగు",
+  "location": "ప్రదేశం",
+  "selectLocation": "ప్రదేశాన్ని ఎంచుకోండి",
+  "currentLocation": "ప్రస్తుత ప్రదేశం",
+  "search": "వెతకండి",
+  "categories": "వర్గాలు",
+  "nearby": "సమీపంలో",
+  "logout": "లాగ్‌అవుట్",
+  "cancel": "రద్దు",
+  "save": "సేవ్",
+  "ok": "సరే",
+  "error": "లోపం",
+  "success": "విజయం",
+  "loading": "లోడ్ అవుతోంది...",
+  "noData": "డేటా అందుబాటులో లేదు",
+  "retry": "మళ్లీ ప్రయత్నించండి",
+  "networkError": "నెట్‌వర్క్ లోపం",
+  "tryAgain": "మళ్లీ ప్రయత్నించండి",
+  "permissionDenied": "అనుమతి తిరస్కరించబడింది",
+  "locationPermissionRequired": "ప్రదేశ అనుమతి అవసరం",
+  "enableLocation": "దయచేసి ప్రదేశ సేవలను ప్రారంభించండి",
+  "appearance": "రూపం",
+  "changeAppTheme": "యాప్ థీమ్ మార్చండి",
+  "systemMode": "సిస్టమ్ మోడ్",
+  "lightMode": "లైట్ మోడ్",
+  "darkMode": "డార్క్ మోడ్",
+  "apply": "వర్తించు",
+  "current": "ప్రస్తుత",
+  "cart": "కార్ట్",
+  "viewCouponOffers": "కూపన్ & ఆఫర్‌లను వీక్షించండి",
+  "couponCodeApplied": "కూపన్ కోడ్ వర్తించబడింది!",
+  "addOrderNote": "ఆర్డర్ నోట్ జోడించండి",
+  "specialInstructionsStore": "స్టోర్ కోసం ఏవైనా ప్రత్యేక సూచనలు (ఉదా., డెలివరీ సమయం, సున్నితమైన వస్తువులు, మొదలైనవి)",
+  "currentlyClosed": "ప్రస్తుతం మూసివేయబడింది",
+  "searchTransactionsPlaceholder": "ఆర్డర్ ఐడి, పేమెంట్ ఐడి ద్వారా శోధించండి...",
+  "paymentId": "చెల్లింపు ఐడి",
+  "orderId": "ఆర్డర్ ID",
+  "copy": "కాపీ చేయండి",
+  "dateAndTime": "తేదీ & సమయం",
+  "paymentPending": "చెల్లింపు పెండింగ్‌లో ఉంది",
+  "paymentFailed": "చెల్లింపు విఫలమైంది",
+  "paymentReceived": "చెల్లింపు స్వీకరించబడింది",
+  "paymentAttempted": "చెల్లింపు ప్రయత్నించబడింది",
+  "unknown": "తెలియదు",
+  "today": "ఈరోజు",
+  "yesterday": "నిన్న",
+  "daysAgo": "{count} రోజుల క్రితం",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "na": "అందుబాటులో లేదు",
+  "statusPending": "పెండింగ్‌లో ఉంది",
+  "statusSuccess": "విజయవంతమైంది",
+  "placeOrder": "ఆర్డర్ చేయండి",
+  "selectPaymentMethod": "చెల్లింపు పద్ధతిని ఎంచుకోండి",
+  "payUsing": "చెల్లించండి",
+  "yourCartIsEmpty": "మీ కార్ట్ ఖాళీగా ఉంది",
+  "looksLikeYouHaventAddedAnythingYet": "మీరు ఇంకా ఏమీ జోడించలేదు",
+  "browseProducts": "ఉత్పత్తులను బ్రౌజ్ చేయండి",
+  "addMoreItems": "మరిన్ని అంశాలను జోడించండి",
+  "addMoreItemsTapped": "మరిన్ని అంశాలను జోడించండి ట్యాప్ చేయబడింది!",
+  "removeItem": "అంశాన్ని తీసివేయండి",
+  "areYouSureYouWantToRemoveItemFromCart": "మీరు నిజంగా {item} ను కార్ట్ నుండి తీసివేయాలనుకుంటున్నారా?",
+  "@areYouSureYouWantToRemoveItemFromCart": {
+    "placeholders": {
+      "item": {
+        "type": "String"
+      }
+    }
+  },
+  "delete": "తొలగించండి",
+  "saveForLater": "తర్వాత కోసం సేవ్ చేయండి",
+  "billDetails": "బిల్ వివరాలు",
+  "itemsTotal": "అంశాల మొత్తం",
+  "saved": "సేవ్ చేయబడింది",
+  "deliveryCharge": "డెలివరీ ఛార్జ్",
+  "free": "ఉచితం",
+  "perStoreDropOffFees": "ప్రతి స్టోర్ డ్రాప్ ఆఫ్ ఫీస్",
+  "handlingCharge": "హ్యాండ్లింగ్ ఛార్జ్",
+  "promoCode": "ప్రోమో కోడ్",
+  "promoDiscount": "ప్రోమో డిస్కౌంట్",
+  "removeCoupon": "కూపన్‌ను తీసివేయండి",
+  "totalPayable": "చెల్లించవలసిన మొత్తం",
+  "grandTotal": "మొత్తం మొత్తం",
+  "yourTotalSavings": "మీ మొత్తం పొదుపు",
+  "downloadInvoice": "ఇన్వాయిస్‌ను డౌన్‌లోడ్ చేయండి",
+  "myOrders": "నా ఆర్డర్‌లు",
+  "noOrdersYet": "ఇంకా ఆర్డర్‌లు లేవు",
+  "failedToLoadOrders": "ఆర్డర్‌లను లోడ్ చేయడంలో విఫలమైంది",
+  "rateOrder": "ఆర్డర్‌ను రేట్ చేయండి",
+  "howWasYourOrder": "మీ ఆర్డర్ ఎలా ఉంది?",
+  "orderSummary": "ఆర్డర్ సారాంశం",
+  "orderDetailsRefreshed": "ఆర్డర్ వివరాలు రిఫ్రెష్ చేయబడ్డాయి",
+  "rateYourExperience": "మీ అనుభవాన్ని రేట్ చేయండి",
+  "failedToLoadOrderDetails": "ఆర్డర్ వివరాలను లోడ్ చేయడంలో విఫలమైంది",
+  "noItemsToDisplay": "ప్రదర్శించడానికి అంశాలు లేవు",
+  "deleteReview": "రివ్యూను తొలగించాలా?",
+  "thisActionCannotBeUndone": "ఈ చర్యను రద్దు చేయలేము.",
+  "edit": "సవరించండి",
+  "cancelItem": "అంశాన్ని రద్దు చేయండి",
+  "cancellationPeriodPassed": "రద్దు కాలపరిమితి ముగిసింది",
+  "areYouSureYouWantToCancelThisItem": "మీరు నిజంగా ఈ అంశాన్ని రద్దు చేయాలనుకుంటున్నారా?",
+  "cancelReturnRequest": "రిటర్న్ అభ్యర్థనను రద్దు చేయండి",
+  "areYouSureYouWantToCancelThisReturnRequest": "మీరు నిజంగా ఈ రిటర్న్ అభ్యర్థనను రద్దు చేయాలనుకుంటున్నారా?",
+  "cancelReturnRequestButton": "రిటర్న్ అభ్యర్థనను రద్దు చేయండి",
+  "cancelItemButton": "అంశాన్ని రద్దు చేయండి",
+  "howWasYourShoppingExperience": "మీ షాపింగ్ అనుభవం ఎలా ఉంది?",
+  "trackDelivery": "డెలివరీని ట్రాక్ చేయండి",
+  "myWishlist": "నా కోరికల జాబితా",
+  "createNewWishlist": "కొత్త కోరికల జాబితాను సృష్టించండి",
+  "createNewWishlistTitle": "కొత్త కోరికల జాబితాను సృష్టించండి",
+  "enterWishlistName": "కోరికల జాబితా పేరును నమోదు చేయండి",
+  "pleaseEnterAWishlistName": "దయచేసి కోరికల జాబితా పేరును నమోదు చేయండి",
+  "create": "సృష్టించండి",
+  "update": "నవీకరించండి",
+  "editWishlist": "కోరికల జాబితాను సవరించండి",
+  "noWishlistsYet": "ఇంకా కోరికల జాబితాలు లేవు",
+  "noOtherWishlistsAvailable": "ఇతర కోరికల జాబితాలు అందుబాటులో లేవు",
+  "noProductsFound": "ఉత్పత్తులు కనుగొనబడలేదు",
+  "noSectionFound": "ఏ విభాగమూ కనుగొనబడలేదు",
+  "somethingWentWrong": "ఏదో తప్పు జరిగింది",
+  "deleteWishlistName": "{wishlistName} ను తొలగించండి",
+  "@deleteWishlistName": {
+    "placeholders": {
+      "wishlistName": {
+        "type": "String"
+      }
+    }
+  },
+  "myAddresses": "నా చిరునామాలు",
+  "addAddress": "చిరునామాను జోడించండి",
+  "deleteAddress": "చిరునామాను తొలగించండి",
+  "areYouSureYouWantToDeleteThisAddress": "మీరు నిజంగా ఈ చిరునామాను తొలగించాలనుకుంటున్నారా?",
+  "near": "దగ్గర",
+  "noAddressSelected": "చిరునామా ఎంచుకోబడలేదు",
+  "pleaseSelectAnImageAndEnterYourName": "దయచేసి ఒక చిత్రాన్ని ఎంచుకుని మీ పేరును నమోదు చేయండి",
+  "loadingProfile": "ప్రొఫైల్ లోడ్ అవుతోంది...",
+  "saveChanges": "మార్పులను సేవ్ చేయండి",
+  "editProfile": "ప్రొఫైల్‌ను సవరించండి",
+  "labelCopiedToClipboard": "{label} క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది",
+  "@labelCopiedToClipboard": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "yourDeliveryAddress": "మీ డెలివరీ చిరునామా",
+  "shoppingList": "షాపింగ్ జాబితా",
+  "aboutUs": "మా గురించి",
+  "termsCondition": "నిబంధనలు & షరతులు",
+  "termsAndConditions": "నిబంధనలు & షరతులు",
+  "privacyPolicy": "గోప్యతా విధానం",
+  "refundPolicy": "రిఫండ్ విధానం",
+  "shippingPolicy": "షిప్పింగ్ విధానం",
+  "deleteAccount": "ఖాతాను తొలగించండి",
+  "pleaseEnterYourName": "దయచేసి మీ పేరును నమోదు చేయండి",
+  "nameMustBeAtLeast2Characters": "పేరు కనీసం 2 అక్షరాలుగా ఉండాలి",
+  "productDetails": "ఉత్పత్తి వివరాలు",
+  "description": "వివరణ",
+  "specification": "వివరణ",
+  "reviews": "రివ్యూలు",
+  "similarProducts": "సమానమైన ఉత్పత్తులు",
+  "specifications": "వివరణలు",
+  "customerReviews": "కస్టమర్ రివ్యూలు",
+  "seeAll": "అన్నీ చూడండి",
+  "addYourReview": "మీ రివ్యూను జోడించండి",
+  "rateThisProduct": "ఈ ఉత్పత్తిని రేట్ చేయండి",
+  "submitReview": "రివ్యూను సమర్పించండి",
+  "questionAndAnswers": "ప్రశ్నలు మరియు సమాధానాలు",
+  "askAQuestion": "ఒక ప్రశ్న అడగండి",
+  "submit": "సమర్పించండి",
+  "questionSubmittedSuccessfully": "ప్రశ్న విజయవంతంగా సమర్పించబడింది!",
+  "pleaseSelectVariant": "దయచేసి వేరియంట్‌ను ఎంచుకోండి",
+  "viewProductDetails": "ఉత్పత్తి వివరాలను వీక్షించండి",
+  "productAddedToCartSuccessfully": "ఉత్పత్తి విజయవంతంగా కార్ట్‌కు జోడించబడింది!",
+  "failedToAddProduct": "ఉత్పత్తిని జోడించడంలో విఫలమైంది: {error}",
+  "@failedToAddProduct": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfStock": "స్టాక్ లేదు",
+  "notifyMe": "నాకు తెలియజేయండి",
+  "notifyMeSuccess": "ఈ ఉత్పత్తి మళ్లీ స్టాక్‌లోకి వచ్చినప్పుడు మేము మీకు తెలియజేస్తాము!",
+  "cancelNotification": "నోటిఫికేషన్‌ను రద్దు చేయి",
+  "notificationCancelledSuccess": "ఈ ఉత్పత్తి తిరిగి స్టాక్‌లోకి వచ్చినప్పుడు మేము మీకు తెలియజేయము.",
+  "storeClosed": "మూసివేయబడింది",
+  "productVariants": "ఉత్పత్తి వేరియంట్‌లు",
+  "selectVariant": "వేరియంట్‌ను ఎంచుకోండి",
+  "add": "జోడించండి",
+  "noProductFound": "ఉత్పత్తి కనుగొనబడలేదు",
+  "filters": "ఫిల్టర్‌లు",
+  "sort": "క్రమబద్ధీకరించండి",
+  "popularity": "ప్రజాదరణ",
+  "searchResultFor": "\"{title}\" కోసం శోధన ఫలితం",
+  "@searchResultFor": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "relevanceDefault": "సంబంధం (డిఫాల్ట్)",
+  "priceLowToHigh": "ధర (తక్కువ నుండి ఎక్కువ)",
+  "priceHighToLow": "ధర (ఎక్కువ నుండి తక్కువ)",
+  "discountHighToLow": "డిస్కౌంట్ (ఎక్కువ నుండి తక్కువ)",
+  "items": "అంశాలు",
+  "startTypingForSuggestions": "సూచనల కోసం టైప్ చేయడం ప్రారంభించండి",
+  "noSuggestionsFound": "సూచనలు కనుగొనబడలేదు",
+  "speak": "మాట్లాడండి",
+  "trySayingSomething": "ఏదో చెప్పడానికి ప్రయత్నించండి",
+  "speechStoppedTryAgain": "మాట ఆగిపోయింది. మళ్లీ ప్రయత్నించండి.",
+  "close": "మూసివేయండి",
+  "searchProducts": "ఉత్పత్తులను శోధించండి...",
+  "searchForProducts": "ఉత్పత్తుల కోసం వెతకండి",
+  "typeProductNameBrandOrCategory": "ప్రారంభించడానికి ఉత్పత్తి పేరు, బ్రాండ్ లేదా వర్గం టైప్ చేయండి",
+  "searching": "వెతుకుతోంది...",
+  "trySearchingWithDifferentKeywords": "వేర్వేరు కీవర్డ్‌లతో వెతకడం ప్రయత్నించండి",
+  "nearbyStores": "సమీప స్టోర్‌లు",
+  "noStoresFoundNearby": "సమీపంలో స్టోర్‌లు కనుగొనబడలేదు.",
+  "searchInStore": "{storeName} లో శోధించండి",
+  "@searchInStore": {
+    "placeholders": {
+      "storeName": {
+        "type": "String"
+      }
+    }
+  },
+  "savedForLater": "తర్వాత కోసం సేవ్ చేయబడింది",
+  "moveToCart": "కార్ట్‌కు తరలించండి",
+  "addFirstItem": "మొదటి అంశాన్ని జోడించండి",
+  "resultFor": "\"{title}\" కోసం ఫలితం",
+  "@resultFor": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "addMoney": "డబ్బు జోడించండి",
+  "enterAmount": "మొత్తాన్ని నమోదు చేయండి",
+  "note": "గమనిక:",
+  "hyperlocalWalletBalanceValidFor1Year": "హైపర్‌లోకల్ వాలెట్ బ్యాలెన్స్ డబ్బు జోడించిన తేదీ నుండి 1 సంవత్సరం వరకు చెల్లుబాటు అవుతుంది",
+  "hyperlocalWalletBalanceCannotBeTransferred": "RBI మార్గదర్శకాల ప్రకారం హైపర్‌లోకల్ వాలెట్ బ్యాలెన్స్‌ను బ్యాంక్ ఖాతాకు బదిలీ చేయలేము",
+  "pleaseEnterAnAmountGreaterThanOrEqualTo1": "దయచేసి 1 కి సమానమైన లేదా అంతకంటే ఎక్కువ మొత్తాన్ని నమోదు చేయండి",
+  "transactions": "లావాదేవీలు",
+  "promoCodeCoupons": "ప్రోమో కోడ్ & కూపన్‌లు",
+  "support": "మద్దతు",
+  "coins": "కాయిన్స్",
+  "earnCoins": "మీరు ఈ ఆర్డర్‌లో {coins} కాయిన్స్ పొందుతారు!",
+  "@earnCoins": {
+    "placeholders": {
+      "coins": {
+        "type": "String"
+      }
+    }
+  },
+  "callUs": "మాకు కాల్ చేయండి",
+  "phoneNumber": "ఫోన్ నంబర్",
+  "emailUs": "మాకు ఇమెయిల్ చేయండి",
+  "tapToContact": "సంప్రదించడానికి ట్యాప్ చేయండి",
+  "rateStoreName": "{storeName} ను రేట్ చేయండి",
+  "@rateStoreName": {
+    "placeholders": {
+      "storeName": {
+        "type": "String"
+      }
+    }
+  },
+  "editYourFeedback": "మీ ఫీడ్‌బ్యాక్‌ను సవరించండి",
+  "howWasYourExperience": "మీ అనుభవం ఎలా ఉంది?",
+  "tapToRate": "రేట్ చేయడానికి ట్యాప్ చేయండి",
+  "star": "{rating} స్టార్",
+  "@star": {
+    "placeholders": {
+      "rating": {
+        "type": "int"
+      }
+    }
+  },
+  "stars": "{rating} స్టార్‌లు",
+  "@stars": {
+    "placeholders": {
+      "rating": {
+        "type": "int"
+      }
+    }
+  },
+  "titleRequired": "శీర్షిక *",
+  "egGreatService": "ఉదా., గొప్ప సేవ!",
+  "descriptionRequired": "వివరణ *",
+  "shareMoreDetails": "మరిన్ని వివరాలను భాగస్వామ్యం చేయండి...",
+  "submitFeedback": "ఫీడ్‌బ్యాక్‌ను సమర్పించండి",
+  "updateFeedback": "ఫీడ్‌బ్యాక్‌ను నవీకరించండి",
+  "updating": "నవీకరిస్తోంది...",
+  "submitting": "సమర్పిస్తోంది...",
+  "deleteFeedback": "ఫీడ్‌బ్యాక్‌ను తొలగించండి",
+  "areYouSureYouWantToDeleteThisFeedback": "మీరు నిజంగా ఈ ఫీడ్‌బ్యాక్‌ను తొలగించాలనుకుంటున్నారా?",
+  "pleaseGiveARating": "దయచేసి రేటింగ్ ఇవ్వండి",
+  "pleaseEnterATitle": "దయచేసి శీర్షికను నమోదు చేయండి",
+  "pleaseEnterADescription": "దయచేసి వివరణను నమోదు చేయండి",
+  "deliveryType": "డెలివరీ రకం",
+  "deliverySpeed": "డెలివరీ వేగం",
+  "pickupInstructions": "పికప్ సూచనలు",
+  "warning": "హెచ్చరిక",
+  "noItemsAvailableForPickup": "మీ కార్ట్‌లోని ఏ వస్తువులూ పికప్ కోసం అందుబాటులో లేవు.",
+  "rushDelivery": "రష్ డెలివరీ",
+  "prioritizedDeliveryForYourUrgentNeeds": "మీ తక్షణ అవసరాల కోసం ప్రాధాన్యత డెలివరీ.",
+  "regularDelivery": "సాధారణ డెలివరీ",
+  "standardDeliveryWithNoExtraCharges": "అదనపు ఛార్జీలు లేకుండా ప్రామాణిక డెలివరీ.",
+  "deliverTo": "డెలివర్ చేయండి",
+  "change": "మార్చండి",
+  "noInternetConnection": "ఇంటర్నెట్ కనెక్షన్ లేదు",
+  "appUnderMaintenance": "యాప్ నిర్వహణలో ఉంది",
+  "noOrderFound": "ఆర్డర్ కనుగొనబడలేదు",
+  "noSearchResults": "శోధన ఫలితాలు లేవు",
+  "microphoneUnavailable": "మైక్రోఫోన్ అనుమతి లేదా స్పీచ్ సర్వీస్ అందుబాటులో లేదు",
+  "speakNow": "ఇప్పుడు మాట్లాడండి",
+  "listening": "వింటోంది...",
+  "noSpeechDetected": "స్పీచ్ కనుగొనబడలేదు",
+  "locationServices": "స్థాన సేవలు",
+  "appPermission": "యాప్ అనుమతి",
+  "continueWithGoogle": "Google తో కొనసాగించండి",
+  "continueWithApple": "Apple తో కొనసాగించండి",
+  "continueWithMobile": "మొబైల్‌తో కొనసాగించండి",
+  "continueWithEmail": "ఇమెయిల్‌తో కొనసాగించండి",
+  "reviewsRatings": "రివ్యూలు & రేటింగ్‌లు",
+  "frequentlyAskedQuestions": "తరచుగా అడిగే ప్రశ్నలు",
+  "dialog": "డైలాగ్",
+  "looksLikeTheStoreCatchingSomeRest": "స్టోర్ కొంచెం విశ్రాంతి తీసుకుంటున్నట్లు అనిపిస్తోంది. కొంచెం తర్వాత తిరిగి రండి!",
+  "addressLine1": "చిరునామా పంక్తి 1",
+  "addressLine2Optional": "చిరునామా పంక్తి 2 (ఐచ్ఛికం)",
+  "country": "దేశం",
+  "state": "రాష్ట్రం",
+  "city": "నగరం",
+  "zipcode": "పిన్‌కోడ్",
+  "landmark": "ల్యాండ్‌మార్క్",
+  "mobileNumber": "మొబైల్ నంబర్",
+  "soldBy": "అమ్మేవారు:",
+  "searchAnAreaOrAddress": "ప్రాంతం లేదా చిరునామాను శోధించండి",
+  "describeTheIssue": "సమస్యను వివరించండి",
+  "writeYourReviewHere": "మీ రివ్యూను ఇక్కడ వ్రాయండి...",
+  "typeYourQuestionHere": "మీ ప్రశ్నను ఇక్కడ టైప్ చేయండి...",
+  "enterReviewTitle": "రివ్యూ శీర్షికను నమోదు చేయండి",
+  "shareYourThoughts": "మీ ఆలోచనలను భాగస్వామ్యం చేయండి...",
+  "searchForAreaStreetName": "ప్రాంతం, వీధి పేరు శోధించండి...",
+  "pleaseSelectADeliveryAddressFirst": "దయచేసి మొదట డెలివరీ చిరునామాను ఎంచుకోండి",
+  "paymentMethodNotSelected": "చెల్లింపు పద్ధతి ఎంచుకోబడలేదు",
+  "inclusiveOfAllTax": "(అన్ని పన్నులు సహా)",
+  "brand": "బ్రాండ్",
+  "packOf": "ప్యాక్ ఆఫ్",
+  "category": "వర్గం",
+  "madeIn": "తయారు చేసిన దేశం",
+  "indicator": "సూచిక",
+  "guaranteePeriod": "అభ్యంతరకాలం",
+  "warrantyPeriod": "వారంటీ కాలం",
+  "returnable": "తిరిగి ఇవ్వగలిగినది",
+  "yes": "అవును",
+  "noDescriptionAvailable": "వివరణ అందుబాటులో లేదు.",
+  "wallet": "వాలెట్",
+  "wishlist": "విష్‌లిస్ట్",
+  "stores": "స్టోర్‌లు",
+  "account": "ఖాతా",
+  "paymentMethod": "చెల్లింపు పద్ధతి",
+  "currentLanguage": "ప్రస్తుత భాష",
+  "promoApplied": "ప్రోమో వర్తించబడింది",
+  "on": "ఆన్",
+  "rushDeliveryActive": "రష్ డెలివరీ యాక్టివ్",
+  "cashbackApplied": "క్యాష్‌బ్యాక్ వర్తించబడింది",
+  "instantDiscountApplied": "తక్షణ తగ్గింపు వర్తించబడింది",
+  "willBeAdded": "జోడించబడుతుంది",
+  "areYouSure": "మీరు ఖచ్చితంగా ఉన్నారా?",
+  "clearCartConfirm": "మీరు నిజంగా కార్ట్‌ను క్లియర్ చేయాలనుకుంటున్నారా?",
+  "no": "కాదు",
+  "yesClear": "అవును, క్లియర్ చేయండి",
+  "logoutConfirmation": "మీరు ఖచ్చితంగా లాగ్ అవుట్ చేయాలనుకుంటున్నారా?",
+  "maxCartItemLimitReached": "మీరు కార్ట్ ఐటెమ్ గరిష్ట పరిమితిని చేరుకున్నారు",
+  "all": "అన్నీ",
+  "shopByCategories": "వర్గాల వారీగా షాప్ చేయండి",
+  "topBrands": "టాప్ బ్రాండ్‌లు",
+  "addItemsToGetStarted": "ప్రారంభించడానికి ఐటెమ్‌లను జోడించండి",
+  "yourShoppingListIsEmpty": "మీ షాపింగ్ లిస్ట్ ఖాళీగా ఉంది",
+  "listItem": "లిస్ట్ ఐటెమ్",
+  "itemsAdded": "ఐటెమ్‌లు జోడించబడ్డాయి",
+  "startShopping": "షాపింగ్ ప్రారంభించండి",
+  "typeItemName": "ఐటెమ్ పేరు టైప్ చేయండి...",
+  "pleaseAdd1ItemInShoppingList": "దయచేసి మీ షాపింగ్ లిస్ట్‌లో కనీసం 1 ఐటెమ్ జోడించండి",
+  "selectDeliveryLocation": "డెలివరీ స్థానాన్ని ఎంచుకోండి",
+  "searchForAreaStreet": "ప్రాంతం, వీధి పేరు కోసం వెతకండి...",
+  "useCurrentLocation": "ప్రస్తుత స్థానాన్ని ఉపయోగించండి",
+  "addNewAddress": "కొత్త చిరునామా జోడించండి",
+  "savedAddresses": "సేవ్ చేసిన చిరునామాలు",
+  "notLoggedIn": "లాగిన్ కాలేదు",
+  "pleaseLoginToViewYourProfile": "మీ ప్రొఫైల్ చూడడానికి దయచేసి లాగిన్ చేయండి",
+  "goToLogin": "లాగిన్‌కి వెళ్లండి",
+  "trackYourDelivery": "మీ డెలివరీని ట్రాక్ చేయండి",
+  "returnItem": "ఐటెమ్ రిటర్న్ చేయండి",
+  "failedToLoadTrackingData": "ట్రాకింగ్ డేటా లోడ్ చేయడంలో విఫలమైంది",
+  "delivered": "డెలివరీ చేయబడింది",
+  "onTheWay": "దారిలో ఉంది",
+  "trackingLiveLocation": "లైవ్ లొకేషన్ ట్రాక్ చేస్తోంది",
+  "arrivingIn": "ఇందులో చేరుకుంటుంది",
+  "mins": "నిమిషాలు",
+  "deliveryPartner": "డెలివరీ పార్ట్‌నర్",
+  "orderDetails": "ఆర్డర్ వివరాలు",
+  "payment": "చెల్లింపు",
+  "orderPlaced": "ఆర్డర్ ఉంచబడింది",
+  "deliveryDetails": "డెలివరీ వివరాలు",
+  "copiedToClipboard": "{label} క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది",
+  "@copiedToClipboard": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "orderIdCopied": "ఆర్డర్ ID కాపీ చేయబడింది!",
+  "reasonForReturn": "రిటర్న్ కారణం",
+  "submitReturn": "రిటర్న్ సమర్పించండి",
+  "thisProductIsNotCancelable": "ఈ ఉత్పత్తి రద్దు చేయలేము",
+  "productCanNoLongerBeCancelled": "ఈ ఉత్పత్తిని ఇకపై రద్దు చేయలేరు",
+  "thisProductIsNotReturnable": "ఈ ఉత్పత్తి రిటర్న్ చేయలేము",
+  "returnButton": "రిటర్న్",
+  "qty": "పరిమాణం",
+  "moveToEllipsis": "కు తరలించండి…",
+  "addToEllipsis": "కు జోడించండి…",
+  "locationAccessNeeded": "లొకేషన్ యాక్సెస్ అవసరం",
+  "later": "తర్వాత",
+  "openSettings": "సెట్టింగ్‌లు తెరవండి",
+  "appPermissions": "యాప్ అనుమతులు",
+  "checkingEmail": "ఇమెయిల్ తనిఖీ చేస్తోంది...",
+  "searchInStoreName": "{storeName}లో వెతకండి",
+  "@searchInStoreName": {
+    "placeholders": {
+      "storeName": {
+        "type": "String"
+      }
+    }
+  },
+  "descriptionOptional": "వివరణ (ఐచ్ఛికం)",
+  "greatService": "ఉదా., గొప్ప సేవ!",
+  "fullName": "పూర్తి పేరు",
+  "enterYourFullName": "మీ పూర్తి పేరు నమోదు చేయండి",
+  "enterYourEmail": "మీ ఇమెయిల్ నమోదు చేయండి",
+  "enterYourPhoneNumber": "మీ ఫోన్ నంబర్ నమోదు చేయండి",
+  "enterYourPassword": "మీ పాస్‌వర్డ్ నమోదు చేయండి",
+  "confirmYourPassword": "మీ పాస్‌వర్డ్ నిర్ధారించండి",
+  "emailOrPhoneNumber": "ఇమెయిల్ లేదా ఫోన్ నంబర్",
+  "emailAddress": "ఇమెయిల్ చిరునామా",
+  "uploadImages": "చిత్రాలు అప్‌లోడ్ చేయండి",
+  "tapToUploadPhotos": "ఫోటోలు అప్‌లోడ్ చేయడానికి ట్యాప్ చేయండి",
+  "helpUsUnderstandYourExperience": "మీ అనుభవాన్ని అర్థం చేసుకోవడానికి మాకు సహాయం చేయండి",
+  "youCanUploadUpToMaxImages": "మీరు గరిష్టంగా {max} చిత్రాలు మాత్రమే అప్‌లోడ్ చేయవచ్చు.",
+  "@youCanUploadUpToMaxImages": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "onlyRemainingMoreImagesAdded": "మాత్రమే {remaining} మరిన్ని చిత్రం(లు) జోడించబడ్డాయి. గరిష్ట పరిమితి: {max}.",
+  "@onlyRemainingMoreImagesAdded": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "maxImagesAllowedExtensions": "• గరిష్టం {max} చిత్రాలు • {extensions} • ప్రతి చిత్రానికి {size}",
+  "@maxImagesAllowedExtensions": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      },
+      "extensions": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "product": "ఉత్పత్తి",
+  "quantity": "పరిమాణం",
+  "price": "ధర",
+  "clearCart": "కార్ట్ క్లియర్ చేయండి",
+  "clearAllItems": "అన్ని ఐటెమ్‌లను క్లియర్ చేయాలా?",
+  "allItemsWillBeRemovedCannotBeUndone": "అన్ని ఐటెమ్‌లు తీసివేయబడతాయి మరియు ఈ చర్యను రద్దు చేయలేము",
+  "paymentSuccessful": "చెల్లింపు విజయవంతమైంది!",
+  "paymentFailedOrCancelled": "చెల్లింపు విఫలమైంది లేదా రద్దు చేయబడింది",
+  "failedToDeleteAddress": "చిరునామాను తొలగించడంలో విఫలమైంది",
+  "pressAgainToExitTheApp": "యాప్ నుండి నిష్క్రమించడానికి మళ్లీ నొక్కండి",
+  "youHaveReachedMaximumLimitOfCart": "మీరు కార్ట్ యొక్క గరిష్ట పరిమితిని చేరుకున్నారు",
+  "sellerInformationNotAvailable": "సెల్లర్ సమాచారం అందుబాటులో లేదు",
+  "failedToRefreshOrderDetails": "ఆర్డర్ వివరాలను రిఫ్రెష్ చేయడంలో విఫలమైంది",
+  "productSavedForLater": "{productName} తర్వాత కోసం సేవ్ చేయబడింది",
+  "@productSavedForLater": {
+    "placeholders": {
+      "productName": {
+        "type": "String"
+      }
+    }
+  },
+  "promoCodeAppliedOnYourCart": "మీ కార్ట్‌పై ప్రోమో కోడ్ వర్తించబడింది",
+  "youHaveCrossedMaximumCartAmountLimit": "మీరు గరిష్ట కార్ట్ మొత్తం పరిమితిని దాటారు. దయచేసి కార్ట్ నుండి కొన్ని ఉత్పత్తులను తీసివేయండి",
+  "feedbackSubmittedSuccessfully": "ఫీడ్‌బ్యాక్ విజయవంతంగా సమర్పించబడింది!",
+  "feedbackUpdatedSuccessfully": "ఫీడ్‌బ్యాక్ విజయవంతంగా అప్‌డేట్ చేయబడింది!",
+  "copiedToClipboardWithLabel": "{label} క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది!",
+  "@copiedToClipboardWithLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterCompleteOTP": "దయచేసి పూర్తి OTP నమోదు చేయండి",
+  "verificationIdNotFound": "వెరిఫికేషన్ ID కనుగొనబడలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.",
+  "otpSentTo": "{phoneNumber}కి OTP పంపబడింది",
+  "@otpSentTo": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  "registrationDataNotFound": "రిజిస్ట్రేషన్ డేటా కనుగొనబడలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.",
+  "noAccountFoundWithEmailOrPhone": "ఈ ఇమెయిల్ లేదా ఫోన్‌తో ఖాతా కనుగొనబడలేదు",
+  "pleaseEnterValidPhoneNumber": "దయచేసి చెల్లుబాటు అయ్యే ఫోన్ నంబర్ నమోదు చేయండి",
+  "emailAlreadyRegistered": "ఇమెయిల్ ఇప్పటికే నమోదు చేయబడింది. దయచేసి వేరే ఇమెయిల్ ఉపయోగించండి.",
+  "pleaseEnterYourFullName": "దయచేసి మీ పూర్తి పేరు నమోదు చేయండి",
+  "pleaseEnterYourEmail": "దయచేసి మీ ఇమెయిల్ నమోదు చేయండి",
+  "pleaseEnterAValidEmail": "దయచేసి చెల్లుబాటు అయ్యే ఇమెయిల్ నమోదు చేయండి",
+  "pleaseEnterYourPhoneNumber": "దయచేసి మీ ఫోన్ నంబర్ నమోదు చేయండి",
+  "pleaseEnterYourPassword": "దయచేసి మీ పాస్‌వర్డ్ నమోదు చేయండి",
+  "passwordMustBeAtLeast8Characters": "పాస్‌వర్డ్ కనీసం 8 అక్షరాలు ఉండాలి",
+  "pleaseConfirmYourPassword": "దయచేసి మీ పాస్‌వర్డ్ నిర్ధారించండి",
+  "passwordsDoNotMatch": "పాస్‌వర్డ్‌లు సరిపోలడం లేదు",
+  "otpVerified": "OTP వెరిఫై చేయబడింది",
+  "pleaseSelectAPaymentMethodFirst": "దయచేసి ముందుగా చెల్లింపు పద్ధతిని ఎంచుకోండి",
+  "fetchingAddress": "చిరునామా తీసుకువస్తోంది...",
+  "selectedLocation": "ఎంచుకున్న స్థానం",
+  "gettingAddress": "చిరునామా తీసుకువస్తోంది...",
+  "unknownLocation": "తెలియని స్థానం",
+  "deliveryNotAvailableAtThisLocation": "ఈ స్థానంలో డెలివరీ అందుబాటులో లేదు",
+  "sorryWeDontDeliverHereYet": "క్షమించండి! మేము ఇంకా ఇక్కడ డెలివరీ చేయడం లేదు",
+  "thisLocationIsOutsideOurDeliveryZone": "ఈ స్థానం ప్రస్తుతం మా డెలివరీ జోన్ వెలుపల ఉంది. సమీప ప్రాంతం కోసం వెతకండి లేదా తర్వాత చూడండి.",
+  "addressDetails": "చిరునామా వివరాలు",
+  "pleaseEnterAddressLine1": "దయచేసి చిరునామా లైన్ 1 నమోదు చేయండి",
+  "pleaseEnterCountry": "దయచేసి దేశం నమోదు చేయండి",
+  "pleaseEnterState": "దయచేసి రాష్ట్రం నమోదు చేయండి",
+  "pleaseEnterCity": "దయచేసి నగరం నమోదు చేయండి",
+  "pleaseEnterZipcode": "దయచేసి పిన్‌కోడ్ నమోదు చేయండి",
+  "contactDetails": "చిరునామా వివరాలు",
+  "pleaseEnterMobileNumber": "దయచేసి మొబైల్ నంబర్ నమోదు చేయండి",
+  "saveAddressAs": "చిరునామాను ఇలా సేవ్ చేయండి",
+  "work": "పని",
+  "other": "ఇతర",
+  "enterCompleteAddress": "పూర్తి చిరునామా నమోదు చేయండి",
+  "confirm": "నిర్ధారించండి",
+  "checkingDelivery": "డెలివరీ తనిఖీ చేస్తోంది...",
+  "confirmLocation": "స్థానాన్ని నిర్ధారించండి",
+  "confirmAddressToProceed": "కొనసాగడానికి చిరునామాను నిర్ధారించండి",
+  "addAddressToProceed": "కొనసాగడానికి చిరునామా జోడించండి",
+  "deliveryNotAvailable": "డెలివరీ అందుబాటులో లేదు",
+  "skip": "స్కిప్ చేయండి",
+  "welcomeBack": "స్వాగతం",
+  "heyThere": "హలో!",
+  "signInToYourAccount": "కొనసాగడానికి మీ ఖాతాలో సైన్ ఇన్ చేయండి",
+  "verifying": "వెరిఫై చేస్తోంది...",
+  "or": "లేదా",
+  "dontHaveAnAccount": "ఖాతా లేదా? ",
+  "emailVerifiedSuccessfully": "ఇమెయిల్ విజయవంతంగా వెరిఫై చేయబడింది",
+  "phoneNumberVerifiedSuccessfully": "ఫోన్ నంబర్ విజయవంతంగా వెరిఫై చేయబడింది",
+  "thisEmailIsNotRegistered": "ఈ ఇమెయిల్ నమోదు చేయబడలేదు. దయచేసి ముందుగా సైన్ అప్ చేయండి.",
+  "thisPhoneNumberIsNotRegistered": "ఈ ఫోన్ నంబర్ నమోదు చేయబడలేదు. దయచేసి ముందుగా సైన్ అప్ చేయండి.",
+  "unableToVerifyUser": "యూజర్‌ను వెరిఫై చేయడంలో సాధ్యం కాలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.",
+  "emailOrPhoneNumberIsRequired": "ఇమెయిల్ లేదా ఫోన్ నంబర్ అవసరం",
+  "enterValidEmailOrPhone": "చెల్లుబాటు అయ్యే ఇమెయిల్ లేదా ఫోన్ నమోదు చేయండి",
+  "passwordIsRequired": "పాస్‌వర్డ్ అవసరం",
+  "passwordMustBeAtLeast6Characters": "పాస్‌వర్డ్ కనీసం 6 అక్షరాలు ఉండాలి",
+  "alreadyHaveAnAccount": "ఇప్పటికే ఖాతా ఉందా? ",
+  "createAccount": "ఖాతా సృష్టించండి",
+  "emailAlreadyRegisteredUseDifferent": "ఇమెయిల్ ఇప్పటికే నమోదు చేయబడింది. దయచేసి వేరే ఇమెయిల్ ఉపయోగించండి.",
+  "changeLocation": "స్థానం మార్చండి",
+  "chooseAddressForDelivery": "డెలివరీ కోసం చిరునామాను ఎంచుకోండి",
+  "balance": "బ్యాలెన్స్",
+  "tapCoinToRefresh": "రిఫ్రెష్ చేయడానికి కాయిన్‌పై ట్యాప్ చేయండి",
+  "viewTransactions": "トラన్సాక్షన్‌లు చూడండి",
+  "verifyOtp": "OTP వెరిఫై చేయండి",
+  "pleaseFillDetailsCreateYourAccount": "మీ ఖాతా సృష్టించడానికి దయచేసి వివరాలు నింపండి",
+  "emailAvailable": "ఇమెయిల్ అందుబాటులో ఉంది",
+  "errorVerifyingEmail": "ఇమెయిల్ వెరిఫై చేయడంలో లోపం",
+  "pleaseAddYourDeliveryAddress": "దయచేసి మీ డెలివరీ చిరునామాను జోడించండి",
+  "areYouSureDeleteFeedback": "మీరు ఖచ్చితంగా ఫీడ్‌బ్యాక్‌ను తొలగించాలనుకుంటున్నారా",
+  "addTo": "కు జోడించండి…",
+  "moveTo": "కు తరలించండి…",
+  "accountInformation": "ఖాతా సమాచారం",
+  "mobile": "మొబైల్",
+  "rewardPoints": "రివార్డ్ పాయింట్లు",
+  "referralCode": "రెఫరల్ కోడ్",
+  "notProvided": "అందించబడలేదు",
+  "notAvailable": "అందుబాటులో లేదు",
+  "failedToLoadProfile": "ప్రొఫైల్ లోడ్ చేయడంలో విఫలమైంది",
+  "pleaseCheckConnection": "దయచేసి మీ కనెక్షన్ తనిఖీ చేసి మళ్లీ ప్రయత్నించండి",
+  "noProfileDataAvailable": "ప్రొఫైల్ డేటా అందుబాటులో లేదు",
+  "giveYourDeliveryHeroFeedback": "మీ డెలివరీ హీరోకి ఫీడ్‌బ్యాక్ ఇవ్వండి!",
+  "editYourFeedbackFor": "{name} కోసం మీ ఫీడ్‌బ్యాక్‌ను సవరించండి",
+  "@editYourFeedbackFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "leaveFeedback": "ఫీడ్‌బ్యాక్ ఇవ్వండి",
+  "editFeedback": "ఫీడ్‌బ్యాక్ సవరించండి",
+  "editSellerFeedback": "సెల్లర్ ఫీడ్‌బ్యాక్ సవరించండి",
+  "leaveSellerFeedback": "సెల్లర్ ఫీడ్‌బ్యాక్ ఇవ్వండి",
+  "productNotApprovedBySeller": "ఈ ఉత్పత్తి సెల్లర్ చేత ఆమోదించబడలేదు",
+  "leaveItemFeedback": "ఐటెమ్ ఫీడ్‌బ్యాక్ ఇవ్వండి",
+  "cashOnDelivery": "క్యాష్ ఆన్ డెలివరీ",
+  "codSubtitle": "నగదు ద్వారా చెల్లించండి లేదా QR కోసం అడగండి",
+  "paidOnline": "ఆన్‌లైన్‌లో చెల్లించబడింది",
+  "orderPlacedOn": "{date}న ఆర్డర్ ఉంచబడింది",
+  "@orderPlacedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "locationAccessDescription": "ఈ యాప్ హైపర్-లోకల్ సేవలను అందిస్తుంది. వ్యక్తిగత సిఫార్సులు మరియు ఖచ్చితమైన ఫలితాల కోసం దయచేసి లొకేషన్‌ను ఎనేబుల్ చేయండి.",
+  "turnOnLocationServicesDescription": "కొనసాగడానికి లొకేషన్ సర్వీసెస్ ఆన్ చేసి యాప్ లొకేషన్ అనుమతిని ఇవ్వండి.",
+  "loadingPaymentPage": "చెల్లింపు పేజీ లోడ్ అవుతోంది...",
+  "youCanUploadUpToImagesOnly": "మీరు గరిష్టంగా {count} చిత్రాలు మాత్రమే అప్‌లోడ్ చేయవచ్చు.",
+  "@youCanUploadUpToImagesOnly": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "onlyMoreImagesAddedMaxLimit": "మాత్రమే {remaining} మరిన్ని చిత్రం(లు) జోడించబడ్డాయి. గరిష్ట పరిమితి: {max}.",
+  "@onlyMoreImagesAddedMaxLimit": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "onlinePaymentMethods": "ఆన్‌లైన్ చెల్లింపు పద్ధతులు",
+  "noCategoryFound": "ఏ వర్గం కనుగొనబడలేదు",
+  "noStoreFound": "ఏ స్టోర్ కనుగొనబడలేదు",
+  "wereNotHereYet": "మేము ఇంకా ఇక్కడ లేము",
+  "weCouldntFindAnyCategories": "మాకు ఏ వర్గాలు కనుగొనబడలేదు.",
+  "weCouldntFindAnyStoreInYourSelectLocation": "మీ ఎంచుకున్న స్థానంలో ఏ స్టోర్ కనుగొనబడలేదు.",
+  "phoneNumberCopied": "ఫోన్ నంబర్ క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది!",
+  "emailCopied": "ఇమెయిల్ క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది!",
+  "pleaseWaitBeforeResending": "మళ్లీ పంపడానికి ముందు దయచేసి వేచి ఉండండి.",
+  "toPay": "చెల్లించాల్సినది:",
+  "currentlyUnavailable": "ప్రస్తుతం అందుబాటులో లేదు",
+  "noStoresOrProductsAreAvailableInThisAreaRightNow": "ఈ ప్రాంతంలో ప్రస్తుతం ఏ స్టోర్‌లు లేదా ఉత్పత్తులు అందుబాటులో లేవు.",
+  "checkConnectionAndTryAgain": "దయచేసి మీ కనెక్షన్ తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.",
+  "weWillBeBackSoon": "మేము త్వరలో తిరిగి వస్తాము. కాసేపు వేచి ఉండండి!",
+  "noOrdersYetDescription": "మీకు ఇంకా ఏ ఆర్డర్‌లు లేవని అనిపిస్తోంది.",
+  "tryAdjustingSearchTerms": "మీ సెర్చ్ టర్మ్‌లను సర్దుబాటు చేయడం ప్రయత్నించండి.",
+  "noProductMatchingSearch": "మీ సెర్చ్‌కి సరిపోలే ఏ ఉత్పత్తులు కనుగొనబడలేదు.",
+  "feedbackDeletedSuccessfully": "రివ్యూ విజయవంతంగా తొలగించబడింది!",
+  "rateDeliveryHero": "డెలివరీ హీరోను రేట్ చేయండి",
+  "howWasTheDelivery": "డెలివరీ ఎలా ఉంది?",
+  "egSuperFastDelivery": "ఉదా., సూపర్ ఫాస్ట్ డెలివరీ!",
+  "youMightAlsoLike": "మీకు ఇవి కూడా నచ్చవచ్చు",
+  "storeCurrentlyClosed": "స్టోర్ ప్రస్తుతం మూసివేయబడింది",
+  "minimumQuantityRequired": "కనీసం {minQty} పరిమాణం అవసరం",
+  "@minimumQuantityRequired": {
+    "placeholders": {
+      "minQty": {}
+    }
+  },
+  "maximumQuantityAllowed": "గరిష్టం {maxQty} ఐటెమ్‌లు అనుమతించబడతాయి",
+  "@maximumQuantityAllowed": {
+    "placeholders": {
+      "maxQty": {}
+    }
+  },
+  "onlyXItemsInStock": "స్టాక్‌లో మాత్రమే {stock} ఐటెమ్‌లు అందుబాటులో ఉన్నాయి",
+  "@onlyXItemsInStock": {
+    "placeholders": {
+      "stock": {}
+    }
+  },
+  "minimumCartAmountRequired": "చెక్‌అవుట్ కనీసం {miniCheckoutAmount} చేరడానికి మరో {minAmount} జోడించండి.",
+  "@minimumCartAmountRequired": {
+    "placeholders": {
+      "minAmount": {},
+      "miniCheckoutAmount": {}
+    }
+  },
+  "youHaveReachedMaximumLimitOfTheCart": "గరిష్ట ఐటెమ్ పరిమితి చేరుకున్నారు",
+  "onlyOneStoreAtATime": "మీరు ఒక్క స్టోర్ నుండి మాత్రమే ఆర్డర్ చేయవచ్చు",
+  "onlyFewLeft": "మాత్రమే {stock} మిగిలి ఉన్నాయి!",
+  "@onlyFewLeft": {
+    "placeholders": {
+      "stock": {}
+    }
+  },
+  "inStock": "స్టాక్‌లో ఉంది",
+  "noTransactionYet": "ఇంకా ఏ ట్రాన్సాక్షన్ లేదు",
+  "noTransactionDescriptionMsg": "మీ వాలెట్ కార్యకలాపాలు ఇక్కడ కనిపిస్తాయి",
+  "noTransactionDescriptionSecondaryMsg": "మీరు మీ మొదటి ట్రాన్సాక్షన్ చేసిన తర్వాత.",
+  "cannotAddMoreThanXItems": "మీరు కార్ట్‌కి మరో {remaining} ఐటెమ్(లు) మాత్రమే జోడించవచ్చు.",
+  "@cannotAddMoreThanXItems": {
+    "description": "Shown when user tries to add items beyond cart limit",
+    "placeholders": {
+      "remaining": {}
+    }
+  },
+  "youCanAddOnlyXMoreItems": "మీరు మరో {count} ఐటెమ్(లు) మాత్రమే జోడించవచ్చు.",
+  "@youCanAddOnlyXMoreItems": {
+    "description": "Simpler version of max items warning",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "cartIsAlreadyAtMaximumLimit": "మీ కార్ట్ గరిష్ట ఐటెమ్ పరిమితిని ({maxAllowed}) చేరుకుంది.",
+  "@cartIsAlreadyAtMaximumLimit": {
+    "placeholders": {
+      "maxAllowed": {}
+    }
+  },
+  "cannotAddFromDifferentStore": "మీరు ఒకే స్టోర్ నుండి మాత్రమే ఐటెమ్‌లను జోడించవచ్చు. దయచేసి మీ కార్ట్ క్లియర్ చేయండి లేదా ఈ స్టోర్ నుండి ఐటెమ్‌లు ఎంచుకోండి.",
+  "cartAlreadyContainsMultipleStores": "మీ కార్ట్‌లో ఇప్పటికే బహుళ స్టోర్‌ల నుండి ఐటెమ్‌లు ఉన్నాయి. దయచేసి ప్రస్తుత ఆర్డర్ పూర్తి చేయండి లేదా కార్ట్ క్లియర్ చేయండి.",
+  "inCart": "కార్ట్‌లో",
+  "thisActionIsPermanent": "ఈ చర్య శాశ్వతం.",
+  "allYourDataWillBeLostForever": "మీ అన్ని డేటా శాశ్వతంగా కోల్పోతాయి.",
+  "addYourFirstAddressToStart": "ప్రారంభించడానికి మీ మొదటి చిరునామాను జోడించండి",
+  "noAddressFound": "ఏ చిరునామా కనుగొనబడలేదు",
+  "includingAllTax": "(అన్ని పన్నులతో సహా)",
+  "dataPlaceholder": "డేటా",
+  "writeYourNoteHere": "మీ నోట్ ఇక్కడ రాయండి...",
+  "clearingYourCart": "మీ కార్ట్ క్లియర్ చేస్తోంది...",
+  "imagesLabel": "చిత్రాలు",
+  "imagesSubtitle": "JPG, PNG (గరిష్టం 5MB)",
+  "pdfDocumentLabel": "PDF డాక్యుమెంట్",
+  "pdfDocumentSubtitle": "PDF ఫైల్స్ (గరిష్టం 10MB)",
+  "wordDocumentLabel": "వర్డ్ డాక్యుమెంట్",
+  "wordDocumentSubtitle": "DOCX ఫైల్స్ (గరిష్టం 10MB)",
+  "cannotOpenFile": "ఫైల్ తెరవడం సాధ్యం కాలేదు: {url}",
+  "@cannotOpenFile": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOpeningAttachment": "అటాచ్‌మెంట్ తెరవడంలో లోపం: {error}",
+  "@errorOpeningAttachment": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paystackPaymentTitle": "పేస్టాక్ చెల్లింపు",
+  "enableLocationTitle": "లొకేషన్ ఎనేబుల్ చేయండి",
+  "failed": "విఫలమైంది",
+  "youWillBeResponsible": "మీరు బాధ్యత వహిస్తారు",
+  "deleteWishlistConfirmation": "మీరు ఖచ్చితంగా ఈ విష్‌లిస్ట్‌ని తొలగించాలనుకుంటున్నారా?",
+  "noReviewsAvailable": "ఏ రివ్యూలు అందుబాటులో లేవు",
+  "searchForStore": "స్టోర్ కోసం వెతకండి",
+  "getStarted": "ప్రారంభించండి",
+  "next": "తదుపరి",
+  "introPage1Title": "నమ్మకంతో షాప్ చేయండి",
+  "introPage1Description": "సురక్షిత చెల్లింపులు మరియు వేగవంతమైన డెలివరీతో నమ్మకమైన సెల్లర్‌ల నుండి వేలాది ఉత్పత్తులను కనుగొనండి.",
+  "introPage2Title": "మీ ఆర్డర్‌లను ట్రాక్ చేయండి",
+  "introPage2Description": "రియల్-టైమ్ ట్రాకింగ్‌తో అప్‌డేట్‌గా ఉండండి మరియు మీ ఆర్డర్ స్థితి గురించి నోటిఫికేషన్‌లు పొందండి.",
+  "introPage3Title": "సులభమైన రిటర్న్‌లు",
+  "introPage3Description": "సంతృప్తి చెందలేదా? మా 30-రోజుల రిటర్న్ పాలసీతో ఇబ్బంది లేకుండా మీ ఐటెమ్‌లను రిటర్న్ చేయండి.",
+  "pleaseEnterAtleast2Letters": "దయచేసి కనీసం 2 అక్షరాలు నమోదు చేయండి",
+  "atleast1ItemIsRequired": "కనీసం 1 ఐటెమ్ అవసరం",
+  "enterYourPhoneNumberToReceiveOtp": "మీ ఫోన్ నంబర్ నమోదు చేయండి, మేము OTP పంపుతాము.",
+  "sendOtp": "OTP పంపండి",
+  "phoneNumberTooShort": "ఫోన్ నంబర్ చాలా చిన్నగా ఉంది",
+  "deliveryZones": "డెలివరీ జోన్‌లు",
+  "searchDeliveryZone": "డెలివరీ జోన్ వెతకండి",
+  "zoneDetails": "జోన్ వివరాలు",
+  "viewDetailsAboutDeliveryZone": "డెలివరీ జోన్ గురించి వివరాలు చూడండి",
+  "zoneInformation": "జోన్ సమాచారం",
+  "zoneId": "జోన్ ID",
+  "zoneName": "జోన్ పేరు",
+  "status": "స్థితి",
+  "deliveryFees": "డెలివరీ ఫీజు",
+  "deliveryFee": "డెలివరీ ఫీజు",
+  "freeDeliveryAbove": "పైన ఉచిత డెలివరీ",
+  "perKMCharge": "ప్రతి కి.మీ. ఛార్జ్",
+  "perStoreFee": "ప్రతి స్టోర్ ఫీజు",
+  "deliveryTimes": "డెలివరీ సమయాలు",
+  "regularTimePerKM": "ప్రతి కి.మీ. సాధారణ సమయం",
+  "bufferTime": "బఫర్ సమయం",
+  "coverageDetails": "కవరేజ్ వివరాలు",
+  "radius": "రేడియస్",
+  "centerCoordinates": "సెంటర్ కోఆర్డినేట్స్",
+  "boundaryPoints": "బౌండరీ పాయింట్లు",
+  "handlingFee": "హ్యాండ్లింగ్ ఫీజు",
+  "coverageRadius": "కవరేజ్ రేడియస్",
+  "noteThisStoreIsNOtAvailableInYourLocation": "గమనిక: ఈ స్టోర్ మీ స్థానంలో అందుబాటులో లేదు.",
+  "rush": "రష్",
+  "clearFilters": "ఫిల్టర్‌లు క్లియర్ చేయండి",
+  "applyFilters": "ఫిల్టర్‌లు వర్తింపజేయండి",
+  "notifications": "నోటిఫికేషన్‌లు",
+  "markAllAsRead": "అన్నీ చదివినట్లు గుర్తించండి",
+  "yourWishlistIsEmpty": "మీ విష్‌లిస్ట్ ఖాళీగా ఉంది",
+  "createYourFirstWishlistToOrganizeAndSaveItemsYouHave": "మీకు నచ్చిన ఐటెమ్‌లను నిర్వహించడానికి మరియు సేవ్ చేయడానికి మీ మొదటి విష్‌లిస్ట్‌ను సృష్టించండి",
+  "viewOrderDetails": "ఆర్డర్ వివరాలు చూడండి",
+  "phoneNumberAlreadyRegistered": "ఫోన్ నంబర్ ఇప్పటికే నమోదు చేయబడింది",
+  "pleaseSelectAValidCountryCode": "దయచేసి చెల్లుబాటు అయ్యే దేశం కోడ్ ఎంచుకోండి",
+  "phoneNumberAvailable": "ఫోన్ నంబర్ అందుబాటులో ఉంది",
+  "totalItems": "మొత్తం ఐటెమ్‌లు",
+  "noPromoCodesAvailable": "ఏ ప్రోమో కోడ్‌లు అందుబాటులో లేవు",
+  "thereAreNoActivePromoCodeOrCouponsAvailableRightNow": "ప్రస్తుతం ఏ యాక్టివ్ ప్రోమో కోడ్‌లు లేదా కూపన్‌లు అందుబాటులో లేవు",
+  "phoneNumberTooLong": "ఫోన్ నంబర్ చాలా పొడవుగా ఉంది",
+  "updateAvailable": "అప్‌డేట్ అందుబాటులో ఉంది",
+  "forceUpdateDialogMessage": "కొత్త వెర్షన్ అందుబాటులో ఉంది. యాప్‌ను ఉపయోగించడం కొనసాగించడానికి దయచేసి అప్‌డేట్ చేయండి.",
+  "doItLater": "తర్వాత చేయండి",
+  "updateNow": "ఇప్పుడే అప్‌డేట్ చేయండి",
+  "comingSoonTitle": "త్వరలో రాబోతోంది",
+  "comingSoonMessage": "యాప్ యొక్క కొత్త వెర్షన్ సిద్ధమవుతోంది. ఇది త్వరలో స్టోర్‌లో అందుబాటులో ఉంటుంది.\n\nమీ సహనానికి ధన్యవాదాలు!",
+  "referralCodeHintText": "రిఫరల్ కోడ్ (ఐచ్ఛికం)",
+  "referAndEarn": "రిఫర్ చేయండి మరియు సంపాదించండి",
+  "failedToLoadReferralData": "రిఫరల్ డేటాను లోడ్ చేయడంలో విఫలమైంది",
+  "yourReferralCode": "మీ రిఫరల్ కోడ్",
+  "codeCopied": "కోడ్ కాపీ చేయబడింది!",
+  "appLink": "యాప్ లింక్",
+  "linkCopied": "లింక్ కాపీ చేయబడింది!",
+  "howItWorks": "ఇది ఎలా పనిచేస్తుంది",
+  "shareYourCode": "మీ కోడ్‌ను పంచుకోండి",
+  "sendYourReferralCodeOrAppLinkToFriends": "మీ రిఫరల్ కోడ్ లేదా యాప్ లింక్‌ను స్నేహితులకు పంపండి.",
+  "friendSignsUp": "స్నేహితుడు సైన్ అప్ అవుతారు",
+  "theyRegisterUsingYourReferralCode": "వారు మీ రిఫరల్ కోడ్‌ని ఉపయోగించి నమోదు చేసుకుంటారు.",
+  "youEarn": "మీరు సంపాదిస్తారు",
+  "whenTheyCompleteTheirFirstOrderYouEarn": "వారు తమ మొదటి ఆర్డర్‌ను పూర్తి చేసినప్పుడు, మీరు రివార్డ్ సంపాదిస్తారు",
+  "upTo": "వరకు",
+  "shareNow": "ఇప్పుడే పంచుకోండి",
+  "referAndEarnTitle": "మీ స్నేహితులను రిఫర్ చేయండి మరియు రివార్డ్‌లను సంపాదించండి",
+  "referAndEarnDescription": "మీ రిఫరల్ కోడ్‌ని ఉపయోగించి స్నేహితులను ఆహ్వానించండి మరియు వారు సైన్ అప్ చేసి మొదటి ఆర్డర్ చేసినప్పుడు రివార్డ్‌లను పొందండి",
+  "share": "పంచుకోండి",
+  "subCategories": "సబ్ కేటగిరీలు",
+  "addonGroupRequiredError": "దయచేసి కనీసం ఒక ఎంపికను ఎంచుకోండి",
+  "editAddOnsTitle": "యాడ్-ఆన్‌లను సవరించండి",
+  "noAddOnsAvailable": "ఈ అంశం కోసం ఎటువంటి యాడ్-ఆన్‌లు అందుబాటులో లేవు",
+  "addOnsLoadError": "యాడ్-ఆన్‌లను లోడ్ చేయడం సాధ్యం కాలేదు",
+  "addonsTitle": "యాడ్-ఆన్‌లు",
+  "addonHintSelectOneRequired": "1 ఎంచుకోండి (అవసరం)",
+  "addonHintSelectOne": "ఏదైనా 1 ఎంచుకోండి",
+  "addonHintSelectAtLeastOneRequired": "కనీసం 1 ఎంచుకోండి (అవసరం)",
+  "addonHintSelectAny": "ఏదైనా ఎంచుకోండి",
+  "addonRequiredBadge": "అవసరం",
+  "addonUnavailable": "అందుబాటులో లేదు",
+  "yourCustomisations": "మీ అనుకూలీకరణలు",
+  "addNewCustomisation": "కొత్త అనుకూలీకరణను జోడించండి",
+  "verify": "నిర్ధారించండి",
+  "verified": "నిర్ధారించబడింది",
+  "pleaseVerifyEmailAndMobileBeforePlacingOrder": "ఆర్డర్ చేయడానికి ముందు దయచేసి మీ ఇమెయిల్ మరియు మొబైల్ నంబర్‌ను నిర్ధారించండి.",
+  "emailVerification": "ఇమెయిల్ నిర్ధారణ",
+  "mobileVerification": "మొబైల్ నిర్ధారణ",
+  "sendVerificationEmail": "నిర్ధారణ ఇమెయిల్ పంపండి",
+  "resendEmail": "ఇమెయిల్ మళ్లీ పంపండి",
+  "checkVerificationStatus": "నిర్ధారణ స్థితిని తనిఖీ చేయండి",
+  "verificationLinkSentMessage": "మేము మీ ఇమెయిల్ చిరునామాకు నిర్ధారణ లింక్‌ను పంపాము. పూర్తి చేయడానికి దయచేసి దీన్ని తెరవండి.",
+  "verificationEmailSentSuccessfully": "నిర్ధారణ ఇమెయిల్ పంపబడింది",
+  "emailIsNowVerified": "మీ ఇమెయిల్ ఇప్పుడు నిర్ధారించబడింది",
+  "emailStillNotVerified": "ఇమెయిల్ ఇంకా నిర్ధారించబడలేదు. దయచేసి మీ ఇన్‌బాక్స్‌ని తనిఖీ చేయండి.",
+  "addEmail": "ఇమెయిల్ జోడించండి",
+  "addMobile": "మొబైల్ జోడించండి",
+  "customisable": "అనుకూలీకరించదగినది",
+  "onlyNumbersAllowed": "అంకెలు మాత్రమే అనుమతించబడతాయి",
+  "verifyYourPhone": "మీ ఫోన్‌ను నిర్ధారించండి",
+  "weSentVerificationCodeTo": "మేము నిర్ధారణ కోడ్‌ను పంపాము:",
+  "didntReceiveCode": "కోడ్ రాలేదా?",
+  "resendOtp": "OTP మళ్లీ పంపండి",
+  "resendInSeconds": "{seconds} సెకన్లలో మళ్లీ పంపండి",
+  "@resendInSeconds": {
+    "description": "Countdown shown on the OTP screen until the user can request a new code.",
+    "placeholders": {
+      "seconds": {
+        "type": "int",
+        "example": "45"
+      }
+    }
+  },
+  "recommended": "సిఫార్సు చేయబడింది",
+  "sponsored": "ప్రాయోజిత",
+  "trackingOrder": "ఆర్డర్ ట్రాక్ చేయండి",
+  "orderDelivered": "ఆర్డర్ డెలివరీ చేయబడింది",
+  "successfullyDelivered": "విజయవంతంగా డెలివరీ చేయబడింది",
+  "orderDeliveredSuccessfully": "మీ ఆర్డర్ విజయవంతంగా డెలివరీ చేయబడింది",
+  "shortly": "త్వరలో",
+  "minutesLabel": "నిమిషాలు",
+  "destinationLabel": "గమ్యస్థానం",
+  "paidLabel": "చెల్లించబడింది",
+  "hurryOnlyLeft": "త్వరపడండి! కేవలం {count} మిగిలి ఉన్నాయి",
+  "nReviews": "{count, plural, =1{1 సమీక్ష} other{{count} సమీక్షలు}}",
+  "checkOutThisProduct": "ఈ ఉత్పత్తిని చూడండి!",
+  "authMessage": "దయచేసి కొనసాగడానికి లాగిన్ అవ్వండి. ఇది మీ అభిరుచులను సేవ్ చేయడానికి మరియు మీ షాపింగ్ అనుభవాన్ని సులభంగా ఉంచడానికి మాకు సహాయపడుతుంది.",
+  "pickup": "పికప్",
+  "delivery": "డెలవరీ",
+  "office": "ఆఫీస్",
+  "deliveryAddress": "డెలివరీ చిరునామా",
+  "heroStorePreparing": "స్టోర్ మీ ఆర్డర్‌ను సిద్ధం చేస్తోంది",
+  "addressTypeWork": "పని",
+  "secondaryItemsReturned": "{count} వస్తువులు తిరిగి ఇవ్వబడ్డాయి · {date}",
+  "secondaryDeliveredOn": "{date} · {time}",
+  "itemCountPending": "{count} పెండింగ్‌లో ఉంది",
+  "actionTrackOrder": "ఆర్డర్‌ను ట్రాక్ చేయండి",
+  "itemCountAccepted": "{count} అంగీకరించబడింది",
+  "orderTransaction": "ఆర్డర్ లావాదేవీ",
+  "secondaryCancelledByYou": "మీరు రద్దు చేశారు · {date}",
+  "heroAssigned": "డెలివరీ భాగస్వామి కేటాయించబడ్డారు",
+  "noteForDeliveryPartner": "డెలివరీ భాగస్వామి కోసం గమనిక",
+  "ratingExperience": "మీ అనుభవాన్ని రేట్ చేయండి",
+  "heroPartiallyRejected": "ఆర్డర్ పాక్షికంగా తిరస్కరించబడింది",
+  "referralFailedRetry": "రెఫరల్‌ను నవీకరించడం సాధ్యం కాలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.",
+  "partialOrderAccepted": "కొన్ని వస్తువులు అందుబాటులో లేవు. దయచేసి మీ ఆర్డర్‌ను సమీక్షించండి",
+  "retryLabel": "మళ్లీ ప్రయత్నించండి",
+  "repeatOrder": "ఆర్డర్‌ను మళ్లీ చేయండి",
+  "itemCountPreparing": "{count} సిద్ధమవుతోంది",
+  "invoiceLabel": "ఇన్‌వాయిస్",
+  "statusPartiallyAccepted": "పాక్షికంగా అంగీకరించబడింది",
+  "actionReorder": "మళ్లీ ఆర్డర్ చేయండి",
+  "actionReschedule": "మళ్లీ షెడ్యూల్ చేయండి",
+  "rescheduleDeadlineWarning": "ఆటోమేటిక్ రద్దును నివారించడానికి దయచేసి {deadline} లోపు మీ డెలివరీని మళ్లీ షెడ్యూల్ చేయండి.",
+  "@rescheduleDeadlineWarning": {
+    "placeholders": {
+      "deadline": {
+        "type": "String"
+      }
+    }
+  },
+  "applyReferralCode": "వర్తింపజేయి",
+  "placedOn": "ఆర్డర్ చేసిన తేదీ",
+  "referralCodePrefilledHint": "మీ ఆహ్వాన లింక్ నుండి కోడ్ జోడించబడింది",
+  "otpChip": "ఓటిపి",
+  "heroPaymentFailed": "చెల్లింపు విఫలమైంది",
+  "statusCancelled": "రద్దు చేయబడింది",
+  "heroOnTheWay": "మార్గంలో ఉంది",
+  "statusDelivered": "డెలివరీ చేయబడింది",
+  "refundCreditedNote": "{amount} మీ వాలెట్‌కు {date}న జోడించబడింది",
+  "statusPlaced": "ఆర్డర్ చేయబడింది",
+  "actionReturn": "తిరిగి ఇచ్చివేయి",
+  "referralCodeTitle": "ఆహ్వాన కోడ్ ఉందా?",
+  "heroReturnedAndRefunded": "తిరిగి ఇవ్వబడింది & రీఫండ్ చేయబడింది",
+  "rewards": "బహుమతులు",
+  "errorLoadingOrder": "ఆర్డర్ వివరాలను లోడ్ చేయడం సాధ్యం కాలేదు",
+  "statusReadyForPickup": "పికప్‌కు సిద్ధంగా ఉంది",
+  "subtotalLabel": "సబ్‌టోటల్",
+  "itemsCount": "{count} వస్తువులు",
+  "statusReturned": "తిరిగి ఇవ్వబడింది",
+  "refundCredited": "క్రెడిట్ చేయబడింది",
+  "refundLabel": "రీఫండ్",
+  "deliveredTo": "ఇక్కడ డెలివరీ చేయబడింది",
+  "secondaryReadyForPickup": "మీ ఆర్డర్ సేకరించడానికి స్టోర్‌కు వెళ్లండి",
+  "skipReferral": "దాటవేయి",
+  "qtyShort": "పరిమాణం {count}",
+  "referralCodeSubtitle": "రివార్డ్‌లను అన్‌లాక్ చేయడానికి స్నేహితుని ఆహ్వాన కోడ్‌ను వర్తింపజేయండి. మీరు ఈ దశను దాటవేయవచ్చు కూడా.",
+  "needHelpWithOrder": "ఈ ఆర్డర్ కోసం సహాయం కావాలా?",
+  "heroDelivered": "డెలివరీ చేయబడింది",
+  "secondaryExpectedBy": "{time} సమయానికి రావచ్చు",
+  "actionCancelOrder": "ఆర్డర్‌ను రద్దు చేయండి",
+  "information": "సమాచారం",
+  "actionRetryPayment": "చెల్లింపును మళ్లీ ప్రయత్నించండి",
+  "referralCodeHint": "రెఫరల్ కోడ్‌ను నమోదు చేయండి",
+  "statusPartiallyRejected": "పాక్షికంగా తిరస్కరించబడింది",
+  "statusAssigned": "కేటాయించబడింది",
+  "heroAwaitingConfirmation": "ధృవీకరణ కోసం వేచి ఉంది",
+  "totalLabel": "మొత్తం",
+  "refundProcessing": "ప్రక్రియలో ఉంది",
+  "itemCountRejected": "{count} తిరస్కరించబడింది",
+  "refundStatusLabel": "రీఫండ్ స్థితి",
+  "statusOutForDelivery": "డెలివరీకి బయలుదేరింది",
+  "refundProcessingNote": "{amount} 1-3 రోజుల్లో మీ వాలెట్‌కు క్రెడిట్ చేయబడుతుంది",
+  "totalPaid": "చెల్లించిన మొత్తం",
+  "heroPartiallyAccepted": "ఆర్డర్ పాక్షికంగా అంగీకరించబడింది",
+  "statusShipped": "షిప్ చేయబడింది",
+  "statusConfirmed": "ధృవీకరించబడింది",
+  "heroRunningLate": "కొంచెం ఆలస్యమవుతోంది",
+  "secondaryDistanceAway": "{name} {distance} దూరంలో ఉంది · ~{minutes} నిమిషాలు",
+  "referralAppliedSuccess": "రెఫరల్ కోడ్ వర్తింపజేయబడింది",
+  "heroReadyForPickup": "మీ ఆర్డర్ పికప్‌కు సిద్ధంగా ఉంది",
+  "secondaryPartialItems": "{count} వస్తువులు అందుబాటులో లేవు",
+  "addressTypeHome": "ఇల్లు",
+  "downloadLabel": "డౌన్‌లోడ్",
+  "secondaryCancelledByStore": "స్టోర్ ద్వారా రద్దు చేయబడింది · {date}",
+  "viewMoreItems": "మరికొన్ని {count} వస్తువులను చూడండి",
+  "waitingForStoreToAccept": "మీ ఆర్డర్‌ను అంగీకరించడానికి స్టోర్ కోసం వేచి ఉంది",
+  "statusFailed": "విఫలమైంది",
+  "secondaryUsuallyAccepted": "సాధారణంగా 2 నిమిషాల్లో అంగీకరించబడుతుంది",
+  "heroDeliveredOnTime": "సమయానికి డెలివరీ చేయబడింది",
+  "orderNote": "ఆర్డర్ నోట్",
+  "secondaryPlacedAndEta": "ఆర్డర్ చేసిన సమయం {placed} · ఈటీఏ {eta}",
+  "statusPreparing": "సిద్ధమవుతోంది",
+  "secondaryAssigned": "డెలివరీ భాగస్వామి మీ ఆర్డర్ తీసుకోవడానికి వస్తున్నారు",
+  "addressTypeOther": "ఇతర",
+  "actionTrackDelivery": "డెలివరీని ట్రాక్ చేయండి",
+  "heroArrivingBy": "{time} సమయానికి రావచ్చు",
+  "heroOrderCancelled": "ఆర్డర్ రద్దు చేయబడింది",
+  "@heroArrivingBy": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryPlacedAndEta": {
+    "placeholders": {
+      "placed": {
+        "type": "String"
+      },
+      "eta": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryPartialItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountAccepted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountPreparing": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountRejected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountPending": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@secondaryDistanceAway": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "distance": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@secondaryDeliveredOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryCancelledByYou": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryCancelledByStore": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryItemsReturned": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryExpectedBy": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@refundProcessingNote": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "@refundCreditedNote": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@viewMoreItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@qtyShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@recommended": {
+    "description": "Badge shown on product cards highlighted by the seller / system as recommended for the user."
+  },
+  "@sponsored": {
+    "description": "Badge shown on product cards that are part of an advertisement campaign."
+  },
+  "@hurryOnlyLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@nReviews": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scheduledDeliveryLabel": "షెడ్యూల్ చేసిన డెలివరీ: {date}",
+  "@scheduledDeliveryLabel": {
+    "description": "Label showing the scheduled delivery date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "arrivingOn": "{date}న వస్తుంది",
+  "@arrivingOn": {
+    "description": "Text indicating the scheduled date when order is arriving",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "pickupScheduleWarning": "పికప్ షెడ్యూల్ చేసిన డెలివరీ తేదీలకు మద్దతు ఇవ్వదు.",
+  "singleStoreScheduleWarning": "షెడ్యూల్ చేసిన ఆర్డర్‌ను ఉంచడానికి, దయచేసి ఒకే స్టోర్ నుండి చెకౌట్ చేయండి.",
+  "storeScheduleUnavailable": "ఈ స్టోర్ కోసం షెడ్యూల్ డెలివరీ అందుబాటులో లేదు",
+  "pickupOrder": "పికప్ ఆర్డర్",
+  "deliverySchedule": "డెలివరీ షెడ్యూల్",
+  "scheduledOrders": "షెడ్యూల్ చేసిన ఆర్డర్లు",
+  "nProducts": "{count, plural, =1{1 ఉత్పత్తి} other{{count} ఉత్పత్తులు}}",
+  "@nProducts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attachments": "అటాచ్‌మెంట్‌లు",
+  "addMoreAttachments": "మరిన్ని అటాచ్‌మెంట్‌లను జోడించండి",
+  "viewAttachment": "అటాచ్‌మెంట్ చూడండి",
+  "addAttachment": "అటాచ్‌మెంట్ జోడించండి",
+  "chooseFileTypeToUpload": "అప్‌లోడ్ చేయడానికి ఫైల్ రకాన్ని ఎంచుకోండి",
+  "couldNotGetFilePath": "ఫైల్ మార్గం పొందడం సాధ్యపడలేదు",
+  "unknownStore": "తెలియని స్టోర్",
+  "unknownProduct": "తెలియని ఉత్పత్తి",
+  "scheduleDelivery": "డెలివరీని షెడ్యూల్ చేయండి",
+  "pickDateAndTime": "మీకు సరిపోయే తేదీ మరియు సమయాన్ని ఎంచుకోండి",
+  "selectDeliveryDate": "డెలివరీ తేదీని ఎంచుకోండి",
+  "selectTimeSlot": "సమయ స్లాట్‌ను ఎంచుకోండి",
+  "selectDateAndTimeProceed": "ముందుకు సాగడానికి తేదీ మరియు సమయాన్ని ఎంచుకోండి",
+  "confirmSlot": "స్లాట్‌ను నిర్ధారించండి",
+  "noSlotsAvailable": "ఈ తేదీకి ఎలాంటి స్లాట్‌లు అందుబాటులో లేవు",
+  "pleaseProvideAReason": "దయచేసి ఒక కారణాన్ని తెలియజేయండి",
+  "pleaseUploadProofImage": "ఉత్పత్తి చిత్రం తప్పనిసరి",
+  "returnDeadlinePassed": "ఈ వస్తువు యొక్క రిటర్న్ గడువు ముగిసింది.",
+  "returnDeadlineCrossed": "{date} న రిటర్న్ గడువు దాటిపోయింది.",
+  "haveReferralCodeTitle": "మీ వద్ద రిఫరల్ కోడ్ ఉందా?",
+  "haveReferralCodeSubtitle": "మీ మొదటి ఆర్డర్‌పై రివార్డ్‌లను పొందడానికి దీన్ని వర్తింపజేయండి.",
+  "noCode": "కోడ్ లేదు",
+  "ourApp": "మా యాప్",
+  "referralShareMessage": "హే! {appName} లో చేరడానికి నా రిఫరల్ కోడ్ *{referralCode}* ఉపయోగించండి.\n\nఇప్పుడే డౌన్‌లోడ్ చేసుకోండి: {appLink}",
+  "shareProduct": "ఉత్పత్తిని భాగస్వామ్యం చేయండి",
+  "shareApp": "యాప్‌ను భాగస్వామ్యం చేయండి",
+  "clearAll": "అన్నీ క్లియర్ చేయి",
+  "dateRange": "తేదీ పరిధి",
+  "sortBy": "క్రమబద్ధీకరించు",
+  "deleteWishlistWithName": "{name} తొలగించండి",
+  "deleteWishlistResponsibility": "దీన్ని నెరవేర్చడానికి మీరే బాధ్యత వహిస్తారు.",
+  "caughtUpMessage": "అన్నీ చూసేశారు! మరిన్ని వివరాల కోసం మళ్ళీ ప్రయత్నించండి.",
+  "homeLayoutApi": "హోమ్ లేఅవుట్ (API)",
+  "noSectionsToShow": "చూపించడానికి విభాగాలు లేవు",
+  "noNotifications": "నోటిఫికేషన్‌లు లేవు",
+  "heroOrderConfirmed": "ఆర్డర్ నిర్ధారించబడింది",
+  "secondaryOrderConfirmed": "స్టోర్ మీ ఆర్డర్‌ను అంగీకరించింది",
+  "scheduledDeliveryDoesNotSupportRush": "షెడ్యూల్డ్ డెలివరీ రష్ డెలివరీకి మద్దతు ఇవ్వదు",
+  "thankYourDeliveryPartner": "మీ డెలివరీ భాగస్వామికి ధన్యవాదాలు తెలియజేయండి",
+  "tipGoesToDeliveryPartner": "మీ టిప్ లో 100% నేరుగా మా డెలివరీ భాగస్వాములకు వెళుతుంది.",
+  "customPreset": "👏కస్టమ్",
+  "minTipAmountError": "కనీస చిట్కా మొత్తం {amount}.",
+  "@minTipAmountError": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "maxTipAmountError": "గరిష్ట చిట్కా మొత్తం {amount}.",
+  "@maxTipAmountError": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "tipOnlineOnlyWarning": "రైడర్ టిప్స్ ఆన్‌లైన్ పేమెంట్ మోడ్‌లలో మాత్రమే సపోర్ట్ చేయబడతాయి.",
+  "tipCodDisabledSubtitle": "రైడర్ టిప్స్ ఆన్‌లైన్ పేమెంట్స్ లో మాత్రమే సపోర్ట్ చేయబడతాయి. కాడ్ ఎంచుకోవడానికి టిప్ తీసివేయండి.",
+  "tipCodDisabledToast": "రైడర్ టిప్స్ ఆన్‌లైన్ పేమెంట్స్ లో మాత్రమే సపోర్ట్ చేయబడతాయి. దయచేసి కాడ్ ఎంచుకోవడానికి టిప్ తీసివేయండి.",
+  "riderTip": "రైడర్ టిప్",
+  "tipRider": "రైడర్ కి టిప్ ఇవ్వండి",
+  "codTipPostOrderWarning": "టిప్ కాడ్ మొత్తంలో చేర్చబడలేదు (టిప్ ఆర్డర్ తర్వాత జోడించబడింది).",
+  "useCoinsForDiscount": "డిస్కౌంట్ కొరకు కాయిన్స్ ఉపయోగించండి",
+  "discountApplied": "డిస్కౌంట్ వర్తింపజేయబడింది",
+  "tapToRemoveDiscount": "డిస్కౌంట్ తొలగించడానికి ట్యాప్ చేయండి",
+  "tapToApplyDiscount": "డిస్కౌంట్ వర్తింపజేయడానికి ట్యాప్ చేయండి",
+  "addProductsMoreToRedeem": "డిస్కౌంట్ కొరకు ఇంకా {currency}{amount} విలువైన ఉత్పత్తులను జోడించండి ›",
+  "coinsDiscount": "కాయిన్స్ డిస్కౌంట్",
+  "applied": "వర్తించబడింది",
+  "getCoinsOnOrder": "ఈ ఆర్డర్‌పై {coins} కాయిన్స్ పొందండి",
+  "cashOnDeliveryFee": "క్యాష్ ఆన్ డెలివరీ రుసుము",
+  "codHandlingFeeSubtitle": "క్యాష్ ఆన్ డెలివరీ చెల్లింపులకు {fee} నగదు నిర్వహణ రుసుము వర్తిస్తుంది.",
+  "onYourNextOrder": "మీ తదుపరి ఆర్డర్‌పై",
+  "howCanWeHelpYou": "మేము మీకు ఎలా సహాయపడగలము?",
+  "supportPageSubtitle": "మీకు ఏవైనా ప్రశ్నలు లేదా సమస్యలు ఉంటే సహాయం చేయడానికి మేము ఇక్కడ ఉన్నాము. సంకోచించకండి సంప్రదించండి!",
+  "twoXSpeed": "2x వేగం",
+  "customerSupportChat": "కస్టమర్ మద్దతు",
+  "selectAnOrder": "ఆర్డర్‌ను ఎంచుకోండి:",
+  "viewOlderOrders": "పాత ఆర్డర్‌లను చూడండి",
+  "generalHelpNoOrder": "సాధారణ సహాయం (ఆర్డర్ లేకుండా)",
+  "selectATopic": "విషయాన్ని ఎంచుకోండి:",
+  "typeYourMessage": "మీ సందేశాన్ని టైప్ చేయండి...",
+  "startChat": "చాట్ ప్రారంభించండి",
+  "markAsResolvedQuestion": "పరిష్కరించబడినట్లు మార్క్ చేయాలా?",
+  "areYouSureResolveConversation": "మీరు ఖచ్చితంగా ఈ సంభాషణను పరిష్కరించాలనుకుంటున్నారా?",
+  "resolutionNotesOptional": "పరిష్కార గమనికలు (ఐచ్ఛికం)",
+  "keepChatting": "చాటింగ్ కొనసాగించండి",
+  "resolve": "పరిష్కరించు",
+  "ticketResolved": "టికెట్ పరిష్కరించబడింది",
+  "requestCallback": "కాల్‌బ్యాక్ అభ్యర్థించండి",
+  "callbackRequested": "కాల్‌బ్యాక్ అభ్యర్థించబడింది",
+  "phoneForCallback": "కాల్‌బ్యాక్ కోసం ఫోన్ నంబర్",
+  "rateYourSupportExperience": "మీ మద్దతు అనుభవాన్ని రేట్ చేయండి",
+  "feedbackOptional": "మీ అభిప్రాయాన్ని రాయండి (ఐచ్ఛికం)",
+  "submitRating": "రేటింగ్ సమర్పించండి",
+  "thankYouForFeedback": "మీ అభిప్రాయానికి ధన్యవాదాలు!",
+  "attachFile": "ఫైల్ జత చేయండి",
+  "supportSessionClosed": "ఈ మద్దతు టికెట్ మూసివేయబడింది.",
+  "reopenTicket": "టికెట్‌ను మళ్లీ తెరవండి",
+  "chatConnected": "లైవ్ మద్దతు కనెక్ట్ అయింది",
+  "chatConnecting": "మద్దతుకు కనెక్ట్ అవుతోంది...",
+  "selectOrderOrTopicSubtitle": "కస్టమర్ మద్దతుతో చాటింగ్ ప్రారంభించడానికి దిగువన ఉన్న ఆర్డర్ లేదా విషయాన్ని ఎంచుకోండి.",
+  "supportCallbackSubtitle": "మద్దతు ప్రతినిధి మీ నమోదిత ఫోన్ నంబర్‌కు కాల్ చేస్తారు.",
+  "agentIsTyping": "ఏజెంట్ టైప్ చేస్తున్నారు...",
+  "dropFilesHereToUpload": "అప్‌లోడ్ చేయడానికి ఫైళ్లను ఇక్కడ వేయండి",
+  "loadOlderMessages": "పాత సందేశాలను లోడ్ చేయండి",
+  "markResolved": "పరిష్కరించబడినట్లు మార్క్ చేయండి",
+  "newChat": "కొత్త చాట్",
+  "noMessagesYet": "ఇంకా సందేశాలు లేవు",
+  "preview": "ముందుజూపు",
+  "startNewChatSubtitle": "మద్దతుతో మాట్లాడటానికి కొత్త చాట్ సెషన్‌ను ప్రారంభించండి.",
+  "stillNeedHelp": "ఇంకా సహాయం కావాలా?",
+  "unableToLoadImage": "చిత్రాన్ని లోడ్ చేయడం కుదరలేదు",
+  "zoomIn": "జూమ్ ఇన్",
+  "zoomOut": "జూమ్ అవుట్",
+  "resetZoom": "జూమ్ రీసెట్ చేయండి",
+  "contactSupport": "మద్దతును సంప్రదించండి",
+  "noContactInformationAvailable": "సమాచార సమాచారం అందుబాటులో లేదు.",
+  "actionFailed": "చర్య విఫలమైంది",
+  "remove": "తొలగించు",
+  "download": "డౌన్‌లోడ్ చేయండి",
+  "fileDownloadedSuccessfully": "ఫైల్ విజయవంతంగా డౌన్‌లోడ్ చేయబడింది.",
+  "downloadFailed": "డౌన్‌లోడ్ విఫలమైంది.",
+  "sharingFailed": "భాగస్వామ్యం విఫలమైంది.",
+  "unableToProcessAttachment": "అటాచ్‌మెంట్‌ను ప్రాసెస్ చేయడం కుదరలేదు.",
+  "supportAndLegal": "సపోర్ట్ & లీగల్",
+  "activity": "యాక్టివిటీ",
+  "preferences": "ప్రాధాన్యతలు",
+  "youAreAllCaughtUp": "అన్నీ చూసేశారు!",
+  "clickHereToGoToTop": "పైకి వెళ్ళడానికి ఇక్కడ క్లిక్ చేయండి",
+  "noReelsFound": "రీల్స్ ఏవీ కనుగొనబడలేదు",
+  "checkBackLaterForNewReels": "కొత్త రీల్స్ కోసం తర్వాత మళ్ళీ చూడండి.",
+  "unableToLoadVideo": "వీడియోను లోడ్ చేయడం సాధ్యం కాలేదు",
+  "reelUrlNotAvailable": "రీల్ URL అందుబాటులో లేదు",
+  "openNow": "Open Now",
+  "closedText": "Closed",
+  "keyFeatures": "ముఖ్య లక్షణాలు",
+  "seller": "విక్రేత",
+  "assignDeliveryPartnerWhenPacked": "మీ ఆర్డర్ ప్యాక్ అయిన వెంటనే మేము డెలివరీ భాగస్వామిని కేటాయిస్తాము",
+  "orderDeliveredSuccessMessage": "మీ ప్యాకేజీ విజయవంతంగా డెలివరీ చేయబడింది. మమ్మల్ని ఎంచుకున్నందుకు ధన్యవాదాలు!",
+  "returnRequests": "రిటర్న్ అభ్యర్థనలు",
+  "nReturnsInitiated": "{count, plural, =1{1 రిటర్న్ ప్రారంభించబడింది} other{{count} రిటర్న్‌లు ప్రారంభించబడ్డాయి}}",
+  "@nReturnsInitiated": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "returnRequested": "రిటర్న్ అభ్యర్థించబడింది",
+  "approved": "ఆమోదించబడింది",
+  "pickedUp": "పికప్ చేయబడింది",
+  "receivedBySeller": "విక్రేత స్వీకరించారు",
+  "refundProcessed": "రీఫండ్ ప్రాసెస్ చేయబడింది",
+  "rejected": "తిరస్కరించబడింది",
+  "inProgress": "పురోగతిలో ఉంది",
+  "reason": "Reason",
+  "requestedOn": "అభ్యర్థించిన తేదీ",
+  "approvedOn": "ఆమోదించిన తేదీ",
+  "sellerNote": "విక్రేత గమనిక",
+  "needsReschedule": "రీషెడ్యూల్ చేయాలి",
+  "orderNumber": "ఆర్డర్ #{orderId}",
+  "@orderNumber": {
+    "placeholders": {
+      "orderId": {
+        "type": "String"
+      }
+    }
+  },
+  "viewDetails": "వివరాలను చూడండి",
+  "trackYourOrder": "మీ ఆర్డర్‌ను ట్రాక్ చేయండి",
+  "storeDetailsNotFoundForRescheduling": "రీషెడ్యూల్ చేయడానికి స్టోర్ వివరాలు కనుగొనబడలేదు",
+  "cancelOrder": "ఆర్డర్‌ను రద్దు చేయండి",
+  "areYouSureYouWantToCancelThisOrder": "మీరు ఖచ్చితంగా ఈ ఆర్డర్‌ను రద్దు చేయాలనుకుంటున్నారా?",
+  "noStoriesAvailable": "కథనాలు ఏవీ అందుబాటులో లేవు",
+  "refresh": "రిఫ్రెష్ చేయండి",
+  "noReturnReasonsAvailable": "రిటర్న్ కారణాలు ఏవీ అందుబాటులో లేవు",
+  "failedToLoadReturnReasons": "రిటర్న్ కారణాలను లోడ్ చేయడం విఫలమైంది",
+  "nItems": "{count, plural, =1{1 వస్తువు} other{{count} వస్తువులు}}",
+  "@nItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "item": "వస్తువు",
+  "notDeliverableToThisLocation": "ఈ స్థానానికి డెలివరీ చేయబడదు.",
+  "showThisOtpAtStore": "స్టోర్ వద్ద ఈ OTPని చూపండి",
+  "syncingYourCart": "మీ కార్ట్ సింక్ అవుతోంది...",
+  "storeHours": "స్టోర్ వేళలు",
+  "transactionId": "లావాదేవీ ID",
+  "recentlyViewed": "ఇటీవల వీక్షించినవి",
+  "filter": "ఫిల్టర్",
+  "hoursAgo": "{count} గంటల క్రితం",
+  "@hoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "minAgo": "{count} నిమిషాల క్రితం",
+  "@minAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "justNow": "ఇప్పుడే",
+  "percentOff": "{percent}% తగ్గింపు",
+  "@percentOff": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "storeOperationalHours": "స్టోర్ పనివేళలు",
+  "monday": "సోమవారం",
+  "tuesday": "మంగళవారం",
+  "wednesday": "బుధవారం",
+  "thursday": "గురువారం",
+  "friday": "శుక్రవారం",
+  "saturday": "శనివారం",
+  "sunday": "ఆదివారం",
+  "returnOtp": "Return OTP",
+  "locatingYou": "మిమ్మల్ని కనుగొంటున్నాము..."
+}

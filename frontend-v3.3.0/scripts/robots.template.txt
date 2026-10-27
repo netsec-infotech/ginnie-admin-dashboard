@@ -1,0 +1,37 @@
+# Robots.txt for the storefront
+
+User-agent: *
+Allow: /
+
+# Block private / non-SEO pages
+Disallow: /api/
+Disallow: /my-account/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /shopping-list/
+Disallow: /forgot-password/
+Disallow: /admin/
+
+# Public framework assets are crawlable so rendered pages can be evaluated.
+Allow: /_next/static/
+Allow: /_next/image
+Allow: /images/
+Allow: /logos/
+Allow: /locales/
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Block aggressive crawlers
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+Sitemap: {{SITE_URL}}/sitemap.xml

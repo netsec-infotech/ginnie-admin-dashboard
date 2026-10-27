@@ -1,0 +1,64 @@
+/* Product form variant builder dark-mode overrides. */
+[data-bs-theme="dark"] .product-variants-panel {
+    --product-variant-surface: var(--tblr-bg-surface, #182433);
+    --product-variant-raised: #1f2d3d;
+    --product-variant-border: rgba(148, 163, 184, .22);
+    --product-variant-muted: #9fb0c5;
+
+    background: var(--product-variant-surface) !important;
+    border: 1px solid var(--product-variant-border) !important;
+    color: var(--tblr-body-color);
+}
+
+[data-bs-theme="dark"] .product-variants-panel > .card-header {
+    background: transparent !important;
+    border-bottom-color: var(--product-variant-border) !important;
+}
+
+[data-bs-theme="dark"] .product-variants-panel .text-muted,
+[data-bs-theme="dark"] .product-variants-panel .form-hint {
+    color: var(--product-variant-muted) !important;
+}
+
+[data-bs-theme="dark"] .product-variants-panel #attributesContainer > .card,
+[data-bs-theme="dark"] .product-variants-panel #variantsContainer,
+[data-bs-theme="dark"] .product-variants-panel #variantsList .card {
+    background: var(--product-variant-raised);
+    border-color: var(--product-variant-border) !important;
+    color: var(--tblr-body-color);
+}
+
+[data-bs-theme="dark"] .product-variants-panel #variantsContainer > .card-header {
+    background: var(--product-variant-raised);
+    border-bottom-color: var(--product-variant-border);
+}
+
+[data-bs-theme="dark"] .product-variants-panel .form-label,
+[data-bs-theme="dark"] .product-variants-panel .card-title,
+[data-bs-theme="dark"] .product-variants-panel h5,
+[data-bs-theme="dark"] .product-variants-panel h6 {
+    color: var(--tblr-body-color);
+}
+
+[data-bs-theme="dark"] .product-variants-panel .form-control,
+[data-bs-theme="dark"] .product-variants-panel .form-select,
+[data-bs-theme="dark"] .product-variants-panel .input-group-text {
+    background-color: var(--tblr-bg-surface);
+    border-color: var(--product-variant-border);
+    color: var(--tblr-body-color);
+}
+
+[data-bs-theme="dark"] .product-variants-panel .form-control::placeholder {
+    color: var(--product-variant-muted);
+}
+
+[data-bs-theme="dark"] .product-variants-panel select.form-select option {
+    background-color: var(--tblr-bg-surface);
+    color: var(--tblr-body-color);
+}
+
+[data-bs-theme="dark"] .product-variants-panel .filepond--panel-root,
+[data-bs-theme="dark"] .product-variants-panel .filepond--drop-label {
+    background-color: var(--tblr-bg-surface);
+    color: var(--product-variant-muted);
+}

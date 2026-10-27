@@ -1,0 +1,171 @@
+'use strict';
+
+$(document).ready(function () {
+
+    let table = $('#ad-campaigns-table').DataTable();
+    let actionUrl = '';
+
+    const validStatusGroups = new Set(['running', 'pending', 'rejected']);
+    const getStatusGroupFromUrl = () => {
+        const statusGroup = new URL(window.location.href).searchParams.get('status_group');
+        return validStatusGroups.has(statusGroup) ? statusGroup : null;
+    };
+    let activeStatusGroup = getStatusGroupFromUrl();
+
+    const syncActiveInsightCard = () => {
+        $('.campaign-insight-card').each(function () {
+            const cardStatusGroup = $(this).attr('data-status-group') || null;
+            const isActive = cardStatusGroup === activeStatusGroup;
+            const $link = $(this).find('.campaign-insight-card-link');
+
+            $(this).toggleClass('active', isActive);
+            $link.attr('aria-current', isActive ? 'page' : null);
+        });
+    };
+
+    const updateStatusGroupUrl = (statusGroup, historyMethod = 'pushState') => {
+        const url = new URL(window.location.href);
+        if (statusGroup) {
+            url.searchParams.set('status_group', statusGroup);
+        } else {
+            url.searchParams.delete('status_group');
+        }
+        window.history[historyMethod]({ statusGroup }, '', url);
+    };
+
+    const applyStatusGroup = (statusGroup, historyMethod = 'pushState') => {
+        activeStatusGroup = validStatusGroups.has(statusGroup) ? statusGroup : null;
+        $('#statusFilter').val('');
+        updateStatusGroupUrl(activeStatusGroup, historyMethod);
+        syncActiveInsightCard();
+        table.ajax.reload(null, false);
+    };
+
+    syncActiveInsightCard();
+
+    $(document).on('click', '.campaign-insight-card-link', function (event) {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+            return;
+        }
+        event.preventDefault();
+        const $card = $(this).closest('.campaign-insight-card');
+        const selectedStatusGroup = $card.attr('data-status-group') || null;
+        const historyMethod = selectedStatusGroup === activeStatusGroup ? 'replaceState' : 'pushState';
+        applyStatusGroup(selectedStatusGroup, historyMethod);
+    });
+
+    window.addEventListener('popstate', function () {
+        activeStatusGroup = getStatusGroupFromUrl();
+        syncActiveInsightCard();
+        table.ajax.reload(null, false);
+    });
+
+    $('#statusFilter').on('change', function () {
+        if ($(this).val()) {
+            activeStatusGroup = null;
+            updateStatusGroupUrl(null, 'replaceState');
+            syncActiveInsightCard();
+        }
+        table.ajax.reload(null, false);
+    });
+
+    $('#refresh').on('click', function () {
+        table.ajax.reload(null, false);
+    });
+
+    table.on('preXhr.dt', function (e, settings, data) {
+        data.status = $('#statusFilter').val();
+        if (!data.status && activeStatusGroup) {
+            data.status_group = activeStatusGroup;
+        }
+    });
+
+    $(document).on('click', '.btn-campaign-approve', function () {
+        const url = this.dataset.url;
+        Swal.fire({
+            title: 'Approve Campaign?',
+            text: 'The campaign will immediately start running.',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonText: 'Approve',
+            confirmButtonColor: '#2fb344',
+        }).then(result => {
+            if (!result.isConfirmed) {
+                return;
+            }
+
+            campaignAction(url, { action: 'approve' }, function () {
+                table.ajax.reload(null, false);
+            });
+        });
+    });
+
+    $('#forceStopModal, #rejectModal').on('show.bs.modal', function (event) {
+        const button = $(event.relatedTarget);
+        actionUrl = button.data('url');
+    });
+
+    $(document).on('click', '.btn-campaign-reject', function () {
+        const rejectReason = document.getElementById('rejectReason');
+        if (rejectReason) {
+            rejectReason.value = '';
+            rejectReason.classList.remove('is-invalid');
+        }
+    });
+
+    document.getElementById('confirmRejectBtn')?.addEventListener('click', function () {
+        const rejectReason = document.getElementById('rejectReason');
+        const reason = rejectReason.value.trim();
+        if (!reason) {
+            rejectReason.classList.add('is-invalid');
+            return;
+        }
+        rejectReason.classList.remove('is-invalid');
+
+        campaignAction(actionUrl, { action: 'reject', reason: reason }, function () {
+            $('#rejectModal').modal('hide');
+            table.ajax.reload(null, false);
+        });
+    });
+
+    $(document).on('click', '.btn-campaign-force-stop', function () {
+        const forceStopReason = document.getElementById('forceStopReason');
+        if (forceStopReason) {
+            forceStopReason.value = '';
+            forceStopReason.classList.remove('is-invalid');
+        }
+    });
+
+    document.getElementById('confirmForceStopBtn')?.addEventListener('click', function () {
+        const forceStopReason = document.getElementById('forceStopReason');
+        const reason = forceStopReason.value.trim();
+        if (!reason) {
+            forceStopReason.classList.add('is-invalid');
+            return;
+        }
+        forceStopReason.classList.remove('is-invalid');
+
+        campaignAction(actionUrl, { action: 'force_stop', reason: reason }, function () {
+            $('#forceStopModal').modal('hide');
+            table.ajax.reload(null, false);
+        });
+    });
+});
+
+function campaignAction(url, payload, onSuccess) {
+    axios.post(url, payload, {
+        headers: { 'X-CSRF-TOKEN': csrfToken },
+    }).then(function (res) {
+        const data = res.data;
+        if (data.success) {
+            Toast.fire({ icon: 'success', title: data.message });
+            if (onSuccess) {
+                onSuccess();
+            }
+        } else {
+            Toast.fire({ icon: 'error', title: data.message });
+        }
+    }).catch(function () {
+        Toast.fire({ icon: 'error', title: 'Something went wrong.' });
+    });
+}

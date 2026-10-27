@@ -1,0 +1,72 @@
+@php
+    $menuKey = match($surface) {
+        \App\Enums\LanguageSurfaceEnum::WEB => 'website',
+        \App\Enums\LanguageSurfaceEnum::CUSTOMER_APP => 'customer_app',
+        \App\Enums\LanguageSurfaceEnum::SELLER_APP => 'seller_app',
+        \App\Enums\LanguageSurfaceEnum::RIDER_APP => 'rider_app',
+    };
+@endphp
+@extends('layouts.admin.app', ['page' => $menuAdmin['languages']['active'] ?? '', 'sub_page' => $menuAdmin['languages']['route'][$menuKey]['sub_active'] ?? ''])
+
+@section('title', $editing ? __('labels.edit_language') : __('labels.add_language'))
+
+@section('header_data')
+    @php
+        $page_title = $editing ? __('labels.edit_language') : __('labels.add_language');
+        $page_pretitle = $surface->label();
+    @endphp
+@endsection
+
+@php
+    $breadcrumbs = [
+        ['title' => __('labels.home'), 'url' => route('admin.dashboard')],
+        ['title' => __('labels.languages_management'), 'url' => route('admin.languages.index')],
+        ['title' => $surface->label(), 'url' => route('admin.languages.clients.show', $surface->value)],
+        ['title' => $editing ? $language->native_name : __('labels.create'), 'url' => null],
+    ];
+    if ($editing) {
+        $translationsUpdateRoute = route('admin.languages.clients.translations.update', [$surface->value, $language]);
+        $translationsDatatableRoute = route('admin.languages.clients.translations.datatable', [$surface->value, $language]);
+    }
+@endphp
+
+@section('admin-content')
+    <div class="row row-cards">
+        <div class="col-12">
+            @include('admin.languages.partials.details-form')
+        </div>
+
+        @if($editing && $language->code !== 'en')
+            <div class="col-12">
+                @include('admin.languages.partials.language-pack')
+            </div>
+            <div class="col-12">
+                @include('admin.languages.partials.translations')
+            </div>
+        @elseif($editing)
+            <div class="col-12">
+                <div class="alert alert-info" role="alert">
+                    {{ __('labels.language_english_source_managed') }}
+                </div>
+            </div>
+        @endif
+    </div>
+@endsection
+
+@push('scripts')
+    <script>
+        window.languageLabels = {
+            areYouSure: @json(__('labels.are_you_sure')),
+            leaveWithoutSaving: @json(__('labels.language_leave_without_saving')),
+            stayOnPage: @json(__('labels.language_stay_on_page')),
+            unsavedChanges: @json(__('labels.unsaved_changes')),
+            unsavedWarning: @json(__('labels.unsaved_changes_warning')),
+        };
+        window.languageOldTranslations = @json(
+            collect(old('translations', []))->mapWithKeys(
+                fn (array $row) => isset($row['key']) ? [$row['key'] => $row['value'] ?? ''] : []
+            )
+        );
+    </script>
+    <script src="{{ hyperAsset('assets/js/languages.js') }}" defer></script>
+@endpush

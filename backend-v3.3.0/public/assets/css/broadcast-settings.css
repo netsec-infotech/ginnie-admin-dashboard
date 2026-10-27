@@ -1,0 +1,7 @@
+.broadcast-driver-panel[hidden] {
+    display: none !important;
+}
+
+.broadcast-driver-panel {
+    transition: opacity 0.15s ease-in-out;
+}

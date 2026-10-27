@@ -1,0 +1,44 @@
+/* Global app styles */
+@import "./globals.css";
+
+/* Editorial article layout */
+@import "./custom/blog-article.css";
+
+/* Product gallery enlargement hint. */
+@import "./custom/product-gallery.css";
+
+/* Swiper styles */
+@import "swiper/css";
+@import "swiper/css/free-mode";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/mousewheel";
+
+/* Progress bar */
+@import "nprogress/nprogress.css";
+
+/* Lightbox */
+@import "yet-another-react-lightbox/styles.css";
+@import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+/* Stripe's test assistant is page-level and survives Elements unmounting.
+   Scope only its iframe to an active Stripe dialog; payment/authentication
+   frames must remain untouched. The filename prefix comes from Stripe.js. */
+body:not(:has([data-stripe-checkout-active]))
+  iframe[src^="https://js.stripe.com/"][src*="/elements-inner-easel-"] {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Custom category artwork uses intrinsic-size cards. Swiper's base slide rule
+   is width: 100%, while the builder artwork can be narrower than the previous
+   280px cap. Let each slide shrink to its visible image so spaceBetween is the
+   actual visual gap instead of being added after an invisible empty area. */
+.home-category-image-swiper .swiper-wrapper {
+  justify-content: flex-start;
+}
+
+.home-category-image-swiper .swiper-slide {
+  width: fit-content !important;
+  max-width: min(100%, 280px);
+}

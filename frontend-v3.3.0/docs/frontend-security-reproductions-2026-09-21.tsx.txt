@@ -1,0 +1,154 @@
+// @vitest-environment-options {"runScripts":"dangerously"}
+// Temporary audit reproductions: assertions describe existing vulnerabilities.
+import { beforeEach, afterEach, expect, it, vi } from "vitest";
+import { configureStore } from "@reduxjs/toolkit";
+import { render } from "@testing-library/react";
+import { readFileSync } from "node:fs";
+import ts from "typescript";
+import L from "leaflet";
+import axios from "axios";
+import { JSDOM } from "jsdom";
+
+const mocks = vi.hoisted(() => ({
+  getUserData: vi.fn(), getCart: vi.fn(), getState: vi.fn(), dispatch: vi.fn(),
+}));
+vi.mock("@/routes/api", () => ({ getUserData: mocks.getUserData, getCart: mocks.getCart }));
+vi.mock("@/lib/redux/store", () => ({ store: { getState: mocks.getState, dispatch: mocks.dispatch } }));
+vi.mock("@heroui/react", () => ({ addToast: vi.fn() }));
+vi.mock("@/lib/analytics", () => ({ trackPurchase: vi.fn() }));
+vi.mock("../i18n", () => ({ default: { t: (key: string) => key } }));
+vi.mock("@/helpers/cartLocationConfirmation", () => ({
+  confirmCartLocation: vi.fn(async () => true),
+  cartLocationKey: () => "synthetic-location", invalidateCartLocationConsent: vi.fn(),
+}));
+
+import authReducer, { login, logout } from "@/lib/redux/slices/authSlice";
+import cartReducer, { clearCart } from "@/lib/redux/slices/cartSlice";
+import checkoutReducer from "@/lib/redux/slices/checkoutSlice";
+import { updateUserDataInRedux } from "@/helpers/functionalHelpers";
+import { updateCartData } from "@/helpers/updators";
+import { setupInterceptors } from "@/routes/interceptor";
+import { setCookie } from "@/lib/cookies";
+import { isValidUrl } from "@/helpers/validator";
+import HTMLRenderer from "@/components/Functional/HTMLRenderer";
+import type { userData } from "@/types/ApiResponse";
+
+const makeStore = () => configureStore({ reducer: { auth: authReducer, cart: cartReducer, checkout: checkoutReducer } });
+let state = makeStore();
+const account = (id: number) => ({ id, name: `Synthetic customer ${id}`, email: `customer${id}@example.invalid` }) as userData;
+const signIn = (id: number) => state.dispatch(login({ user: account(id), access_token: `synthetic-token-${id}` }));
+const deferred = <T,>() => {
+  let resolve!: (value: T) => void;
+  const promise = new Promise<T>(r => { resolve = r; });
+  return { promise, resolve };
+};
+const executesEventHandler = (html: string) => {
+  // Vitest's DOM disables inline script execution; use an isolated script-enabled DOM.
+  const dom = new JSDOM(html, { runScripts: "dangerously", url: "https://example.invalid" });
+  dom.window.document.querySelector("img")!.dispatchEvent(new dom.window.Event("error"));
+  const executed = dom.window.__auditMarker === 1;
+  dom.window.close();
+  return executed;
+};
+
+beforeEach(() => {
+  vi.clearAllMocks();
+  state = makeStore();
+  mocks.getState.mockImplementation(() => state.getState());
+  mocks.dispatch.mockImplementation(action => state.dispatch(action));
+  setCookie("userLocation", { lat: 20, lng: 70 });
+  signIn(1);
+});
+afterEach(() => {
+  delete (window as Window & { __auditMarker?: number }).__auditMarker;
+});
+
+it("reproduces old profile response overwriting the next customer's identity", async () => {
+  const response = deferred<unknown>();
+  mocks.getUserData.mockReturnValue(response.promise);
+  const pending = updateUserDataInRedux();
+  state.dispatch(logout());
+  signIn(2);
+  response.resolve({ success: true, data: account(1) });
+  await pending;
+  expect(state.getState().auth.access_token).toBe("synthetic-token-2");
+  expect(state.getState().auth.user?.id).toBe(1);
+});
+
+it("reproduces private profile data returning after logout", async () => {
+  const response = deferred<unknown>();
+  mocks.getUserData.mockReturnValue(response.promise);
+  const pending = updateUserDataInRedux();
+  state.dispatch(logout());
+  response.resolve({ success: true, data: account(1) });
+  await pending;
+  expect(state.getState().auth.isLoggedIn).toBe(false);
+  expect(state.getState().auth.user?.email).toBe("customer1@example.invalid");
+});
+
+it("reproduces old cart response repopulating cart after account change", async () => {
+  const response = deferred<unknown>();
+  mocks.getCart.mockReturnValue(response.promise);
+  const pending = updateCartData(false, false);
+  await vi.waitFor(() => expect(mocks.getCart).toHaveBeenCalledOnce());
+  state.dispatch(logout());
+  state.dispatch(clearCart());
+  signIn(2);
+  response.resolve({ success: true, data: { id: 101, items: [{ name: "Synthetic private item" }], payment_summary: {} } });
+  await pending;
+  expect(state.getState().auth.user?.id).toBe(2);
+  expect(state.getState().cart.cartData?.id).toBe(101);
+});
+
+it("reproduces a stale tab sending the shared cookie's new account token", async () => {
+  // A login in another same-origin tab changes cookies but not this tab's Redux.
+  setCookie("access_token", "synthetic-token-2");
+  const requests: string[] = [];
+  const client = axios.create({ adapter: async config => {
+    requests.push(String(config.headers.get("Authorization")));
+    return { data: {}, status: 200, statusText: "OK", headers: {}, config };
+  } });
+  setupInterceptors(client);
+  await client.post("/user/orders", { synthetic: true });
+  expect(state.getState().auth.user?.id).toBe(1);
+  expect(requests).toEqual(["Bearer synthetic-token-2"]);
+});
+
+it("reproduces executable event attributes through the real rich HTML renderer", () => {
+  const { container } = render(<HTMLRenderer html={'<img src="invalid" onerror="window.__auditMarker=1">'} />);
+  expect(executesEventHandler(container.innerHTML)).toBe(true);
+});
+
+it.each(["delivery_boy.full_name", "store.store_name", "data.order.shipping_address_1"])(
+  "reproduces active Leaflet HTML injection from %s", (field) => {
+    const file = readFileSync("src/components/Location/OpenStreetMapTracking.tsx", "utf8");
+    const ast = ts.createSourceFile("map.tsx", file, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+    let template = "";
+    const visit = (node: ts.Node) => {
+      if (ts.isCallExpression(node) && ts.isPropertyAccessExpression(node.expression) &&
+          node.expression.name.text === "bindPopup" && node.arguments[0]?.getText(ast).includes(field)) {
+        template = node.arguments[0].getText(ast);
+      }
+      ts.forEachChild(node, visit);
+    };
+    visit(ast);
+    expect(template).not.toBe("");
+    const payload = '<img src="invalid" onerror="window.__auditMarker=1">';
+    const code = ts.transpileModule(`globalThis.result = ${template};`, {}).outputText;
+    const html = new Function("deliveryBoyData", "store", "data", "idx", "isCollected", `${code}; return globalThis.result;`)(
+      { delivery_boy: { full_name: payload } }, { store_name: payload },
+      { order: { shipping_address_1: payload } }, 0, false,
+    );
+    const element = document.createElement("div");
+    document.body.append(element);
+    const map = L.map(element).setView([20, 70], 5);
+    try {
+      const popup = L.popup().setLatLng([20, 70]).setContent(html).openOn(map);
+      expect(executesEventHandler(popup.getElement()!.innerHTML)).toBe(true);
+    } finally { map.remove(); element.remove(); }
+  },
+);
+
+it("confirms the wallet URL validator accepts an executable scheme", () => {
+  expect(isValidUrl("javascript:void(0)")).toBe(true);
+});

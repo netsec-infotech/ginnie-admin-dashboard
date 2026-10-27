@@ -1,0 +1,89 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp 
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+/dist/
+
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.git555
+
+# Local secrets. `.env` is tracked in this repo, so anything genuinely secret
+# (FTP deploy credentials, API keys) belongs here instead — never there.
+# ftp.js loads this first, and values here win over `.env`.
+.env.local
+.env.*.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# PWA files
+**/public/manifest.json
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/swe-worker-*.js
+# Emitted only when next-pwa `fallbacks` is configured (the offline page).
+**/public/fallback-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+# Ignore specific PNG files
+**/public/logo-144.png
+**/public/logo-192.png
+**/public/logo-512.png
+/public/blog-media/
+
+
+*.pdf
+*.md
+!/SUPPORT_CHAT_IMPLEMENTATION_PLAN.md
+!/PROJECT_PRESERVATION_RULES.md
+!PROJECT_HISTORY.md
+!CHANGELOG.md
+!docs/home-feed-layout-plan.md
+!docs/reels-backend-contract.md
+!docs/seo-readiness-audit.md
+!docs/aapanel-ssr.md
+!docs/shared-cart.md
+!docs/cart-payment-methods.md
+!docs/functional-audit-2026-09-12.md
+
+*.zip
+*.zip.tmp
+*.tar.gz
+
+
+
+*.xml
+!/public/robots.txt

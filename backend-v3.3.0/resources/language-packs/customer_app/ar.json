@@ -1,0 +1,1495 @@
+{
+ "backToTop": "العودة إلى الأعلى",
+  "appTitle": "هايبر لوكال",
+  "appName": "هايبر لوكال",
+  "welcome": "مرحباً",
+  "login": "تسجيل الدخول",
+  "register": "تسجيل",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "confirmPassword": "تأكيد كلمة المرور",
+  "forgotPassword": "هل نسيت كلمة المرور؟",
+  "forgotPasswordDescription": "لا تقلق! أدخل بريدك الإلكتروني وسنرسل لك تعليمات لإعادة تعيين كلمة المرور.",
+  "sending": "جاري الإرسال...",
+  "sendResetLink": "إرسال رابط إعادة التعيين",
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "alreadyHaveAccount": "لديك حساب بالفعل؟",
+  "signUp": "إنشاء حساب",
+  "signIn": "تسجيل الدخول",
+  "home": "الصفحة الرئيسية",
+  "discover": "اكتشف",
+  "profile": "الملف الشخصي",
+  "dashboard": "لوحة التحكم",
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "selectLanguage": "اختر اللغة",
+  "arabic": "العربية",
+  "french": "الفرنسية",
+  "hindi": "الهندية",
+  "gujarati": "الغوجاراتية",
+  "telugu": "التيلجو",
+  "location": "الموقع",
+  "selectLocation": "اختر الموقع",
+  "currentLocation": "الموقع الحالي",
+  "search": "بحث",
+  "categories": "الفئات",
+  "nearby": "بالقرب",
+  "logout": "تسجيل الخروج",
+  "cancel": "إلغاء",
+  "save": "حفظ",
+  "ok": "موافق",
+  "error": "خطأ",
+  "success": "نجاح",
+  "loading": "جارٍ التحميل...",
+  "noData": "لا توجد بيانات",
+  "retry": "إعادة المحاولة",
+  "networkError": "خطأ في الشبكة",
+  "tryAgain": "حاول مرة أخرى",
+  "permissionDenied": "تم رفض الإذن",
+  "locationPermissionRequired": "يتطلب إذن الوصول إلى الموقع",
+  "enableLocation": "يرجى تفعيل خدمات الموقع",
+  "appearance": "المظهر",
+  "changeAppTheme": "تغيير سمة التطبيق",
+  "systemMode": "وضع النظام",
+  "lightMode": "الوضع الفاتح",
+  "darkMode": "الوضع الداكن",
+  "apply": "تطبيق",
+  "current": "الحالي",
+  "cart": "عربة التسوق",
+  "viewCouponOffers": "عرض الكوبونات والعروض",
+  "couponCodeApplied": "تم تطبيق كود الخصم!",
+  "addOrderNote": "إضافة ملاحظة الطلب",
+  "specialInstructionsStore": "أي تعليمات خاصة للمتجر (مثل وقت التوصيل، مواد قابلة للكسر، إلخ.)",
+  "currentlyClosed": "مغلق حالياً",
+  "searchTransactionsPlaceholder": "البحث برقم الطلب، رقم الدفع...",
+  "paymentId": "رقم عملية الدفع",
+  "orderId": "رقم الطلب",
+  "copy": "نسخ",
+  "dateAndTime": "التاريخ والوقت",
+  "paymentPending": "الدفع معلق",
+  "paymentFailed": "فشل الدفع",
+  "paymentReceived": "تم استلام الدفعة",
+  "paymentAttempted": "محاولة الدفع",
+  "unknown": "غير معروف",
+  "today": "اليوم",
+  "yesterday": "أمس",
+  "daysAgo": "منذ {count} أيام",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "na": "غير متوفر",
+  "statusPending": "قيد الانتظار",
+  "statusSuccess": "ناجح",
+  "placeOrder": "إتمام الطلب",
+  "selectPaymentMethod": "اختر طريقة الدفع",
+  "payUsing": "الدفع باستخدام",
+  "yourCartIsEmpty": "عربة التسوق فارغة",
+  "looksLikeYouHaventAddedAnythingYet": "يبدو أنك لم تضف أي شيء بعد",
+  "browseProducts": "تصفح المنتجات",
+  "addMoreItems": "إضافة المزيد من العناصر",
+  "addMoreItemsTapped": "تم النقر لإضافة المزيد من العناصر!",
+  "removeItem": "إزالة العنصر",
+  "areYouSureYouWantToRemoveItemFromCart": "هل أنت متأكد أنك تريد إزالة {item} من العربة؟",
+  "@areYouSureYouWantToRemoveItemFromCart": {
+    "placeholders": {
+      "item": {
+        "type": "String"
+      }
+    }
+  },
+  "delete": "حذف",
+  "saveForLater": "احفظه لوقت لاحق",
+  "billDetails": "تفاصيل الفاتورة",
+  "itemsTotal": "إجمالي العناصر",
+  "saved": "تم الحفظ",
+  "deliveryCharge": "رسوم التوصيل",
+  "free": "مجاناً",
+  "perStoreDropOffFees": "رسوم التسليم لكل متجر",
+  "handlingCharge": "رسوم المناولة",
+  "promoCode": "رمز العرض",
+  "promoDiscount": "خصم العرض",
+  "removeCoupon": "إزالة الكوبون",
+  "totalPayable": "إجمالي المستحق",
+  "grandTotal": "المجموع الكلي",
+  "yourTotalSavings": "إجمالي التوفير الخاص بك",
+  "downloadInvoice": "تحميل الفاتورة",
+  "myOrders": "طلباتي",
+  "noOrdersYet": "لا توجد طلبات بعد",
+  "failedToLoadOrders": "فشل تحميل الطلبات",
+  "rateOrder": "تقييم الطلب",
+  "howWasYourOrder": "كيف كان طلبك؟",
+  "orderSummary": "ملخص الطلب",
+  "orderDetailsRefreshed": "تم تحديث تفاصيل الطلب",
+  "rateYourExperience": "قيّم تجربتك",
+  "failedToLoadOrderDetails": "فشل تحميل تفاصيل الطلب",
+  "noItemsToDisplay": "لا توجد عناصر للعرض",
+  "deleteReview": "حذف التقييم؟",
+  "thisActionCannotBeUndone": "لا يمكن التراجع عن هذا الإجراء.",
+  "edit": "تعديل",
+  "cancelItem": "إلغاء العنصر",
+  "cancellationPeriodPassed": "انتهت فترة الإلغاء",
+  "areYouSureYouWantToCancelThisItem": "هل أنت متأكد أنك تريد إلغاء هذا العنصر؟",
+  "cancelReturnRequest": "إلغاء طلب الإرجاع",
+  "areYouSureYouWantToCancelThisReturnRequest": "هل أنت متأكد أنك تريد إلغاء طلب الإرجاع هذا؟",
+  "cancelReturnRequestButton": "إلغاء طلب الإرجاع",
+  "cancelItemButton": "إلغاء العنصر",
+  "howWasYourShoppingExperience": "كيف كانت تجربتك في التسوق؟",
+  "trackDelivery": "تتبع التوصيل",
+  "myWishlist": "قائمة رغباتي",
+  "createNewWishlist": "إنشاء قائمة رغبات جديدة",
+  "createNewWishlistTitle": "إنشاء قائمة رغبات جديدة",
+  "enterWishlistName": "أدخل اسم قائمة الرغبات",
+  "pleaseEnterAWishlistName": "يرجى إدخال اسم قائمة الرغبات",
+  "create": "إنشاء",
+  "update": "تحديث",
+  "editWishlist": "تعديل قائمة الرغبات",
+  "noWishlistsYet": "لا توجد قوائم رغبات بعد",
+  "noOtherWishlistsAvailable": "لا توجد قوائم رغبات أخرى",
+  "noProductsFound": "لم يتم العثور على منتجات",
+  "noSectionFound": "لم يتم العثور على أي قسم",
+  "somethingWentWrong": "حدث خطأ ما",
+  "deleteWishlistName": "حذف {wishlistName}",
+  "@deleteWishlistName": {
+    "placeholders": {
+      "wishlistName": {
+        "type": "String"
+      }
+    }
+  },
+  "myAddresses": "عناويني",
+  "addAddress": "إضافة عنوان",
+  "deleteAddress": "حذف العنوان",
+  "areYouSureYouWantToDeleteThisAddress": "هل أنت متأكد أنك تريد حذف هذا العنوان؟",
+  "near": "بالقرب من",
+  "noAddressSelected": "لم يتم اختيار عنوان",
+  "pleaseSelectAnImageAndEnterYourName": "يرجى اختيار صورة وإدخال اسمك",
+  "loadingProfile": "جارٍ تحميل الملف الشخصي...",
+  "saveChanges": "حفظ التغييرات",
+  "editProfile": "تعديل الملف الشخصي",
+  "labelCopiedToClipboard": "تم نسخ {label} إلى الحافظة",
+  "@labelCopiedToClipboard": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "yourDeliveryAddress": "عنوان التوصيل الخاص بك",
+  "shoppingList": "قائمة التسوق",
+  "aboutUs": "معلومات عنا",
+  "termsCondition": "الشروط والأحكام",
+  "termsAndConditions": "الشروط والأحكام",
+  "privacyPolicy": "سياسة الخصوصية",
+  "refundPolicy": "سياسة الاسترجاع",
+  "shippingPolicy": "سياسة الشحن",
+  "deleteAccount": "حذف الحساب",
+  "pleaseEnterYourName": "يرجى إدخال اسمك",
+  "nameMustBeAtLeast2Characters": "يجب أن يكون الاسم مكوناً من حرفين على الأقل",
+  "productDetails": "تفاصيل المنتج",
+  "description": "الوصف",
+  "specification": "المواصفات",
+  "reviews": "المراجعات",
+  "similarProducts": "منتجات مشابهة",
+  "specifications": "المواصفات",
+  "customerReviews": "تقييمات العملاء",
+  "seeAll": "عرض الكل",
+  "addYourReview": "أضف تقييمك",
+  "rateThisProduct": "قيّم هذا المنتج",
+  "submitReview": "إرسال التقييم",
+  "questionAndAnswers": "الأسئلة والأجوبة",
+  "askAQuestion": "اسأل سؤالاً",
+  "submit": "إرسال",
+  "questionSubmittedSuccessfully": "تم إرسال السؤال بنجاح!",
+  "pleaseSelectVariant": "يرجى اختيار خيار",
+  "viewProductDetails": "عرض تفاصيل المنتج",
+  "productAddedToCartSuccessfully": "تمت إضافة المنتج إلى العربة بنجاح!",
+  "failedToAddProduct": "فشل إضافة المنتج: {error}",
+  "@failedToAddProduct": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfStock": "غير متوفر",
+  "notifyMe": "أبلغني",
+  "notifyMeSuccess": "سنقوم بإعلامك عندما يتوفر هذا المنتج في المخزون!",
+  "cancelNotification": "إلغاء التنبيه",
+  "notificationCancelledSuccess": "لن نقوم بإعلامك عندما يتوفر هذا المنتج في المخزون مرة أخرى.",
+  "storeClosed": "مغلق",
+  "productVariants": "خيارات المنتج",
+  "selectVariant": "اختر الخيار",
+  "add": "إضافة",
+  "noProductFound": "لم يتم العثور على منتج",
+  "filters": "الفلاتر",
+  "sort": "ترتيب",
+  "popularity": "الأكثر شهرة",
+  "searchResultFor": "نتائج البحث عن \"{title}\"",
+  "@searchResultFor": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "relevanceDefault": "الصلة (افتراضي)",
+  "priceLowToHigh": "السعر (من الأقل للأعلى)",
+  "priceHighToLow": "السعر (من الأعلى للأقل)",
+  "discountHighToLow": "الخصم (من الأعلى للأقل)",
+  "items": "عناصر",
+  "startTypingForSuggestions": "ابدأ بالكتابة للحصول على اقتراحات",
+  "noSuggestionsFound": "لم يتم العثور على اقتراحات",
+  "speak": "تحدث",
+  "trySayingSomething": "حاول قول شيء",
+  "speechStoppedTryAgain": "توقف الصوت. حاول مرة أخرى.",
+  "close": "إغلاق",
+  "searchProducts": "ابحث عن المنتجات...",
+  "searchForProducts": "ابحث عن المنتجات",
+  "typeProductNameBrandOrCategory": "اكتب اسم المنتج أو العلامة التجارية أو الفئة",
+  "searching": "جارٍ البحث...",
+  "trySearchingWithDifferentKeywords": "حاول البحث باستخدام كلمات مختلفة",
+  "nearbyStores": "المتاجر القريبة",
+  "noStoresFoundNearby": "لم يتم العثور على متاجر قريبة.",
+  "searchInStore": "البحث في {storeName}",
+  "@searchInStore": {
+    "placeholders": {
+      "storeName": {
+        "type": "String"
+      }
+    }
+  },
+  "savedForLater": "محفوظ لوقت لاحق",
+  "moveToCart": "انقل إلى العربة",
+  "addFirstItem": "أضف العنصر الأول",
+  "resultFor": "النتائج لـ \"{title}\"",
+  "@resultFor": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "addMoney": "إضافة رصيد",
+  "enterAmount": "أدخل المبلغ",
+  "note": "ملاحظة:",
+  "hyperlocalWalletBalanceValidFor1Year": "رصيد محفظة هايبر لوكال صالح لمدة سنة من تاريخ الإضافة",
+  "hyperlocalWalletBalanceCannotBeTransferred": "لا يمكن تحويل رصيد المحفظة إلى حساب بنكي وفقاً لتعليمات RBI",
+  "pleaseEnterAnAmountGreaterThanOrEqualTo1": "يرجى إدخال مبلغ أكبر من أو يساوي 1",
+  "transactions": "المعاملات",
+  "promoCodeCoupons": "رموز العرض والكوبونات",
+  "support": "الدعم",
+  "coins": "عملات",
+  "earnCoins": "ستربح {coins} عملات في هذا الطلب!",
+  "@earnCoins": {
+    "placeholders": {
+      "coins": {
+        "type": "String"
+      }
+    }
+  },
+  "callUs": "اتصل بنا",
+  "phoneNumber": "رقم الهاتف",
+  "emailUs": "راسلنا بريدياً",
+  "tapToContact": "اضغط للاتصال",
+  "rateStoreName": "قيّم {storeName}",
+  "@rateStoreName": {
+    "placeholders": {
+      "storeName": {
+        "type": "String"
+      }
+    }
+  },
+  "editYourFeedback": "تعديل ملاحظاتك",
+  "howWasYourExperience": "كيف كانت تجربتك؟",
+  "tapToRate": "اضغط للتقييم",
+  "star": "{rating} نجمة",
+  "@star": {
+    "placeholders": {
+      "rating": {
+        "type": "int"
+      }
+    }
+  },
+  "stars": "{rating} نجوم",
+  "@stars": {
+    "placeholders": {
+      "rating": {
+        "type": "int"
+      }
+    }
+  },
+  "titleRequired": "العنوان *",
+  "egGreatService": "مثال: خدمة رائعة!",
+  "descriptionRequired": "الوصف *",
+  "shareMoreDetails": "شارك المزيد من التفاصيل...",
+  "submitFeedback": "إرسال الملاحظات",
+  "updateFeedback": "تحديث الملاحظات",
+  "updating": "جارٍ التحديث...",
+  "submitting": "جارٍ الإرسال...",
+  "deleteFeedback": "حذف الملاحظات",
+  "areYouSureYouWantToDeleteThisFeedback": "هل تريد حذف هذه الملاحظات؟",
+  "pleaseGiveARating": "يرجى إعطاء تقييم",
+  "pleaseEnterATitle": "يرجى إدخال عنوان",
+  "pleaseEnterADescription": "يرجى إدخال وصف",
+  "deliveryType": "نوع التوصيل",
+  "deliverySpeed": "سرعة التوصيل",
+  "pickupInstructions": "تعليمات الاستلام",
+  "warning": "تحذير",
+  "noItemsAvailableForPickup": "لا توجد عناصر في عربة التسوق الخاصة بك متاحة للاستلام.",
+  "rushDelivery": "توصيل سريع",
+  "prioritizedDeliveryForYourUrgentNeeds": "توصيل ذو أولوية لاحتياجاتك العاجلة.",
+  "regularDelivery": "توصيل عادي",
+  "standardDeliveryWithNoExtraCharges": "توصيل قياسي بدون رسوم إضافية.",
+  "deliverTo": "التوصيل إلى",
+  "change": "تغيير",
+  "noInternetConnection": "لا يوجد اتصال بالإنترنت",
+  "appUnderMaintenance": "التطبيق تحت الصيانة",
+  "noOrderFound": "لم يتم العثور على طلب",
+  "noSearchResults": "لا توجد نتائج بحث",
+  "microphoneUnavailable": "إذن الميكروفون أو خدمة الصوت غير متوفرة",
+  "speakNow": "تحدث الآن",
+  "listening": "جارٍ الاستماع...",
+  "noSpeechDetected": "لم يتم اكتشاف صوت",
+  "locationServices": "خدمات الموقع",
+  "appPermission": "إذن التطبيق",
+  "continueWithGoogle": "تابع باستخدام جوجل",
+  "continueWithApple": "تابع باستخدام آبل",
+  "continueWithMobile": "المتابعة باستخدام رقم الهاتف",
+  "continueWithEmail": "المتابعة باستخدام البريد الإلكتروني",
+  "reviewsRatings": "المراجعات والتقييمات",
+  "frequentlyAskedQuestions": "الأسئلة الشائعة",
+  "dialog": "مربع الحوار",
+  "looksLikeTheStoreCatchingSomeRest": "يبدو أن المتجر يأخذ قسطًا من الراحة. عد بعد قليل!",
+  "addressLine1": "سطر العنوان 1",
+  "addressLine2Optional": "سطر العنوان 2 (اختياري)",
+  "country": "البلد",
+  "state": "الولاية",
+  "city": "المدينة",
+  "zipcode": "الرمز البريدي",
+  "landmark": "معلم بارز",
+  "mobileNumber": "رقم الجوال",
+  "soldBy": "مباع من:",
+  "searchAnAreaOrAddress": "ابحث عن منطقة أو عنوان",
+  "describeTheIssue": "صف المشكلة",
+  "writeYourReviewHere": "اكتب تقييمك هنا...",
+  "typeYourQuestionHere": "اكتب سؤالك هنا...",
+  "enterReviewTitle": "أدخل عنوان التقييم",
+  "shareYourThoughts": "شارك أفكارك...",
+  "searchForAreaStreetName": "ابحث عن منطقة أو اسم شارع...",
+  "pleaseSelectADeliveryAddressFirst": "يرجى اختيار عنوان التوصيل أولاً",
+  "paymentMethodNotSelected": "لم يتم اختيار طريقة الدفع",
+  "inclusiveOfAllTax": "(شامل جميع الضرائب)",
+  "brand": "العلامة التجارية",
+  "packOf": "عبوة من",
+  "category": "الفئة",
+  "madeIn": "صنع في",
+  "indicator": "المؤشر",
+  "guaranteePeriod": "مدة الضمان",
+  "warrantyPeriod": "مدة الكفالة",
+  "returnable": "قابل للإرجاع",
+  "yes": "نعم",
+  "noDescriptionAvailable": "لا يوجد وصف متاح.",
+  "wallet": "المحفظة",
+  "wishlist": "قائمة الرغبات",
+  "stores": "المتاجر",
+  "account": "الحساب",
+  "paymentMethod": "طريقة الدفع",
+  "currentLanguage": "اللغة الحالية",
+  "promoApplied": "تم تطبيق العرض",
+  "on": "مفعل",
+  "rushDeliveryActive": "التوصيل السريع مفعل",
+  "cashbackApplied": "تم تطبيق الكاش باك",
+  "instantDiscountApplied": "تم تطبيق الخصم الفوري",
+  "willBeAdded": "سيتم الإضافة",
+  "areYouSure": "هل أنت متأكد؟",
+  "clearCartConfirm": "هل تريد فعلاً إفراغ العربة؟",
+  "no": "لا",
+  "yesClear": "نعم، امسح",
+  "logoutConfirmation": "هل أنت متأكد أنك تريد تسجيل الخروج؟",
+  "maxCartItemLimitReached": "لقد وصلت إلى الحد الأقصى لعدد العناصر",
+  "all": "الكل",
+  "shopByCategories": "تسوق حسب الفئات",
+  "topBrands": "أفضل العلامات التجارية",
+  "addItemsToGetStarted": "أضف عناصر للبدء",
+  "yourShoppingListIsEmpty": "قائمة التسوق الخاصة بك فارغة",
+  "listItem": "عنصر القائمة",
+  "itemsAdded": "تمت إضافة عناصر",
+  "startShopping": "ابدأ التسوق",
+  "typeItemName": "اكتب اسم العنصر...",
+  "pleaseAdd1ItemInShoppingList": "الرجاء إضافة عنصر واحد (1) على الأقل في قائمة التسوق الخاصة بك",
+  "selectDeliveryLocation": "حدد موقع التسليم",
+  "searchForAreaStreet": "ابحث عن منطقة، اسم شارع...",
+  "useCurrentLocation": "استخدام الموقع الحالي",
+  "addNewAddress": "إضافة عنوان جديد",
+  "savedAddresses": "العناوين المحفوظة",
+  "notLoggedIn": "غير مُسجل الدخول",
+  "pleaseLoginToViewYourProfile": "الرجاء تسجيل الدخول لعرض ملفك الشخصي",
+  "goToLogin": "اذهب إلى تسجيل الدخول",
+  "trackYourDelivery": "تتبع طلبك",
+  "returnItem": "إرجاع العنصر",
+  "failedToLoadTrackingData": "فشل في تحميل بيانات التتبع",
+  "delivered": "تم التوصيل",
+  "onTheWay": "في الطريق",
+  "trackingLiveLocation": "تتبع الموقع المباشر",
+  "arrivingIn": "سيصل في غضون",
+  "mins": "دقيقة",
+  "deliveryPartner": "شريك التوصيل",
+  "orderDetails": "تفاصيل الطلب",
+  "payment": "الدفع",
+  "orderPlaced": "تم وضع الطلب",
+  "deliveryDetails": "تفاصيل التوصيل",
+  "copiedToClipboard": "تم نسخ {label} إلى الحافظة",
+  "@copiedToClipboard": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "orderIdCopied": "تم نسخ رقم الطلب!",
+  "reasonForReturn": "سبب الإرجاع",
+  "submitReturn": "إرسال طلب الإرجاع",
+  "thisProductIsNotCancelable": "لا يمكن إلغاء هذا المنتج",
+  "productCanNoLongerBeCancelled": "لا يمكن إلغاء هذا المنتج بعد الآن",
+  "thisProductIsNotReturnable": "لا يمكن إرجاع هذا المنتج",
+  "returnButton": "إرجاع",
+  "qty": "الكمية",
+  "moveToEllipsis": "نقل إلى...",
+  "addToEllipsis": "إضافة إلى...",
+  "locationAccessNeeded": "مطلوب إذن الوصول إلى الموقع",
+  "later": "لاحقًا",
+  "openSettings": "فتح الإعدادات",
+  "appPermissions": "أذونات التطبيق",
+  "checkingEmail": "جارٍ التحقق من البريد الإلكتروني...",
+  "searchInStoreName": "البحث في {storeName}",
+  "@searchInStoreName": {
+    "placeholders": {
+      "storeName": {
+        "type": "String"
+      }
+    }
+  },
+  "descriptionOptional": "الوصف (اختياري)",
+  "greatService": "على سبيل المثال، خدمة رائعة!",
+  "fullName": "الاسم الكامل",
+  "enterYourFullName": "أدخل اسمك الكامل",
+  "enterYourEmail": "أدخل بريدك الإلكتروني",
+  "enterYourPhoneNumber": "أدخل رقم هاتفك",
+  "enterYourPassword": "أدخل كلمة المرور الخاصة بك",
+  "confirmYourPassword": "تأكيد كلمة المرور الخاصة بك",
+  "emailOrPhoneNumber": "البريد الإلكتروني أو رقم الهاتف",
+  "emailAddress": "عنوان البريد الإلكتروني",
+  "uploadImages": "تحميل الصور",
+  "tapToUploadPhotos": "اضغط لتحميل الصور",
+  "helpUsUnderstandYourExperience": "ساعدنا على فهم تجربتك",
+  "youCanUploadUpToMaxImages": "يمكنك تحميل ما يصل إلى {max} صور فقط.",
+  "@youCanUploadUpToMaxImages": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "onlyRemainingMoreImagesAdded": "تمت إضافة {remaining} صور أخرى فقط. الحد الأقصى: {max}.",
+  "@onlyRemainingMoreImagesAdded": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "maxImagesAllowedExtensions": "• الحد الأقصى {max} صورة • {extensions} • {size} لكل صورة",
+  "@maxImagesAllowedExtensions": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      },
+      "extensions": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "product": "المنتج",
+  "quantity": "الكمية",
+  "price": "السعر",
+  "clearCart": "مسح سلة التسوق",
+  "clearAllItems": "مسح جميع العناصر؟",
+  "allItemsWillBeRemovedCannotBeUndone": "ستتم إزالة جميع العناصر ولا يمكن التراجع عن هذا الإجراء",
+  "paymentSuccessful": "تم الدفع بنجاح!",
+  "paymentFailedOrCancelled": "فشل أو إلغاء الدفع",
+  "failedToDeleteAddress": "فشل في حذف العنوان",
+  "pressAgainToExitTheApp": "اضغط مرة أخرى للخروج من التطبيق",
+  "youHaveReachedMaximumLimitOfCart": "لقد وصلت إلى الحد الأقصى لسلة التسوق",
+  "sellerInformationNotAvailable": "معلومات البائع غير متوفرة",
+  "failedToRefreshOrderDetails": "فشل في تحديث تفاصيل الطلب",
+  "productSavedForLater": "تم حفظ {productName} لوقت لاحق",
+  "@productSavedForLater": {
+    "placeholders": {
+      "productName": {
+        "type": "String"
+      }
+    }
+  },
+  "promoCodeAppliedOnYourCart": "تم تطبيق الرمز الترويجي على سلة التسوق الخاصة بك",
+  "youHaveCrossedMaximumCartAmountLimit": "لقد تجاوزت الحد الأقصى لمبلغ سلة التسوق. الرجاء إزالة بعض المنتجات من السلة",
+  "feedbackSubmittedSuccessfully": "تم إرسال الملاحظات بنجاح!",
+  "feedbackUpdatedSuccessfully": "تم تحديث الملاحظات بنجاح!",
+  "copiedToClipboardWithLabel": "تم نسخ {label} إلى الحافظة!",
+  "@copiedToClipboardWithLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterCompleteOTP": "الرجاء إدخال رمز OTP كاملاً",
+  "verificationIdNotFound": "لم يتم العثور على معرّف التحقق. الرجاء المحاولة مرة أخرى.",
+  "otpSentTo": "تم إرسال رمز OTP إلى {phoneNumber}",
+  "@otpSentTo": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  "registrationDataNotFound": "لم يتم العثور على بيانات التسجيل. الرجاء المحاولة مرة أخرى.",
+  "noAccountFoundWithEmailOrPhone": "لم يتم العثور على حساب بهذا البريد الإلكتروني أو رقم الهاتف",
+  "pleaseEnterValidPhoneNumber": "الرجاء إدخال رقم هاتف صالح",
+  "emailAlreadyRegistered": "البريد الإلكتروني مسجل بالفعل. الرجاء استخدام بريد إلكتروني مختلف.",
+  "pleaseEnterYourFullName": "الرجاء إدخال اسمك الكامل",
+  "pleaseEnterYourEmail": "الرجاء إدخال بريدك الإلكتروني",
+  "pleaseEnterAValidEmail": "الرجاء إدخال بريد إلكتروني صالح",
+  "pleaseEnterYourPhoneNumber": "الرجاء إدخال رقم هاتفك",
+  "pleaseEnterYourPassword": "الرجاء إدخال كلمة المرور الخاصة بك",
+  "passwordMustBeAtLeast8Characters": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+  "pleaseConfirmYourPassword": "الرجاء تأكيد كلمة المرور الخاصة بك",
+  "passwordsDoNotMatch": "كلمتا المرور غير متطابقتين",
+  "otpVerified": "تم التحقق من رمز OTP",
+  "pleaseSelectAPaymentMethodFirst": "الرجاء تحديد طريقة دفع أولاً",
+  "fetchingAddress": "جاري جلب العنوان...",
+  "selectedLocation": "الموقع المحدد",
+  "gettingAddress": "جاري جلب العنوان...",
+  "unknownLocation": "موقع غير معروف",
+  "deliveryNotAvailableAtThisLocation": "التوصيل غير متاح في هذا الموقع",
+  "sorryWeDontDeliverHereYet": "عذراً! لا نقوم بالتوصيل هنا بعد",
+  "thisLocationIsOutsideOurDeliveryZone": "هذا الموقع خارج منطقة التوصيل حالياً. جرب البحث عن منطقة قريبة أو تحقق لاحقاً.",
+  "addressDetails": "تفاصيل العنوان",
+  "pleaseEnterAddressLine1": "الرجاء إدخال سطر العنوان 1",
+  "pleaseEnterCountry": "الرجاء إدخال الدولة",
+  "pleaseEnterState": "الرجاء إدخال الولاية",
+  "pleaseEnterCity": "الرجاء إدخال المدينة",
+  "pleaseEnterZipcode": "الرجاء إدخال الرمز البريدي",
+  "contactDetails": "تفاصيل الاتصال",
+  "pleaseEnterMobileNumber": "الرجاء إدخال رقم الجوال",
+  "saveAddressAs": "حفظ العنوان باسم",
+  "work": "العمل",
+  "other": "أخرى",
+  "enterCompleteAddress": "أدخل العنوان الكامل",
+  "confirm": "تأكيد",
+  "checkingDelivery": "جاري التحقق من التوصيل...",
+  "confirmLocation": "تأكيد الموقع",
+  "confirmAddressToProceed": "أكد العنوان للمتابعة",
+  "addAddressToProceed": "أضف عنواناً للمتابعة",
+  "deliveryNotAvailable": "التوصيل غير متاح",
+  "skip": "تخطي",
+  "welcomeBack": "مرحباً بعودتك",
+  "heyThere": "أهلاً بك!",
+  "signInToYourAccount": "سجل الدخول إلى حسابك للمتابعة",
+  "verifying": "جاري التحقق...",
+  "or": "أو",
+  "dontHaveAnAccount": "ليس لديك حساب؟ ",
+  "emailVerifiedSuccessfully": "تم التحقق من البريد الإلكتروني بنجاح",
+  "phoneNumberVerifiedSuccessfully": "تم التحقق من رقم الهاتف بنجاح",
+  "thisEmailIsNotRegistered": "هذا البريد الإلكتروني غير مسجل. يرجى التسجيل أولاً.",
+  "thisPhoneNumberIsNotRegistered": "هذا رقم الهاتف غير مسجل. يرجى التسجيل أولاً.",
+  "unableToVerifyUser": "تعذر التحقق من المستخدم. يرجى المحاولة مرة أخرى.",
+  "emailOrPhoneNumberIsRequired": "البريد الإلكتروني أو رقم الهاتف مطلوب",
+  "enterValidEmailOrPhone": "أدخل بريداً إلكترونياً أو هاتفاً صالحاً",
+  "passwordIsRequired": "كلمة المرور مطلوبة",
+  "passwordMustBeAtLeast6Characters": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+  "alreadyHaveAnAccount": "لديك حساب بالفعل؟ ",
+  "createAccount": "إنشاء حساب",
+  "emailAlreadyRegisteredUseDifferent": "البريد الإلكتروني مسجل بالفعل. يرجى استخدام بريد آخر.",
+  "changeLocation": "تغيير الموقع",
+  "chooseAddressForDelivery": "اختر عنواناً للتوصيل",
+  "balance": "الرصيد",
+  "tapCoinToRefresh": "اضغط على العملة للتحديث",
+  "viewTransactions": "عرض المعاملات",
+  "verifyOtp": "التحقق من رمز OTP",
+  "pleaseFillDetailsCreateYourAccount": "يرجى ملء التفاصيل لإنشاء حسابك",
+  "emailAvailable": "البريد الإلكتروني متاح",
+  "errorVerifyingEmail": "خطأ في التحقق من البريد الإلكتروني",
+  "pleaseAddYourDeliveryAddress": "يرجى إضافة عنوان التوصيل الخاص بك",
+  "areYouSureDeleteFeedback": "هل أنت متأكد من حذف التقييم",
+  "addTo": "إضافة إلى…",
+  "moveTo": "نقل إلى…",
+  "accountInformation": "معلومات الحساب",
+  "mobile": "الجوال",
+  "rewardPoints": "نقاط المكافآت",
+  "referralCode": "كود الإحالة",
+  "notProvided": "غير مقدم",
+  "notAvailable": "غير متاح",
+  "failedToLoadProfile": "فشل تحميل الملف الشخصي",
+  "pleaseCheckConnection": "يرجى التحقق من الاتصال وإعادة المحاولة",
+  "noProfileDataAvailable": "لا توجد بيانات ملف شخصي متاحة",
+  "giveYourDeliveryHeroFeedback": "أعطِ تقييماً لسائق التوصيل الخاص بك!",
+  "editYourFeedbackFor": "عدل تقييمك لـ {name}",
+  "@editYourFeedbackFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "leaveFeedback": "ترك تقييم",
+  "editFeedback": "تعديل التقييم",
+  "editSellerFeedback": "تعديل تقييم البائع",
+  "leaveSellerFeedback": "ترك تقييم للبائع",
+  "productNotApprovedBySeller": "هذا المنتج غير معتمد من البائع",
+  "leaveItemFeedback": "ترك تقييم للعنصر",
+  "cashOnDelivery": "الدفع عند الاستلام",
+  "codSubtitle": "الدفع نقداً أو اطلب رمز QR",
+  "paidOnline": "مدفوع عبر الإنترنت",
+  "orderPlacedOn": "تم تقديم الطلب في {date}",
+  "@orderPlacedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "locationAccessDescription": "تطبيق هذا يقدم خدمات محلية فائقة. يرجى تفعيل الموقع للحصول على توصيات شخصية ونتائج دقيقة.",
+  "turnOnLocationServicesDescription": "فعّل خدمات الموقع وامنح التطبيق إذن الموقع للمتابعة.",
+  "loadingPaymentPage": "جاري تحميل صفحة الدفع...",
+  "youCanUploadUpToImagesOnly": "يمكنك رفع حتى {count} صور فقط.",
+  "@youCanUploadUpToImagesOnly": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "onlyMoreImagesAddedMaxLimit": "تم إضافة {remaining} صورة(صور) إضافية فقط. الحد الأقصى: {max}.",
+  "@onlyMoreImagesAddedMaxLimit": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "onlinePaymentMethods": "طرق الدفع عبر الإنترنت",
+  "noCategoryFound": "لم يتم العثور على فئة",
+  "noStoreFound": "لم يتم العثور على متجر",
+  "wereNotHereYet": "لم نصل هنا بعد",
+  "weCouldntFindAnyCategories": "لم نتمكن من العثور على أي فئات.",
+  "weCouldntFindAnyStoreInYourSelectLocation": "لم نتمكن من العثور على أي متجر في الموقع المحدد.",
+  "phoneNumberCopied": "تم نسخ رقم الهاتف إلى الحافظة!",
+  "emailCopied": "تم نسخ البريد الإلكتروني إلى الحافظة!",
+  "pleaseWaitBeforeResending": "يرجى الانتظار قبل إعادة الإرسال.",
+  "toPay": "المبلغ المستحق:",
+  "currentlyUnavailable": "غير متاح حالياً",
+  "noStoresOrProductsAreAvailableInThisAreaRightNow": "لا توجد متاجر أو منتجات متاحة في هذه المنطقة الآن.",
+  "checkConnectionAndTryAgain": "يرجى التحقق من الاتصال وإعادة المحاولة.",
+  "weWillBeBackSoon": "سنعود قريباً. انتظر قليلاً!",
+  "noOrdersYetDescription": "يبدو أنه ليس لديك أي طلبات بعد.",
+  "tryAdjustingSearchTerms": "جرب تعديل مصطلحات البحث.",
+  "noProductMatchingSearch": "لم نتمكن من العثور على أي منتجات تطابق بحثك.",
+  "feedbackDeletedSuccessfully": "تم حذف التقييم بنجاح!",
+  "rateDeliveryHero": "قيّم سائق التوصيل",
+  "howWasTheDelivery": "كيف كان التوصيل؟",
+  "egSuperFastDelivery": "مثال: توصيل فائق السرعة!",
+  "youMightAlsoLike": "قد يعجبك أيضاً",
+  "storeCurrentlyClosed": "المتجر مغلق حالياً",
+  "minimumQuantityRequired": "الحد الأدنى للكمية المطلوبة هو {minQty}",
+  "@minimumQuantityRequired": {
+    "placeholders": {
+      "minQty": {}
+    }
+  },
+  "maximumQuantityAllowed": "الحد الأقصى المسموح به هو {maxQty} قطع",
+  "@maximumQuantityAllowed": {
+    "placeholders": {
+      "maxQty": {}
+    }
+  },
+  "onlyXItemsInStock": "يوجد {stock} قطع فقط متوفرة في المخزون",
+  "@onlyXItemsInStock": {
+    "placeholders": {
+      "stock": {}
+    }
+  },
+  "minimumCartAmountRequired": "أضف {minAmount} إضافية لتصل إلى الحد الأدنى للدفع {miniCheckoutAmount}.",
+  "@minimumCartAmountRequired": {
+    "placeholders": {
+      "minAmount": {},
+      "miniCheckoutAmount": {}
+    }
+  },
+  "youHaveReachedMaximumLimitOfTheCart": "لقد وصلت إلى الحد الأقصى للسلة",
+  "onlyOneStoreAtATime": "يمكنك الطلب من متجر واحد فقط في كل مرة",
+  "onlyFewLeft": "تبقت {stock} قطع فقط!",
+  "@onlyFewLeft": {
+    "placeholders": {
+      "stock": {}
+    }
+  },
+  "inStock": "متوفر",
+  "noTransactionYet": "لا توجد معاملات بعد",
+  "noTransactionDescriptionMsg": "ستظهر أنشطة محفظتك هنا بمجرد",
+  "noTransactionDescriptionSecondaryMsg": "إجراء معاملتك الأولى.",
+  "cannotAddMoreThanXItems": "يمكنك إضافة {remaining} قطعة إضافية فقط إلى سلتك.",
+  "@cannotAddMoreThanXItems": {
+    "description": "Shown when user tries to add items beyond cart limit",
+    "placeholders": {
+      "remaining": {}
+    }
+  },
+  "youCanAddOnlyXMoreItems": "يمكنك إضافة {count} قطعة إضافية فقط.",
+  "@youCanAddOnlyXMoreItems": {
+    "description": "Simpler version of max items warning",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "cartIsAlreadyAtMaximumLimit": "وصلت سلتك إلى الحد الأقصى للأصناف ({maxAllowed}).",
+  "@cartIsAlreadyAtMaximumLimit": {
+    "placeholders": {
+      "maxAllowed": {}
+    }
+  },
+  "cannotAddFromDifferentStore": "يمكنك إضافة أصناف من نفس المتجر فقط. يرجى إفراغ سلتك أو اختيار أصناف من هذا المتجر.",
+  "cartAlreadyContainsMultipleStores": "تحتوي سلتك بالفعل على أصناف من متاجر متعددة. يرجى إكمال الطلب الحالي أو إفراغ السلة أولاً.",
+  "inCart": "في السلة",
+  "thisActionIsPermanent": "هذا الإجراء دائم.",
+  "allYourDataWillBeLostForever": "ستفقد جميع بياناتك للأبد.",
+  "addYourFirstAddressToStart": "أضف عنوانك الأول للبدء",
+  "noAddressFound": "لم يتم العثور على عنوان",
+  "includingAllTax": "(شامل الضريبة)",
+  "dataPlaceholder": "بيانات",
+  "writeYourNoteHere": "اكتب ملاحظتك هنا...",
+  "clearingYourCart": "جاري إفراغ السلة...",
+  "imagesLabel": "الصور",
+  "imagesSubtitle": "JPG, PNG (بحد أقصى 5 ميجابايت)",
+  "pdfDocumentLabel": "ملف PDF",
+  "pdfDocumentSubtitle": "ملفات PDF (بحد أقصى 10 ميجابايت)",
+  "wordDocumentLabel": "ملف Word",
+  "wordDocumentSubtitle": "ملفات DOCX (بحد أقصى 10 ميجابايت)",
+  "cannotOpenFile": "لا يمكن فتح الملف: {url}",
+  "@cannotOpenFile": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOpeningAttachment": "خطأ في فتح المرفق: {error}",
+  "@errorOpeningAttachment": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paystackPaymentTitle": "الدفع عبر Paystack",
+  "enableLocationTitle": "تفعيل الموقع",
+  "failed": "فشل",
+  "youWillBeResponsible": "ستكون مسؤولاً",
+  "deleteWishlistConfirmation": "هل أنت متأكد أنك تريد حذف قائمة الرغبات هذه؟",
+  "noReviewsAvailable": "لا توجد تقييمات متاحة",
+  "searchForStore": "البحث عن متجر",
+  "getStarted": "ابدأ الآن",
+  "next": "التالي",
+  "introPage1Title": "تسوق بثقة",
+  "introPage1Description": "اكتشف آلاف المنتجات من بائعين موثوقين مع دفع آمن وتوصيل سريع.",
+  "introPage2Title": "تتبع طلباتك",
+  "introPage2Description": "ابقَ على اطلاع من خلال التتبع المباشر واحصل على تنبيهات حول حالة طلبك.",
+  "introPage3Title": "إرجاع سهل",
+  "introPage3Description": "غير راضٍ؟ قم بإرجاع مشترياتك بكل سهولة مع سياسة الإرجاع لمدة 30 يوماً.",
+  "pleaseEnterAtleast2Letters": "يرجى إدخال حرفين على الأقل",
+  "atleast1ItemIsRequired": "مطلوب صنف واحد على الأقل",
+  "enterYourPhoneNumberToReceiveOtp": "أدخل رقم هاتفك وسنرسل لك رمز التحقق (OTP).",
+  "sendOtp": "إرسال رمز التحقق",
+  "phoneNumberTooShort": "يرجى إدخال رقم هاتف صحيح",
+  "deliveryZones": "مناطق التوصيل",
+  "searchDeliveryZone": "البحث عن منطقة التوصيل",
+  "zoneDetails": "تفاصيل المنطقة",
+  "viewDetailsAboutDeliveryZone": "عرض تفاصيل منطقة التوصيل",
+  "zoneInformation": "معلومات المنطقة",
+  "zoneId": "معرف المنطقة",
+  "zoneName": "اسم المنطقة",
+  "status": "الحالة",
+  "deliveryFees": "رسوم التوصيل",
+  "deliveryFee": "رسوم التوصيل",
+  "freeDeliveryAbove": "توصيل مجاني فوق",
+  "perKMCharge": "رسوم لكل كم",
+  "perStoreFee": "رسوم لكل متجر",
+  "deliveryTimes": "أوقات التوصيل",
+  "regularTimePerKM": "الوقت العادي لكل كم",
+  "bufferTime": "وقت الاحتياطي",
+  "coverageDetails": "تفاصيل التغطية",
+  "radius": "نصف القطر",
+  "centerCoordinates": "إحداثيات المركز",
+  "boundaryPoints": "نقاط الحدود",
+  "handlingFee": "رسوم المعالجة",
+  "coverageRadius": "نصف قطر التغطية",
+  "noteThisStoreIsNOtAvailableInYourLocation": "ملاحظة: هذا المتجر غير متوفر في موقعك.",
+  "rush": "عاجل",
+  "clearFilters": "مسح الفلاتر",
+  "applyFilters": "تطبيق الفلاتر",
+  "notifications": "الإشعارات",
+  "markAllAsRead": "تحديد الكل كمقروء",
+  "yourWishlistIsEmpty": "قائمة الرغبات فارغة",
+  "createYourFirstWishlistToOrganizeAndSaveItemsYouHave": "أنشئ قائمة رغباتك الأولى لتنظيم وحفظ العناصر التي تحبها",
+  "viewOrderDetails": "عرض تفاصيل الطلب",
+  "phoneNumberAlreadyRegistered": "رقم الهاتف مسجل بالفعل",
+  "pleaseSelectAValidCountryCode": "يرجى اختيار رمز دولة صالح",
+  "phoneNumberAvailable": "رقم الهاتف متاح",
+  "totalItems": "إجمالي العناصر",
+  "noPromoCodesAvailable": "لا توجد رموز ترويجية متاحة",
+  "thereAreNoActivePromoCodeOrCouponsAvailableRightNow": "لا توجد رموز ترويجية أو قسائم نشطة متاحة حاليًا",
+  "phoneNumberTooLong": "رقم الهاتف طويل جدًا",
+  "updateAvailable": "تحديث متوفر",
+  "forceUpdateDialogMessage": "يتوفر إصدار جديد. يرجى التحديث لمتابعة استخدام التطبيق.",
+  "doItLater": "لاحقاً",
+  "updateNow": "التحديث الآن",
+  "comingSoonTitle": "قريباً",
+  "comingSoonMessage": "يتم إعداد إصدار أحدث من التطبيق. سيكون متاحاً في المتجر قريباً.\n\nشكراً لترقبكم!",
+  "referralCodeHintText": "رمز الإحالة (اختياري)",
+  "referAndEarn": "إحالة وكسب",
+  "failedToLoadReferralData": "فشل تحميل بيانات الإحالة",
+  "yourReferralCode": "رمز الإحالة الخاص بك",
+  "codeCopied": "تم نسخ الرمز!",
+  "appLink": "رابط التطبيق",
+  "linkCopied": "تم نسخ الرابط!",
+  "howItWorks": "كيف يعمل",
+  "shareYourCode": "شارك رمزك",
+  "sendYourReferralCodeOrAppLinkToFriends": "أرسل رمز الإحالة أو رابط التطبيق لأصدقائك.",
+  "friendSignsUp": "تسجيل الصديق",
+  "theyRegisterUsingYourReferralCode": "يقومون بالتسجيل باستخدام رمز الإحالة الخاص بك.",
+  "youEarn": "أنت تكسب",
+  "whenTheyCompleteTheirFirstOrderYouEarn": "عندما يكملون طلبهم الأول، تكسب أنت المكافأة",
+  "upTo": "حتى",
+  "shareNow": "شارك الآن",
+  "referAndEarnTitle": "أحل أصدقائك واكسب المكافآت",
+  "referAndEarnDescription": "أدعُ أصدقائك باستخدام رمز الإحالة واكسب المكافآت عند تسجيلهم وإتمام طلبهم الأول",
+  "share": "مشاركة",
+  "subCategories": "الفئات الفرعية",
+  "addonGroupRequiredError": "يرجى اختيار خيار واحد على الأقل",
+  "editAddOnsTitle": "تعديل الإضافات",
+  "noAddOnsAvailable": "لا توجد إضافات متاحة لهذا العنصر",
+  "addOnsLoadError": "تعذّر تحميل الإضافات",
+  "addonsTitle": "الإضافات",
+  "addonHintSelectOneRequired": "اختر 1 (مطلوب)",
+  "addonHintSelectOne": "اختر أي واحد",
+  "addonHintSelectAtLeastOneRequired": "اختر 1 على الأقل (مطلوب)",
+  "addonHintSelectAny": "اختر أي منها",
+  "addonRequiredBadge": "مطلوب",
+  "addonUnavailable": "غير متاح",
+  "yourCustomisations": "تخصيصاتك",
+  "addNewCustomisation": "إضافة تخصيص جديد",
+  "verify": "تأكيد",
+  "verified": "تم التأكيد",
+  "pleaseVerifyEmailAndMobileBeforePlacingOrder": "يرجى تأكيد البريد الإلكتروني ورقم الجوال قبل تقديم الطلب.",
+  "emailVerification": "تأكيد البريد الإلكتروني",
+  "mobileVerification": "تأكيد رقم الجوال",
+  "sendVerificationEmail": "إرسال بريد التأكيد",
+  "resendEmail": "إعادة إرسال البريد الإلكتروني",
+  "checkVerificationStatus": "التحقق من حالة التأكيد",
+  "verificationLinkSentMessage": "لقد أرسلنا رابط التأكيد إلى عنوان بريدك الإلكتروني. افتحه في متصفحك لإكمال التأكيد.",
+  "verificationEmailSentSuccessfully": "تم إرسال بريد التأكيد",
+  "emailIsNowVerified": "تم تأكيد بريدك الإلكتروني الآن",
+  "emailStillNotVerified": "لم يتم تأكيد البريد الإلكتروني بعد. يرجى التحقق من صندوق الوارد وفتح الرابط.",
+  "addEmail": "إضافة بريد إلكتروني",
+  "addMobile": "إضافة رقم جوال",
+  "customisable": "قابل للتخصيص",
+  "onlyNumbersAllowed": "الأرقام فقط مسموح بها",
+  "verifyYourPhone": "تأكيد رقم هاتفك",
+  "weSentVerificationCodeTo": "أرسلنا رمز التأكيد إلى",
+  "didntReceiveCode": "لم تتلقَّ الرمز؟",
+  "resendOtp": "إعادة إرسال الرمز",
+  "resendInSeconds": "إعادة الإرسال خلال {seconds} ثانية",
+  "@resendInSeconds": {
+    "description": "Countdown shown on the OTP screen until the user can request a new code.",
+    "placeholders": {
+      "seconds": {
+        "type": "int",
+        "example": "45"
+      }
+    }
+  },
+  "recommended": "موصى به",
+  "sponsored": "مُموَّل",
+  "trackingOrder": "تتبع الطلب",
+  "orderDelivered": "تم توصيل الطلب",
+  "successfullyDelivered": "تم التوصيل بنجاح",
+  "orderDeliveredSuccessfully": "تم توصيل طلبك بنجاح",
+  "shortly": "قريبًا",
+  "minutesLabel": "دقائق",
+  "destinationLabel": "الوجهة",
+  "paidLabel": "مدفوع",
+  "hurryOnlyLeft": "أسرع! بقي {count} فقط",
+  "nReviews": "{count, plural, =1{تقييم واحد} other{{count} تقييمات}}",
+  "checkOutThisProduct": "ألقِ نظرة على هذا المنتج!",
+  "authMessage": "يرجى تسجيل الدخول للمتابعة. يساعدنا ذلك في حفظ تفضيلاتك والحفاظ على تجربة تسوق سلسة.",
+  "pickup": "الاستلام",
+  "delivery": "التوصيل",
+  "office": "المكتب",
+  "deliveryAddress": "عنوان التسليم",
+  "heroStorePreparing": "المتجر يقوم بتحضير طلبك",
+  "addressTypeWork": "العمل",
+  "secondaryItemsReturned": "تم إرجاع {count} من العناصر · {date}",
+  "secondaryDeliveredOn": "{date} · {time}",
+  "itemCountPending": "{count} قيد الانتظار",
+  "actionTrackOrder": "تتبع الطلب",
+  "itemCountAccepted": "تم قبول {count}",
+  "orderTransaction": "معاملات الطلبات",
+  "secondaryCancelledByYou": "تم إلغاؤه من قبلك · {date}",
+  "heroAssigned": "تم تعيين شريك التوصيل",
+  "noteForDeliveryPartner": "ملاحظة لشريك التوصيل",
+  "ratingExperience": "قيم تجربتك",
+  "heroPartiallyRejected": "تم رفض الطلب جزئيًا",
+  "referralFailedRetry": "تعذر تحديث الإحالة. يرجى المحاولة مرة أخرى.",
+  "partialOrderAccepted": "بعض العناصر غير متوفرة. يرجى مراجعة طلبك",
+  "retryLabel": "إعادة المحاولة",
+  "repeatOrder": "تكرار الطلب",
+  "itemCountPreparing": "جاري تحضير {count}",
+  "invoiceLabel": "الفاتورة",
+  "statusPartiallyAccepted": "مقبول جزئيًا",
+  "actionReorder": "إعادة الطلب",
+  "actionReschedule": "إعادة جدولة",
+  "rescheduleDeadlineWarning": "يرجى إعادة جدولة موعد التوصيل بحلول {deadline} لمنع الإلغاء التلقائي.",
+  "@rescheduleDeadlineWarning": {
+    "placeholders": {
+      "deadline": {
+        "type": "String"
+      }
+    }
+  },
+  "applyReferralCode": "تطبيق",
+  "placedOn": "تم تقديم الطلب في",
+  "referralCodePrefilledHint": "تم إضافة الرمز من رابط الدعوة الخاص بك",
+  "otpChip": "رمز التحقق",
+  "heroPaymentFailed": "فشل عملية الدفع",
+  "statusCancelled": "ملغي",
+  "heroOnTheWay": "في الطريق",
+  "statusDelivered": "تم التوصيل",
+  "refundCreditedNote": "تم إضافة {amount} إلى محفظتك في {date}",
+  "statusPlaced": "تم تقديم الطلب",
+  "actionReturn": "إرجاع",
+  "referralCodeTitle": "هل لديك رمز دعوة؟",
+  "heroReturnedAndRefunded": "تم الإرجاع واسترداد الأموال",
+  "rewards": "المكافآت",
+  "errorLoadingOrder": "تعذر تحميل تفاصيل الطلب",
+  "statusReadyForPickup": "جاهز للاستلام",
+  "subtotalLabel": "المجموع الفرعي",
+  "itemsCount": "{count} من العناصر",
+  "statusReturned": "مرجع",
+  "refundCredited": "تم إيداعه",
+  "refundLabel": "استرداد الأموال",
+  "deliveredTo": "تم التوصيل إلى",
+  "secondaryReadyForPickup": "توجه إلى المتجر لاستلام طلبك",
+  "skipReferral": "تخطي",
+  "qtyShort": "الكمية {count}",
+  "referralCodeSubtitle": "تطبيق رمز دعوة صديق لفتح المكافآت. يمكنك أيضًا تخطي هذه الخطوة.",
+  "needHelpWithOrder": "هل تحتاج إلى مساعدة في هذا الطلب؟",
+  "heroDelivered": "تم التوصيل",
+  "secondaryExpectedBy": "متوقع بحلول {time}",
+  "actionCancelOrder": "إلغاء الطلب",
+  "information": "معلومات",
+  "actionRetryPayment": "إعادة محاولة الدفع",
+  "referralCodeHint": "أدخل رمز الإحالة",
+  "statusPartiallyRejected": "مرفوض جزئيًا",
+  "statusAssigned": "تم التعيين",
+  "heroAwaitingConfirmation": "في انتظار التأكيد",
+  "totalLabel": "الإجمالي",
+  "refundProcessing": "جاري المعالجة",
+  "itemCountRejected": "تم رفض {count}",
+  "refundStatusLabel": "حالة استرداد الأموال",
+  "statusOutForDelivery": "خارج للتوصيل",
+  "refundProcessingNote": "سيتم إضافة {amount} إلى محفظتك خلال 1-3 أيام",
+  "totalPaid": "إجمالي المدفوع",
+  "heroPartiallyAccepted": "تم قبول الطلب جزئيًا",
+  "statusShipped": "تم الشحن",
+  "statusConfirmed": "تم التأكيد",
+  "heroRunningLate": "متأخر قليلاً",
+  "secondaryDistanceAway": "{name} على بعد {distance} · ~{minutes} دقيقة",
+  "referralAppliedSuccess": "تم تطبيق رمز الإحالة",
+  "heroReadyForPickup": "طلبك جاهز للاستلام",
+  "secondaryPartialItems": "{count} من العناصر غير متوفرة",
+  "addressTypeHome": "المنزل",
+  "downloadLabel": "تنزيل",
+  "secondaryCancelledByStore": "تم إلغاؤه من قبل المتجر · {date}",
+  "viewMoreItems": "عرض {count} من العناصر الإضافية",
+  "waitingForStoreToAccept": "في انتظار قبول المتجر لطلبك",
+  "statusFailed": "فاشل",
+  "secondaryUsuallyAccepted": "عادة ما يتم قبوله في غضون دقيقتين",
+  "heroDeliveredOnTime": "تم التوصيل في الوقت المحدد",
+  "orderNote": "ملاحظة الطلب",
+  "secondaryPlacedAndEta": "تم الطلب في {placed} · الوقت المتوقع للتوصيل {eta}",
+  "statusPreparing": "جاري التحضير",
+  "secondaryAssigned": "شريك التوصيل يتجه لاستلام طلبك",
+  "addressTypeOther": "آخر",
+  "actionTrackDelivery": "تتبع التوصيل",
+  "heroArrivingBy": "يصل بحلول {time}",
+  "heroOrderCancelled": "تم إلغاء الطلب",
+  "@heroArrivingBy": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryPlacedAndEta": {
+    "placeholders": {
+      "placed": {
+        "type": "String"
+      },
+      "eta": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryPartialItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountAccepted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountPreparing": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountRejected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@itemCountPending": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@secondaryDistanceAway": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "distance": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@secondaryDeliveredOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryCancelledByYou": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryCancelledByStore": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryItemsReturned": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@secondaryExpectedBy": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@refundProcessingNote": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "@refundCreditedNote": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@viewMoreItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@qtyShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@recommended": {
+    "description": "Badge shown on product cards highlighted by the seller / system as recommended for the user."
+  },
+  "@sponsored": {
+    "description": "Badge shown on product cards that are part of an advertisement campaign."
+  },
+  "@hurryOnlyLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@nReviews": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scheduledDeliveryLabel": "التوصيل المجدول: {date}",
+  "@scheduledDeliveryLabel": {
+    "description": "Label showing the scheduled delivery date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "arrivingOn": "يصل في {date}",
+  "@arrivingOn": {
+    "description": "Text indicating the scheduled date when order is arriving",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "pickupScheduleWarning": "الاستلام لا يدعم تواريخ التسليم المجدولة.",
+  "singleStoreScheduleWarning": "لتقديم طلب مجدول، يرجى الدفع من متجر واحد.",
+  "storeScheduleUnavailable": "التوصيل المجدول غير متوفر لهذا المتجر",
+  "pickupOrder": "طلب استلام",
+  "deliverySchedule": "جدول التوصيل",
+  "scheduledOrders": "الطلبات المجدولة",
+  "nProducts": "{count, plural, =1{منتج واحد} other{{count} منتجات}}",
+  "@nProducts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attachments": "المرفقات",
+  "addMoreAttachments": "إضافة المزيد من المرفقات",
+  "viewAttachment": "عرض المرفق",
+  "addAttachment": "إضافة مرفق",
+  "chooseFileTypeToUpload": "اختر نوع الملف للتحميل",
+  "couldNotGetFilePath": "تعذر الحصول على مسار الملف",
+  "unknownStore": "متجر غير معروف",
+  "unknownProduct": "منتج غير معروف",
+  "scheduleDelivery": "جدولة الديلفري",
+  "pickDateAndTime": "اختر التاريخ والوقت المناسب لك",
+  "selectDeliveryDate": "اختر تاريخ التوصيل",
+  "selectTimeSlot": "اختر الفترة الزمنية",
+  "selectDateAndTimeProceed": "اختر التاريخ والوقت للمتابعة",
+  "confirmSlot": "تأكيد الموعد",
+  "noSlotsAvailable": "لا تتوفر مواعيد لهذا التاريخ",
+  "pleaseProvideAReason": "يرجى تقديم سبب",
+  "pleaseUploadProofImage": "صورة المنتج إزامية",
+  "returnDeadlinePassed": "انتهت مهلة الإرجاع لهذا العنصر.",
+  "returnDeadlineCrossed": "انتهت مهلة الإرجاع بتاريخ {date}.",
+  "haveReferralCodeTitle": "هل لديك كود إحالة؟",
+  "haveReferralCodeSubtitle": "قم بتطبيقه للحصول على مكافآت على طلبك الأول.",
+  "noCode": "لا يوجد رمز",
+  "ourApp": "تطبيقنا",
+  "referralShareMessage": "مرحباً! استخدم كود الإحالة الخاص بي *{referralCode}* للانضمام إلى {appName}.\n\nحمل الآن: {appLink}",
+  "shareProduct": "مشاركة المنتج",
+  "shareApp": "مشاركة التطبيق",
+  "clearAll": "مسح الكل",
+  "dateRange": "نطاق التاريخ",
+  "sortBy": "ترتيب حسب",
+  "deleteWishlistWithName": "حذف {name}",
+  "deleteWishlistResponsibility": "ستكون مسؤولاً عن الوفاء بها.",
+  "caughtUpMessage": "أنت على اطلاع بكل شيء! تحقق لاحقًا للحصول على التحديثات.",
+  "homeLayoutApi": "مخطط الصفحة الرئيسية (واجهة برمجة التطبيقات)",
+  "noSectionsToShow": "لا توجد أقسام لعرضها",
+  "noNotifications": "لا توجد إشعارات",
+  "heroOrderConfirmed": "تم تأكيد الطلب",
+  "secondaryOrderConfirmed": "تم قبول طلبك من قبل المتجر",
+  "scheduledDeliveryDoesNotSupportRush": "التوصيل المجدول لا يدعم التوصيل السريع",
+  "thankYourDeliveryPartner": "اشكر شريك التوصيل الخاص بك",
+  "tipGoesToDeliveryPartner": "100٪ من إكراميتك تذهب مباشرة لدعم شركاء التوصيل لدينا.",
+  "customPreset": "👏مخصص",
+  "minTipAmountError": "الحد الأدنى لمبلغ الإكرامية هو {amount}.",
+  "@minTipAmountError": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "maxTipAmountError": "الحد الأقصى لمبلغ الإكرامية هو {amount}.",
+  "@maxTipAmountError": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "tipOnlineOnlyWarning": "إكرامية السائق مدعومة فقط مع طرق الدفع عبر الإنترنت.",
+  "tipCodDisabledSubtitle": "إكرامية السائق مدعومة فقط مع الدفع عبر الإنترنت. قم بإزالة الإكرامية لاختيار الدفع عند الاستلام.",
+  "tipCodDisabledToast": "إكرامية السائق مدعومة فقط مع الدفع عبر الإنترنت. يرجى إزالة الإكرامية لاختيار الدفع عند الاستلام.",
+  "riderTip": "إكرامية السائق",
+  "tipRider": "إكرامية السائق",
+  "codTipPostOrderWarning": "الإكرامية غير مشمولة في إجمالي الدفع عند الاستلام (تمت إضافة الإكرامية بعد الطلب).",
+  "useCoinsForDiscount": "استخدام العملات للحصول على خصم",
+  "discountApplied": "تم تطبيق الخصم",
+  "tapToRemoveDiscount": "اضغط لإزالة الخصم",
+  "tapToApplyDiscount": "اضغط لتطبيق الخصم",
+  "addProductsMoreToRedeem": "أضف منتجات بقيمة {currency}{amount} إضافية ›",
+  "coinsDiscount": "خصم العملات",
+  "applied": "مطبق",
+  "getCoinsOnOrder": "احصل على {coins} عملات في هذا الطلب",
+  "cashOnDeliveryFee": "رسوم الدفع عند الاستلام",
+  "codHandlingFeeSubtitle": "تنطبق رسوم معالجة نقدية بقيمة {fee} على الدفع عند الاستلام.",
+  "onYourNextOrder": "في طلبك القادم",
+  "howCanWeHelpYou": "كيف يمكننا مساعدتك؟",
+  "supportPageSubtitle": "نحن هنا لمساعدتك في أي أسئلة أو مشكلات قد تكون لديك. لا تتردد في الاتصال بنا!",
+  "twoXSpeed": "سرعة 2x",
+  "customerSupportChat": "دعم العملاء",
+  "selectAnOrder": "اختر طلباً:",
+  "viewOlderOrders": "عرض الطلبات الأقدم",
+  "generalHelpNoOrder": "مساعدة عامة (بدون طلب)",
+  "selectATopic": "اختر موضوعاً:",
+  "typeYourMessage": "اكتب رسالتك...",
+  "startChat": "بدء المحادثة",
+  "markAsResolvedQuestion": "تحديد كمحلول؟",
+  "areYouSureResolveConversation": "هل أنت تأكد من أنك تريد إنهاء هذه المحادثة؟",
+  "resolutionNotesOptional": "ملاحظات الحل (اختياري)",
+  "keepChatting": "متابعة المحادثة",
+  "resolve": "حل المشكلة",
+  "ticketResolved": "تم حل التذكرة",
+  "requestCallback": "طلب إعادة اتصال",
+  "callbackRequested": "تم طلب الاتصال",
+  "phoneForCallback": "رقم الهاتف للاتصال",
+  "rateYourSupportExperience": "قيّم تجربة الدعم",
+  "feedbackOptional": "اكتب ملاحظاتك (اختياري)",
+  "submitRating": "إرسال التقييم",
+  "thankYouForFeedback": "شكراً لملاحظاتك!",
+  "attachFile": "إرفاق ملف",
+  "supportSessionClosed": "تم إغلاق تذكرة الدعم هذه.",
+  "reopenTicket": "إعادة فتح التذكرة",
+  "chatConnected": "تم الاتصال بالدعم المباشر",
+  "chatConnecting": "جاري الاتصال بالدعم...",
+  "selectOrderOrTopicSubtitle": "اختر طلباً أو موضوعاً أدناه لبدء المحادثة مع دعم العملاء.",
+  "supportCallbackSubtitle": "سيتصل بك ممثل الدعم على رقم هاتفك المسجل.",
+  "agentIsTyping": "ممثل الدعم يكتب الآن...",
+  "dropFilesHereToUpload": "أسقط الملفات هنا للرفع",
+  "loadOlderMessages": "تحميل الرسائل الأقدم",
+  "markResolved": "تحديد كمحلول",
+  "newChat": "محادثة جديدة",
+  "noMessagesYet": "لا توجد رسائل بعد",
+  "preview": "معاينة",
+  "startNewChatSubtitle": "ابدأ جلسة محادثة جديدة للتحدث مع الدعم.",
+  "stillNeedHelp": "هل لا تزال بحاجة إلى مساعدة؟",
+  "unableToLoadImage": "تعذر تحميل الصورة",
+  "zoomIn": "تكبير",
+  "zoomOut": "تصغير",
+  "resetZoom": "إعادة ضبط التكبير",
+  "contactSupport": "الاتصال بالدعم",
+  "noContactInformationAvailable": "لا تتوفر معلومات اتصال.",
+  "actionFailed": "فشلت العملية",
+  "remove": "إزالة",
+  "download": "تنزيل",
+  "fileDownloadedSuccessfully": "تم تنزيل الملف بنجاح.",
+  "downloadFailed": "فشل التنزيل.",
+  "sharingFailed": "فشلت المشاركة.",
+  "unableToProcessAttachment": "تعذر معالجة المرفق.",
+  "supportAndLegal": "الدعم والشروط القانونية",
+  "activity": "النشاط",
+  "preferences": "التفضيلات",
+  "youAreAllCaughtUp": "أنت على اطلاع بكل شيء!",
+  "clickHereToGoToTop": "انقر هنا للذهاب إلى الأعلى",
+  "noReelsFound": "لم يتم العثور على مقاطع ريلز",
+  "checkBackLaterForNewReels": "تحقق مرة أخرى لاحقًا لمشاهدة مقاطع ريلز جديدة.",
+  "unableToLoadVideo": "تعذر تحميل الفيديو",
+  "reelUrlNotAvailable": "رابط مقطع الريلز غير متوفر",
+  "openNow": "Open Now",
+  "closedText": "Closed",
+  "keyFeatures": "الميزات الرئيسية",
+  "seller": "البائع",
+  "assignDeliveryPartnerWhenPacked": "سنقوم بتعيين شريك توصيل بمجرد تجهيز طلبك",
+  "orderDeliveredSuccessMessage": "تم توصيل طردك بنجاح. شكراً لاختيارك لنا!",
+  "returnRequests": "طلبات الإرجاع",
+  "nReturnsInitiated": "{count, plural, =1{تم بدء طلب إرجاع واحد} other{تم بدء {count} طلبات إرجاع}}",
+  "@nReturnsInitiated": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "returnRequested": "تم طلب الإرجاع",
+  "approved": "تمت الموافقة",
+  "pickedUp": "تم الاستلام",
+  "receivedBySeller": "تم الاستلام من قبل البائع",
+  "refundProcessed": "تمت معالجة الاسترداد",
+  "rejected": "مرفوض",
+  "inProgress": "قيد التنفيذ",
+  "reason": "Reason",
+  "requestedOn": "تاريخ الطلب",
+  "approvedOn": "تاريخ الموافقة",
+  "sellerNote": "ملاحظة البائع",
+  "needsReschedule": "يحتاج إلى إعادة جدولة",
+  "orderNumber": "الطلب #{orderId}",
+  "@orderNumber": {
+    "placeholders": {
+      "orderId": {
+        "type": "String"
+      }
+    }
+  },
+  "viewDetails": "عرض التفاصيل",
+  "trackYourOrder": "تتبع طلبك",
+  "storeDetailsNotFoundForRescheduling": "لم يتم العثور على تفاصيل المتجر لإعادة الجدولة",
+  "cancelOrder": "إلغاء الطلب",
+  "areYouSureYouWantToCancelThisOrder": "هل أنت متأكد أنك تريد إلغاء هذا الطلب؟",
+  "noStoriesAvailable": "لا توجد قصص متاحة",
+  "refresh": "تحديث",
+  "noReturnReasonsAvailable": "لا توجد أسباب للإرجاع متاحة",
+  "failedToLoadReturnReasons": "فشل في تحميل أسباب الإرجاع",
+  "nItems": "{count, plural, =1{عنصر واحد} other{{count} من العناصر}}",
+  "@nItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "item": "عنصر",
+  "notDeliverableToThisLocation": "غير قابل للتوصيل إلى هذا الموقع.",
+  "showThisOtpAtStore": "أظهر رمز OTP هذا في المتجر",
+  "syncingYourCart": "جاري مزامنة عربة التسوق...",
+  "storeHours": "ساعات العمل",
+  "transactionId": "معرف المعاملة",
+  "recentlyViewed": "المشاهدة مؤخراً",
+  "filter": "فلترة",
+  "hoursAgo": "منذ {count} ساعات",
+  "@hoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "minAgo": "منذ {count} دقيقة",
+  "@minAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "justNow": "الآن",
+  "percentOff": "{percent}٪ خصم",
+  "@percentOff": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "storeOperationalHours": "ساعات العمل في المتجر",
+  "monday": "الاثنين",
+  "tuesday": "الثلاثاء",
+  "wednesday": "الأربعاء",
+  "thursday": "الخميس",
+  "friday": "الجمعة",
+  "saturday": "السبت",
+  "sunday": "الأحد",
+  "returnOtp": "Return OTP",
+  "locatingYou": "جاري تحديد موقعك...",
+  "cartLinkCopied": "تم نسخ الرابط",
+  "copyCartLink": "نسخ الرابط",
+  "mergeSharedCart": "دمج السلة",
+  "mergeSharedCartDescription": "يحتفظ بمنتجاتك الحالية ويضيف المنتجات المشتركة.",
+  "notified": "تم التنبيه",
+  "products": "المنتجات",
+  "reels": "بكرات",
+  "reelsComingSoon": "البكرات قريبا",
+  "replaceSharedCart": "استبدال السلة",
+  "replaceSharedCartDescription": "يستبدل سلتك الحالية بالمنتجات المشتركة.",
+  "shareCart": "مشاركة السلة",
+  "shareCartLinkLabel": "مشاركة",
+  "shareCartPrompt": "هل تريد مشاركة سلتك مع أصدقائك؟",
+  "sharedCartEmpty": "هذه السلة المشتركة فارغة.",
+  "sharedCartExpired": "انتهت صلاحية رابط هذه السلة المشتركة.",
+  "sharedCartImported": "تم تحديث السلة.",
+  "sharedCartLocationRequired": "اختر موقعك لعرض هذه المنتجات.",
+  "sharedCartLoginRequired": "سجّل الدخول لدمج سلتك أو استبدالها.",
+  "sharedCartSkipped": "تعذرت إضافة بعض المنتجات.",
+  "sharedCartTitle": "منتجات تمت مشاركتها معك!",
+  "unnotifyStoreConfirm": "هل أنت متأكد أنك تريد إلغاء التنبيهات عندما يعود هذا المتجر للعمل؟"
+}

@@ -1,0 +1,154 @@
+// Temporary audit probes: these assertions describe current unsafe behavior.
+import { useEffect, useState, type ReactNode } from "react";
+import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { afterEach, beforeEach, expect, it, vi } from "vitest";
+
+const mocks = vi.hoisted(() => ({
+  razorOrder: vi.fn(), paystackOrder: vi.fn(), checkout: vi.fn(), intent: vi.fn(),
+  confirm: vi.fn(), retrieve: vi.fn(), success: vi.fn(), toast: vi.fn(),
+  razorOptions: [] as any[], paystackOptions: [] as any[],
+  translate: (key: string) => key,
+}));
+vi.mock("@heroui/react", () => ({
+  addToast: mocks.toast,
+  Button: ({ children, isDisabled, isLoading, type, onPress }: any) =>
+    <button type={type || "button"} disabled={isDisabled || isLoading} onClick={onPress}>{children}</button>,
+  Modal: ({ children, isOpen }: any) => isOpen ? children : null,
+  ModalContent: ({ children }: any) => children,
+  ModalBody: ({ children }: any) => children,
+  ModalHeader: ({ children }: any) => children,
+  Spinner: () => <span>Loading</span>,
+}));
+vi.mock("next/script", () => ({ default: ({ onLoad }: any) => { useEffect(() => { onLoad?.(); }, []); return null; } }));
+vi.mock("@/contexts/SettingsContext", () => ({ useSettings: () => ({
+  currencySymbol: "$", paymentSettings: { razorpayKeyId: "synthetic", stripePublishableKey: "pk_test_synthetic", stripeCurrencyCode: "usd" },
+}) }));
+vi.mock("@/helpers/getters", () => ({
+  getCartDataFromRedux: () => ({ payment_summary: { payable_amount: 10 } }),
+  getUserDataFromRedux: () => ({ name: "Synthetic", email: "customer@example.invalid" }),
+}));
+vi.mock("@/helpers/functionalHelpers", () => ({ handleCheckout: mocks.checkout, formatAmount: String }));
+vi.mock("@/routes/api", () => ({
+  createRazorPayOrder: mocks.razorOrder, paystackCreateOrder: mocks.paystackOrder, createStripeIntent: mocks.intent,
+}));
+vi.mock("react-redux", () => ({ useDispatch: () => vi.fn() }));
+vi.mock("react-i18next", () => ({ useTranslation: () => ({ t: mocks.translate }) }));
+vi.mock("@stripe/stripe-js", () => ({ loadStripe: () => Promise.resolve({}) }));
+vi.mock("@stripe/react-stripe-js", () => ({
+  Elements: ({ children, options }: { children: ReactNode; options: { clientSecret: string } }) =>
+    <div data-testid="elements" data-secret={options.clientSecret}>{children}</div>,
+  useStripe: () => ({ confirmPayment: mocks.confirm, retrievePaymentIntent: mocks.retrieve }),
+  useElements: () => ({}),
+  PaymentElement: ({ onReady, onChange }: any) => <button type="button" onClick={() => { onReady?.(); onChange?.({ complete: true }); }}>Ready</button>,
+}));
+
+import RazorPay from "@/components/PaymentGateway/RazorPay";
+import Paystack from "@/components/PaymentGateway/Paystack";
+import Stripe from "@/components/PaymentGateway/Stripe";
+import TipStripePaymentModal from "@/components/Modals/TipStripePaymentModal";
+
+const wallet = { transaction: { id: 7, amount: 10 }, payment_response: {
+  id: "synthetic-wallet", amount: 1000, currency: "INR", receipt: "synthetic",
+  access_code: "synthetic-code", reference: "synthetic-reference", clientSecret: "synthetic-secret",
+} };
+const Components = { razorpay: RazorPay, paystack: Paystack };
+function Gateway({ kind, usageType = "order" }: { kind: keyof typeof Components; usageType?: "wallet" | "order" }) {
+  const [loading, setLoading] = useState(false);
+  const Component = Components[kind];
+  return <Component isLoading={loading} setIsLoading={setLoading} onSuccess={mocks.success} onError={vi.fn()}
+    usageType={usageType} walletOrderData={usageType === "wallet" ? wallet : undefined} />;
+}
+const orderMock = (kind: keyof typeof Components) => kind === "razorpay" ? mocks.razorOrder : mocks.paystackOrder;
+const optionsFor = (kind: keyof typeof Components) => kind === "razorpay" ? mocks.razorOptions : mocks.paystackOptions;
+async function press(kind: keyof typeof Components) {
+  const button = await screen.findByRole("button", { name: kind === "razorpay" ? "Pay with Razorpay" : "Pay with PayStack" });
+  await act(async () => { fireEvent.click(button); });
+  return button;
+}
+async function paid(kind: keyof typeof Components) {
+  await act(async () => {
+    if (kind === "razorpay") await mocks.razorOptions[0].handler({ razorpay_order_id: "synthetic-order", razorpay_payment_id: "synthetic-paid", razorpay_signature: "synthetic-signature" });
+    else mocks.paystackOptions[0].onSuccess({ reference: "synthetic-paid", status: "success" });
+  });
+}
+beforeEach(() => {
+  vi.clearAllMocks();
+  mocks.razorOptions.length = 0; mocks.paystackOptions.length = 0;
+  mocks.razorOrder.mockResolvedValue({ success: true, data: { id: "synthetic-order", amount: 10, currency: "INR" } });
+  mocks.paystackOrder.mockResolvedValue({ success: true, data: { payment_response: { access_code: "synthetic-code", reference: "synthetic-reference" } } });
+  mocks.checkout.mockResolvedValue({ success: false, message: "Synthetic order persistence failure" });
+  mocks.intent.mockResolvedValue({ success: true, data: { clientSecret: "synthetic-secret" } });
+  mocks.retrieve.mockResolvedValue({ paymentIntent: { status: "requires_payment_method" } });
+  mocks.confirm.mockResolvedValue({ paymentIntent: { id: "synthetic-paid", status: "succeeded" } });
+  const script = document.createElement("script"); script.id = "razorpay-sdk"; document.body.append(script);
+  Object.defineProperty(window, "Razorpay", { configurable: true, value: class {
+    constructor(options: any) { mocks.razorOptions.push(options); }
+    open() {} on() {}
+  } });
+  Object.defineProperty(window, "PaystackPop", { configurable: true, value: class {
+    resumeTransaction(_code: string, options: any) { mocks.paystackOptions.push(options); }
+  } });
+});
+afterEach(() => document.getElementById("razorpay-sdk")?.remove());
+
+it.each(["razorpay", "paystack"] as const)("%s permits another payment window before the first completes", async kind => {
+  render(<Gateway kind={kind} />);
+  const button = await press(kind);
+  expect(optionsFor(kind)).toHaveLength(1);
+  expect(button).toBeEnabled();
+  await press(kind);
+  expect(orderMock(kind)).toHaveBeenCalledTimes(2);
+  expect(optionsFor(kind)).toHaveLength(2);
+});
+
+it.each(["razorpay", "paystack"] as const)("%s wallet announces success without backend credit confirmation", async kind => {
+  render(<Gateway kind={kind} usageType="wallet" />);
+  await press(kind); await paid(kind);
+  expect(mocks.success).toHaveBeenCalledOnce();
+  expect(mocks.checkout).not.toHaveBeenCalled();
+  expect(mocks.toast).toHaveBeenCalledWith(expect.objectContaining({ title: "Wallet Recharged Successfully!" }));
+});
+
+it.each(["razorpay", "paystack"] as const)("%s allows a new payment after a successful payment's order fails", async kind => {
+  render(<Gateway kind={kind} />);
+  await press(kind); await paid(kind);
+  await waitFor(() => expect(mocks.checkout).toHaveBeenCalledOnce());
+  await press(kind);
+  expect(orderMock(kind)).toHaveBeenCalledTimes(2);
+  expect(optionsFor(kind)).toHaveLength(2);
+});
+
+it.each(["processing", "requires_capture"])("Stripe tip calls onPaid for status %s", async status => {
+  mocks.confirm.mockResolvedValue({ paymentIntent: { id: "synthetic-not-settled", status } });
+  const onPaid = vi.fn(async () => {});
+  render(<TipStripePaymentModal isOpen amount={10} onPaid={onPaid} onCancel={vi.fn()} />);
+  const button = await screen.findByRole("button", { name: "tip.payNow" });
+  await act(async () => { fireEvent.click(button); });
+  expect(onPaid).toHaveBeenCalledWith("synthetic-not-settled");
+});
+
+it("Stripe creates a fresh intent after remount following paid-but-order-failed", async () => {
+  const props = { onSuccess: mocks.success, onError: vi.fn(), isLoading: false, setIsLoading: vi.fn() };
+  const view = render(<Stripe {...props} />);
+  fireEvent.click(await screen.findByText("Ready"));
+  await act(async () => { fireEvent.click(screen.getByRole("button", { name: "Pay Now" })); });
+  expect(mocks.checkout).toHaveBeenCalledOnce();
+  expect(screen.getByRole("button", { name: "Pay Now" })).toBeDisabled();
+  view.unmount();
+  render(<Stripe {...props} />);
+  fireEvent.click(await screen.findByText("Ready"));
+  expect(mocks.intent).toHaveBeenCalledTimes(2);
+  expect(screen.getByRole("button", { name: "Pay Now" })).toBeEnabled();
+});
+
+it("Stripe tip accepts a late initialization response for an obsolete amount", async () => {
+  let finishOld!: (value: unknown) => void;
+  mocks.intent.mockImplementationOnce(() => new Promise(resolve => { finishOld = resolve; }))
+    .mockResolvedValueOnce({ success: true, data: { clientSecret: "synthetic-amount-20" } });
+  const props = { isOpen: true, onPaid: vi.fn(async () => {}), onCancel: vi.fn() };
+  const view = render(<TipStripePaymentModal {...props} amount={10} />);
+  view.rerender(<TipStripePaymentModal {...props} amount={20} />);
+  await waitFor(() => expect(screen.getByTestId("elements")).toHaveAttribute("data-secret", "synthetic-amount-20"));
+  await act(async () => { finishOld({ success: true, data: { clientSecret: "synthetic-amount-10" } }); });
+  expect(screen.getByTestId("elements")).toHaveAttribute("data-secret", "synthetic-amount-10");
+});

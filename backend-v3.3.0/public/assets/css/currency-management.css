@@ -1,0 +1,22 @@
+.currency-management-page .badge {
+    white-space: nowrap;
+}
+
+.currency-management-page .table td {
+    vertical-align: middle;
+}
+
+.currency-management-page .currency-tool-output {
+    background: #111827;
+    border-radius: 6px;
+    color: #e5e7eb;
+    max-height: 520px;
+    min-height: 180px;
+    overflow: auto;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.currency-management-page .store-currency-form .form-select {
+    min-width: 96px;
+}

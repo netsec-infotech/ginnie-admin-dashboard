@@ -1,0 +1,557 @@
+.watch-buy-status-gallery {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    scrollbar-color: var(--tblr-border-color) transparent;
+    scrollbar-width: thin;
+}
+
+.watch-buy-status-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.watch-buy-status-toolbar-actions,
+.watch-buy-status-search {
+    display: flex;
+    gap: .5rem;
+}
+
+.watch-buy-status-profile-ring {
+    display: inline-flex;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--tblr-primary), #f76707);
+}
+
+.watch-buy-status-profile-ring .avatar {
+    border: 3px solid var(--tblr-bg-surface);
+}
+
+.watch-buy-status-profile-group {
+    overflow: hidden;
+    border: 1px solid var(--tblr-border-color);
+    border-radius: var(--tblr-border-radius-lg);
+    background: var(--tblr-bg-surface);
+    box-shadow: var(--tblr-shadow-card);
+}
+
+.watch-buy-status-profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--tblr-border-color);
+}
+
+.watch-buy-status-gallery::-webkit-scrollbar {
+    height: 7px;
+}
+
+.watch-buy-status-gallery::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: var(--tblr-border-color);
+}
+
+.seller-watch-buy-statuses .watch-buy-status-gallery {
+    padding: 0;
+}
+
+.watch-buy-status-card,
+.watch-buy-status-media-shell {
+    overflow: hidden;
+}
+
+.watch-buy-status-card {
+    flex: 0 0 190px;
+    border-radius: 1rem;
+    scroll-snap-align: start;
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.watch-buy-status-card:hover {
+    border-color: color-mix(in srgb, var(--tblr-primary) 45%, var(--tblr-border-color));
+    box-shadow: 0 10px 28px rgba(31, 41, 55, .14);
+    transform: translateY(-2px);
+}
+
+.watch-buy-status-media-shell {
+    position: relative;
+    aspect-ratio: 9 / 12;
+    background: #111827;
+}
+
+.watch-buy-status-media-shell > img,
+.watch-buy-status-media-shell > video,
+.watch-buy-status-modal-media > img,
+.watch-buy-status-modal-media > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.watch-buy-status-text-preview,
+.watch-buy-preview-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    white-space: pre-wrap;
+    background: linear-gradient(145deg, #5f3dc4, #0ca678);
+}
+
+.watch-buy-status-preview-trigger {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.watch-buy-status-type,
+.watch-buy-status-delete,
+.watch-buy-status-expiry,
+.watch-buy-status-play {
+    position: absolute;
+    z-index: 3;
+}
+
+.watch-buy-status-type { top: .75rem; left: .75rem; }
+.watch-buy-status-delete { top: .75rem; right: .75rem; }
+.watch-buy-status-expiry {
+    right: .75rem;
+    bottom: .75rem;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    color: #fff;
+    background: rgba(0, 0, 0, .62);
+}
+
+.watch-buy-status-play {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, .58);
+    pointer-events: none;
+}
+
+.watch-buy-status-modal-media {
+    overflow: hidden;
+    aspect-ratio: 9 / 12;
+    max-height: 65vh;
+    border-radius: .5rem;
+    background: #111827;
+}
+
+.watch-buy-video-preview {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 90px;
+    height: 120px;
+    border-radius: .375rem;
+    background: #111827;
+}
+
+.watch-buy-video-preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.watch-buy-video-preview span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+}
+
+@media (max-width: 767.98px) {
+    .watch-buy-status-toolbar,
+    .watch-buy-status-toolbar-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .watch-buy-status-toolbar-actions,
+    .watch-buy-status-search,
+    .watch-buy-status-toolbar-actions > .btn {
+        width: 100%;
+    }
+
+    .watch-buy-status-search .form-control {
+        min-width: 0;
+    }
+
+    .watch-buy-status-profile-header {
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .watch-buy-status-gallery {
+        gap: .75rem;
+        padding: 1rem;
+    }
+
+    .watch-buy-status-card {
+        flex-basis: 164px;
+    }
+}
+
+.empty-icon {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--tblr-secondary, #6c7a9c);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-icon i,
+.empty-icon .ti {
+    font-size: 3.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    stroke-width: 1.5;
+}
+
+.watch-buy-status-card {
+    overflow: hidden;
+    border: 1px solid var(--tblr-border-color);
+    background: var(--tblr-bg-surface);
+    box-shadow: 0 4px 18px rgba(31, 41, 55, .08);
+}
+
+.watch-buy-status-card-media {
+    position: relative;
+    display: flex;
+    aspect-ratio: 9 / 13;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #111827;
+    color: #fff;
+}
+
+.watch-buy-status-card-media > img,
+.watch-buy-status-card-media > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.watch-buy-status-theme-0 { background: linear-gradient(145deg, #4c1d95, #7c3aed 55%, #db2777); }
+.watch-buy-status-theme-1 { background: linear-gradient(145deg, #0f766e, #0891b2 55%, #2563eb); }
+.watch-buy-status-theme-2 { background: linear-gradient(145deg, #9a3412, #ea580c 55%, #eab308); }
+.watch-buy-status-theme-3 { background: linear-gradient(145deg, #1e3a8a, #4338ca 55%, #7e22ce); }
+
+.watch-buy-status-text-only {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    max-height: 11.5rem;
+    padding: 1.25rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.55;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.watch-buy-status-media-unavailable,
+.watch-buy-status-preview-unavailable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+    color: #94a3b8;
+}
+
+.watch-buy-status-media-unavailable i,
+.watch-buy-status-preview-unavailable i { font-size: 2.5rem; }
+
+.watch-buy-status-preview-trigger {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+    color: #fff;
+}
+
+.watch-buy-status-preview-trigger > span {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .5rem .75rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, .78);
+    font-size: .8rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.watch-buy-status-preview-trigger:hover { background: rgba(15, 23, 42, .25); }
+.watch-buy-status-preview-trigger:hover > span,
+.watch-buy-status-preview-trigger:focus-visible > span { opacity: 1; transform: translateY(0); }
+
+.watch-buy-status-card-topbar {
+    position: absolute;
+    z-index: 4;
+    top: .6rem;
+    right: .6rem;
+    left: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    pointer-events: none;
+}
+
+.watch-buy-status-card-topbar > * { pointer-events: auto; }
+.watch-buy-status-card-topbar .badge,
+.watch-buy-status-card-topbar .btn {
+    color: #fff !important;
+    border: 0;
+    background: rgba(15, 23, 42, .72) !important;
+    backdrop-filter: blur(6px);
+}
+
+.watch-buy-status-play-icon {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    width: 3.25rem;
+    height: 3.25rem;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, .55);
+    border-radius: 50%;
+    background: rgba(15, 23, 42, .55);
+    font-size: 1.5rem;
+}
+
+.watch-buy-status-card-expiry {
+    position: absolute;
+    z-index: 3;
+    right: .65rem;
+    bottom: .65rem;
+    left: .65rem;
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .45rem .6rem;
+    border-radius: .5rem;
+    background: rgba(15, 23, 42, .78);
+    font-size: .72rem;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.watch-buy-status-card-summary { padding: .8rem; }
+.watch-buy-status-card-text {
+    display: -webkit-box;
+    margin-bottom: .45rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: .82rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.watch-buy-status-products {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .7rem;
+    padding-top: .7rem;
+    border-top: 1px solid var(--tblr-border-color);
+    color: var(--tblr-secondary);
+    font-size: .75rem;
+}
+
+.watch-buy-status-inline-empty {
+    display: flex;
+    min-height: 8rem;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: var(--tblr-secondary);
+}
+
+#watch-buy-status-gallery-container.is-loading,
+.seller-watch-buy-statuses .card-body.is-loading {
+    position: relative;
+    min-height: 10rem;
+}
+
+#watch-buy-status-gallery-container > :not(.watch-buy-status-loading),
+.seller-watch-buy-statuses .card-body > :not(.watch-buy-status-loading) {
+    transition: opacity .2s ease;
+}
+
+#watch-buy-status-gallery-container.is-loading > :not(.watch-buy-status-loading),
+.seller-watch-buy-statuses .card-body.is-loading > :not(.watch-buy-status-loading) {
+    opacity: .35;
+}
+
+.watch-buy-status-loading {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background: color-mix(in srgb, var(--tblr-bg-surface) 82%, transparent);
+    color: var(--tblr-secondary);
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.watch-buy-status-loading.is-visible {
+    opacity: 1;
+}
+
+.watch-buy-status-loading.is-hiding {
+    opacity: 0;
+}
+
+.watch-buy-status-preview-layout { min-height: 620px; }
+.watch-buy-status-preview-stage {
+    display: flex;
+    min-height: 620px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #080c14;
+    color: #fff;
+}
+
+.watch-buy-status-preview-stage img,
+.watch-buy-status-preview-stage video {
+    width: 100%;
+    height: 620px;
+    object-fit: contain;
+    background: #080c14;
+}
+
+.watch-buy-status-preview-text-only {
+    display: flex;
+    width: 100%;
+    min-height: 620px;
+    max-width: 42rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: linear-gradient(145deg, #1e3a8a, #4338ca 55%, #7e22ce);
+    font-size: clamp(1.4rem, 3vw, 2.25rem);
+    font-weight: 650;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.watch-buy-status-preview-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--tblr-bg-surface);
+}
+
+.watch-buy-status-preview-copy { white-space: pre-wrap; overflow-wrap: anywhere; }
+.watch-buy-status-preview-meta { display: grid; gap: 1rem; }
+.watch-buy-status-preview-meta > div {
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+    color: var(--tblr-secondary);
+}
+.watch-buy-status-preview-meta i { margin-top: .1rem; font-size: 1.15rem; color: var(--tblr-primary); }
+.watch-buy-status-preview-actions { display: grid; gap: .75rem; }
+
+@media (hover: none) {
+    .watch-buy-status-preview-trigger > span { opacity: 1; transform: none; }
+}
+
+@media (max-width: 991.98px) {
+    .watch-buy-status-preview-layout,
+    .watch-buy-status-preview-stage { min-height: auto; }
+
+    .watch-buy-status-preview-stage,
+    .watch-buy-status-preview-stage img,
+    .watch-buy-status-preview-stage video,
+    .watch-buy-status-preview-text-only {
+        height: min(56vh, 520px);
+        min-height: min(56vh, 520px);
+    }
+}
+
+/* Horizontal overflow is handled by the shared DataTable scroll container. */
+.card-table .dt-scroll-body,
+.card-table .table-responsive {
+    overflow-x: auto !important;
+    max-width: 100% !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dt-container table.dataTable td .dropdown,
+.dt-container table.dataTable td .dropdown-menu {
+    position: relative;
+    z-index: 1050;
+}
+
+.dt-container table.dataTable td .dropdown-menu.show {
+    position: absolute !important;
+    z-index: 1070 !important;
+}
+
+table.dataTable tr:has(.dropdown-menu.show) {
+    position: relative;
+    z-index: 1060 !important;
+}
+
+/* Ensure SweetAlert2 confirmation dialogs and toasts appear in front of Bootstrap modals (modal z-index is 1055) */
+div.swal2-container,
+div:where(.swal2-container),
+.swal2-container,
+body.swal2-shown .swal2-container {
+    z-index: 999999 !important;
+}
